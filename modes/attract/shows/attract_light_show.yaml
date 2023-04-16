@@ -1,0 +1,27 @@
+#show_version=5
+##! show: attract_light_show
+- duration: 1
+  lights:
+    GI_light1: red
+    GI_light2: red
+    GI_light3: red
+    GI_light4: red
+- duration: 1
+  lights:
+    GI_light1: blue
+    GI_light2: blue
+    GI_light3: blue
+    GI_light4: blue
+- duration: 1
+  lights:
+    GI_light1: purple
+    GI_light2: purple
+    GI_light3: purple
+    GI_light4: purple
+- duration: 1
+  lights:
+    GI_light1: orange
+    GI_light2: orange
+    GI_light3: orange
+    GI_light4: orange
+    
