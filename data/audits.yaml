@@ -1,31 +1,47 @@
 events:
-  game_ended: 1
-  game_started: 25
+  game_ended: 26
+  game_started: 94
 player:
   score:
-    average: 0.0
+    average: 36332.142857142855
     top:
-    - 0
-    - 0
-    total: 2
+    - 390500
+    - 174500
+    - 149500
+    - 53500
+    - 46000
+    - 39100
+    - 21500
+    - 20000
+    - 18500
+    - 17100
+    total: 28
 switches:
-  s_left_EOS: 340
-  s_left_flipper: 526
-  s_left_inlane: 16
-  s_left_outlane: 17
-  s_left_slingshot: 100
+  s_autoplunger: 130
+  s_left_EOS: 898
+  s_left_flipper: 1583
+  s_left_inlane: 39
+  s_left_outlane: 30
+  s_left_slingshot: 194
   s_plunger_lane: 40
-  s_right_EOS: 181
-  s_right_flipper: 193
-  s_right_inlane: 102
-  s_right_outlane: 118
-  s_right_slingshot: 115
-  s_shooter_lane: 2
-  s_start_button: 4
-  s_trough1: 10
-  s_trough2: 3
-  s_trough3: 0
-  s_trough4: 1
-  s_trough5: 3
-  s_trough6: 3
-  s_trough_jam: 0
+  s_pop_center: 440
+  s_pop_left: 563
+  s_pop_right: 2743
+  s_right_EOS: 672
+  s_right_flipper: 993
+  s_right_inlane: 180
+  s_right_outlane: 234
+  s_right_slingshot: 202
+  s_rollover_gork: 35
+  s_rollover_mork: 45
+  s_shooter_lane: 12
+  s_spinner: 2282
+  s_start_button: 17
+  s_trough1: 148
+  s_trough2: 142
+  s_trough3: 135
+  s_trough4: 128
+  s_trough5: 118
+  s_trough6: 9
+  s_trough_jam: 4
+  s_upperscoop: 42

@@ -12,13 +12,16 @@ fast:
             3208:
                 model: FP-I/O-3208
                 order: 1
+            3208_2:
+                model: FP-I/O-3208
+                order: 2 
     baud: 921600
     debug: false
     console_log: none
     file_log: basic
     watchdog: 1s
-    default_quick_debounce_open: 2ms
-    default_quick_debounce_close: 2ms
+    default_quick_debounce_open: 1ms
+    default_quick_debounce_close: 1ms
     default_normal_debounce_open: 4ms
     default_normal_debounce_close: 4ms
 
@@ -32,25 +35,29 @@ fast:
         model: FP-EXP-2000
   
 lights:
-      GI_light1:
-        number: playfield-1-1
-      GI_light2:
-        number: playfield-1-2
-      GI_light3:
-        number: playfield-1-3
-      GI_light4: 
-        number: playfield-1-4
-      GI_light5:
-	      number: playfield-1-5
-     # l_led3:
-      #  number: expansion1-1-2
-    #GI_light3:
-    #  number: playfield-1-1
+  GI_light1:
+    number: playfield-1-1
+  GI_light2:
+    number: playfield-1-2
+  GI_light3:
+    number: playfield-1-3
+  GI_light4: 
+    number: playfield-1-4
+  GI_light5:
+    number: playfield-1-5
+  GI_light6:
+    number: playfield-1-6
+  GI_light7:
+    number: playfield-1-7
+  GI_light8:
+    number: playfield-1-8
+  GI_light9:
+    number: playfield-1-9
 
 
 switches:
   s_trough_jam:
-    number: 3208-23
+    number: 3208-17
   s_trough1:
     number: 3208-1
   s_trough2:
@@ -62,16 +69,19 @@ switches:
   s_trough5:
     number: 3208-5
   s_trough6:
+    number: 3208-7
+  s_spinner:
     number: 3208-6
+    debounce: quick
   s_start_button:
     number: 3208-30
     tags: start
   s_right_outlane:
     number: 3208-8
-    tags: playfield_active
+    #tags: playfield_active
   s_right_inlane:
     number: 3208-9
-    tags: playfield_active
+    #tags: playfield_active
   s_left_flipper: 
     number: 3208-31 
     tags: left_flipper
@@ -93,14 +103,29 @@ switches:
   s_right_flipper:
     number: 3208-29 
     tags: right_flipper
-  s_shooter_lane:
-    number: 3208-0 
+  s_autoplunger:
+    number: 3208-0
+  s_pop_left:
+    number: 3208-19
+  s_pop_right:
+    number: 3208-20
+  s_pop_center:
+    number: 3208-21
+  s_rollover_gork:
+    number: 3208-22
+  s_rollover_mork: 
+    number: 3208-23
+  s_upperscoop:
+    number: 3208-18
+    
 
 coils:
   c_trough_eject:
     number: 3208-7
-  knocker:
+    default_pulse_ms: 12
+  c_autoplunger:
     number: 3208-6
+    default_pulse_ms: 12
   c_right_slingshot:
     number: 3208-2
     default_pulse_ms: 10
@@ -121,6 +146,18 @@ coils:
   c_flipper_right_hold:
     number: 3208-3
     allow_enable: true
+  c_pop_left:
+    number: 3208_2-0
+    default_pulse_ms: 12
+  c_pop_center:
+    number: 3208_2-1
+    default_pulse_ms: 12
+  c_pop_right:
+    number: 3208_2-2
+    default_pulse_ms: 12
+  c_upperscoop:
+    number: 3208_2-3
+    default_pulse_ms: 3
 
 playfields:
   playfield:
@@ -141,15 +178,25 @@ flippers:
 
 ball_devices:
     bd_plunger:
-      mechanical_eject: true
-      ball_switches: s_shooter_lane
+      mechanical_eject: false
+      ball_switches: s_autoplunger
+      eject_coil: c_autoplunger
+      eject_timeouts: 5s
+      eject_targets: playfield
     bd_trough:
       ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
       eject_coil: c_trough_eject
       tags: trough, home, drain
       jam_switch: s_trough_jam
       eject_coil_jam_pulse: 15ms
+      eject_targets: bd_plunger
+      eject_timeouts: 3s
       debug: true
+
+    bd_upperscoop:
+      ball_switches: s_upperscoop
+      eject_coil: c_upperscoop
+      eject_timeouts: 3s
 
 autofire_coils:
   ac_slingshot_left:
@@ -158,7 +205,16 @@ autofire_coils:
   ac_slingshot_right:
     coil: c_right_slingshot
     switch: s_right_slingshot
-
+  ac_popbumper_left:
+    coil: c_pop_left
+    switch: s_pop_left
+  ac_popbumper_center:
+    coil: c_pop_center
+    switch: s_pop_center
+  ac_popbumper_right:
+    coil: c_pop_right
+    switch: s_pop_right
+  
 
 slides: 
   welcome_slide:
