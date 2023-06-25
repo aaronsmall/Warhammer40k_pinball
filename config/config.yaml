@@ -41,7 +41,7 @@ lights:
       GI_light4: 
         number: playfield-1-4
       GI_light5:
-	number: playfield-1-5
+	      number: playfield-1-5
      # l_led3:
       #  number: expansion1-1-2
     #GI_light3:
@@ -52,17 +52,17 @@ switches:
   s_trough_jam:
     number: 3208-23
   s_trough1:
-    number: 3208-25
+    number: 3208-1
   s_trough2:
-    number: 3208-26
+    number: 3208-2
   s_trough3:
-    number: 3208-28
+    number: 3208-3
   s_trough4:
-    number: 3208-16
+    number: 3208-4
   s_trough5:
-    number: 3208-24
+    number: 3208-5
   s_trough6:
-    number: 3208-27
+    number: 3208-6
   s_start_button:
     number: 3208-30
     tags: start
@@ -93,10 +93,8 @@ switches:
   s_right_flipper:
     number: 3208-29 
     tags: right_flipper
-  s_plunger_lane:
-    number: 3208-0 
   s_shooter_lane:
-    number: 3208-1
+    number: 3208-0 
 
 coils:
   c_trough_eject:
@@ -207,8 +205,6 @@ keyboard:
     toggle: true
   s:
     switch: s_start_button
-  p:
-    switch: s_plunger_lane
   o:
     switch: s_right_outlane
 
