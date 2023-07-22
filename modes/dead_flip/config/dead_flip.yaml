@@ -1,0 +1,7 @@
+#config_version=5
+mode:
+  start_events: mode_attract_started
+  stop_events: mode_attract_stopped
+  priority: 400
+  game_mode: false
+  code: dead_flip.dead_flip

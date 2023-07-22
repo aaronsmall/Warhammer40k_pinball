@@ -1,9 +1,36 @@
 #config_version=5
 
+mode:
+  code: attract.MyAttract
+
+#event_player: 
+ # mode_attract_started: play_main_attract_light_show, play_attract_lcd_slide, play_attract_dmd_slide_1, tractorbeam_stepper_startpos, backboard_stepper_startpos, start_attract_random_video_play_timer, reset_drop_target_bank_request
 show_player:
   mode_attract_started:
     attract_light_show:
       speed: 3
     attract_display_loop:
+      priority: 100
       speed: .8
+      manual_advance: false
+  s_right_flipper_active:
+    attract_display_loop:
+      action: advance
+      manual_advance: false
+  s_left_flipper_active:
+    attract_display_loop:
+       action: step_back
+       manual_advance: false
+  flipper_code_ultramar:
+    flipper_code_ultramar:
+      priority: 200
+      loops: 0
 
+
+
+#  slide_player:
+#    dead_flip_code_successfully_activated:
+#      dead_flip_mode_activated:
+#        target: dmd
+#        expire: 1s
+#        priority: 2

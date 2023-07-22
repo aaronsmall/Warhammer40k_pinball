@@ -1,0 +1,10 @@
+#config_version=5
+
+assets:
+  videos:
+    default:
+      load: preload
+
+videos:
+  flipper_code_video:
+    file: StrollingThroughUltramar.mp4

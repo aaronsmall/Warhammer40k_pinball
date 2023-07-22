@@ -1,0 +1,45 @@
+#config_version=5
+
+coils:
+  c_trough_eject:
+    number: 3208-7
+    default_pulse_ms: 12
+  c_autoplunger:
+    number: 3208-6
+    default_pulse_ms: 12
+  c_right_slingshot:
+    number: 3208-2
+    default_pulse_ms: 10
+    allow_enable: true
+  c_left_slingshot:
+    number: 3208-0
+    default_pulse_ms: 10
+    allow_enable: true
+  c_flipper_left_main:
+    number: 3208-4  # again, these numbers will probably be different for you
+    default_pulse_ms: 20
+  c_flipper_left_hold:
+    number: 3208-5  # check your platform-specific documentation for the actual numbers
+    allow_enable: true
+  c_flipper_right_main:
+    default_pulse_ms: 20
+    number: 3208-1
+  c_flipper_right_hold:
+    number: 3208-3
+    allow_enable: true
+  c_pop_left:
+    number: 3208_2-0
+    default_pulse_ms: 17
+  c_pop_center:
+    number: 3208_2-1
+    default_pulse_ms: 17
+  c_pop_right:
+    number: 3208_2-2
+    default_pulse_ms: 17
+  c_upperscoop:
+    number: 3208_2-3
+    default_pulse_ms: 3
+  c_scoop:
+    number: 3208_2-5
+  c_kickback:
+    number: 3208_2-6

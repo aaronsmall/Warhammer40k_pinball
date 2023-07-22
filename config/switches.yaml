@@ -1,0 +1,101 @@
+#config_version=5
+
+switches:
+  s_trough_jam:
+    number: 3208-7
+    type: "NC"
+  s_trough1:
+    number: 3208-1
+  s_trough2:
+    number: 3208-2
+  s_trough3:
+    number: 3208-3
+  s_trough4:
+    number: 3208-4
+  s_trough5:
+    number: 3208-5
+  s_trough6:
+    number: 3208-17
+    type: "NC"
+  s_spinner:
+    number: 3208-6
+    type: "NC"
+    debounce: quick
+  s_start_button:
+    number: 3208-30
+    tags: start
+  s_right_outlane:
+    number: 3208-8
+    #tags: playfield_active
+  s_right_inlane:
+    number: 3208-9
+    #tags: playfield_active
+  s_left_flipper: 
+    number: 3208-31 
+    tags: left_flipper
+  s_right_slingshot: 
+    number: 3208-10
+  s_right_EOS:
+    number: 3208-11
+  s_left_EOS:
+    number: 3208-12
+  s_left_inlane:
+    number: 3208-14
+    tags: playfield_active
+  s_left_outlane: 
+    number: 3208-15
+    tags: playfield_active
+  s_left_slingshot: 
+    number: 3208-13
+  s_right_flipper:
+    number: 3208-29 
+    tags: right_flipper
+  s_autoplunger:
+    number: 3208-0
+  s_pop_left:
+    number: 3208-19
+  s_pop_right:
+    number: 3208-20
+  s_pop_center:
+    number: 3208-21
+  s_rollover_gork:
+    number: 3208-22
+  s_rollover_mork: 
+    number: 3208-23
+  s_upperscoop:
+    number: 3208-18
+  s_xenos_x:
+    number: 3208_2-0
+  s_xenos_e:
+    number: 3208_2-1
+  s_xenos_n:
+    number: 3208_2-2
+  s_xenos_o:
+    number: 3208_2-3
+  s_xenos_s:
+    number: 3208_2-4
+  s_kickback1:
+    number: 3208_2-7
+  s_kickback2:
+    number: 3208_2-6
+  s_disk_backtarget:
+    number: 3208_2-5
+  s_droptarget_down:
+    number: 3208_2-15
+  s_droptarget_lock:
+    number: 3208_2-14
+  s_kickback_opto:
+    number: 3208_2-23
+    type: "NC"
+  s_left_ramp: 
+    number: 3208_2-22
+    type: "NC"
+  s_center_spinner:
+    number: 3208_2-21
+    type: "NC"
+  s_right_ramp:
+    number: 3208_2-20
+    type: "NC"
+  s_scoop:
+    number: 3208_2-19
+    type: "NC"   
