@@ -43,3 +43,7 @@ coils:
     number: 3208_2-5
   c_kickback:
     number: 3208_2-6
+    default_pulse_ms: 20
+  c_droptarget:
+    number: 3208_2-4
+    
