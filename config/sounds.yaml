@@ -1,0 +1,21 @@
+#config_version=5
+
+#sounds:
+#  player_one:
+#    file: player_one.mp3
+#    streaming: false
+#    track: voice
+#    priority: 50
+#    volume: 1.0
+#  player_two:
+#    file: player_two.mp3
+#    streaming: voice
+#    priority: 50
+#    volume: 1.0
+#    ducking:
+#      target: music
+#      delay: 0
+#      attack: 0.3 sec
+#      attenuation: 0.15
+#      release_point: 2.0 sec
+#      release: 1.0 sec    

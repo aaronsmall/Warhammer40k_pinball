@@ -40,6 +40,26 @@ game:
 machine: 
   balls_installed: 6
   min_balls: 5
+
+
+sound_system:
+  buffer: 1024
+  channels: 1
+  enabled: true
+  frequency: 44100
+  tracks:
+    music:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.5
+    voice:
+      type: standard
+      simultaneous_sounds: 1
+      volume: 0.7
+    sfx:
+      type: standard
+      simultaneous_sounds: 8
+      volume: 0.4
   
 config: 
   - lights.yaml
@@ -48,6 +68,12 @@ config:
   - switches.yaml
   - videos.yaml
   - timed_switches.yaml
+  - assets.yaml
+
+displays:
+  lcd_display:
+    width: 800
+    height: 600
 
 playfields:
   playfield:
@@ -159,4 +185,4 @@ virtual_platform_start_active_switches:
 
 modes: 
   - base
- # - dead_flip
+  - high_score

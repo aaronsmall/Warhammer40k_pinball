@@ -26,7 +26,36 @@ show_player:
       priority: 200
       loops: 0
 
-
+high_score:
+  _overwrite: True
+  categories: !!omap
+  - score:
+      - GRAND CHAMPION
+      - HIGH SCORE 1
+      - HIGH SCORE 2
+      - HIGH SCORE 3
+      - HIGH SCORE 4
+  - loops:
+      - LOOP CHAMP
+  - hits:
+      - MOST HITS
+  defaults:
+    score:
+      - BRI: 4242
+      - GHK: 2323
+      - JK: 1337
+      - QC: 42
+      - MPF: 23
+    loops:
+      - JK: 42
+    hits:
+      - A: 1
+  vars:
+    loops:
+      - player: number
+    hits:
+      - player: number
+      - machine: credits_string
 
 #  slide_player:
 #    dead_flip_code_successfully_activated:
