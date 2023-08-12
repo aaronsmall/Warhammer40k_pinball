@@ -124,8 +124,11 @@ autofire_coils:
     coil: c_pop_right
     switch: s_pop_right
   ac_kickback:
-    coil: c_scoop
+    coil: c_kickback
     switch: s_kickback_opto
+  ac_droptarget:
+    coil: c_droptarget
+    switch: s_droptarget
   
 
 slides: 

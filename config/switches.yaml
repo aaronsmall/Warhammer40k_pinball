@@ -80,8 +80,9 @@ switches:
     number: 3208_2-6
   s_disk_backtarget:
     number: 3208_2-5
-  s_droptarget_down:
+  s_droptarget:
     number: 3208_2-15
+    debounce: normal
   s_droptarget_lock:
     number: 3208_2-14
   s_kickback_opto:

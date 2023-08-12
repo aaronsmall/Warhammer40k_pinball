@@ -1,65 +1,66 @@
 events:
-  game_ended: 38
-  game_started: 200
+  game_ended: 40
+  game_started: 216
 player:
   score:
-    average: 42391.11111111111
+    average: 55378.72340425532
     top:
+    - 474300
     - 411000
     - 390500
     - 225500
+    - 220900
     - 174500
     - 149500
     - 142100
     - 122000
     - 89600
-    - 53500
-    - 46000
-    total: 45
+    total: 47
 switches:
-  s_autoplunger: 275
-  s_center_spinner: 7
-  s_disk_backtarget: 4
-  s_droptarget_down: 1
-  s_droptarget_lock: 1
-  s_kickback1: 0
-  s_kickback2: 8
-  s_kickback_opto: 68
+  s_autoplunger: 304
+  s_center_spinner: 11
+  s_disk_backtarget: 15
+  s_droptarget: 72
+  s_droptarget_down: 2
+  s_droptarget_lock: 8
+  s_kickback1: 31
+  s_kickback2: 31
+  s_kickback_opto: 147
   s_kickback_opto2: 0
   s_kickback_opto3: 0
-  s_left_EOS: 1024
-  s_left_flipper: 1999
-  s_left_inlane: 44
-  s_left_outlane: 33
-  s_left_ramp: 5
-  s_left_slingshot: 230
+  s_left_EOS: 1074
+  s_left_flipper: 2173
+  s_left_inlane: 47
+  s_left_outlane: 35
+  s_left_ramp: 6
+  s_left_slingshot: 253
   s_lowerscoop: 0
   s_plunger_lane: 40
-  s_pop_center: 2332
-  s_pop_left: 1357
-  s_pop_right: 5244
-  s_right_EOS: 792
-  s_right_flipper: 1427
-  s_right_inlane: 185
-  s_right_outlane: 240
-  s_right_ramp: 1
-  s_right_slingshot: 250
-  s_rollover_gork: 59
-  s_rollover_mork: 59
-  s_scoop: 5
+  s_pop_center: 4489
+  s_pop_left: 2118
+  s_pop_right: 7062
+  s_right_EOS: 874
+  s_right_flipper: 1653
+  s_right_inlane: 193
+  s_right_outlane: 250
+  s_right_ramp: 5
+  s_right_slingshot: 262
+  s_rollover_gork: 64
+  s_rollover_mork: 71
+  s_scoop: 30
   s_shooter_lane: 12
-  s_spinner: 3542
-  s_start_button: 202
-  s_trough1: 225
-  s_trough2: 181
-  s_trough3: 171
-  s_trough4: 162
-  s_trough5: 146
-  s_trough6: 51
-  s_trough_jam: 39
-  s_upperscoop: 48
-  s_xenos_e: 6
-  s_xenos_n: 6
-  s_xenos_o: 6
-  s_xenos_s: 4
-  s_xenos_x: 3
+  s_spinner: 4249
+  s_start_button: 211
+  s_trough1: 251
+  s_trough2: 206
+  s_trough3: 195
+  s_trough4: 176
+  s_trough5: 157
+  s_trough6: 78
+  s_trough_jam: 63
+  s_upperscoop: 53
+  s_xenos_e: 8
+  s_xenos_n: 11
+  s_xenos_o: 13
+  s_xenos_s: 10
+  s_xenos_x: 4
