@@ -8,9 +8,8 @@ class MyAttract(Attract):
 
     ATTRACT_MESSAGES = [
       ['...and thanks to', 'everyone watching!'],
-      ['Not Endorsed', 'By Nintendo'],
-      ['Fight All 4 Bosses', 'Then Beat Motherbrain'],
-      ['Covid 19 is Real', 'Protect Yourself']
+      ['Not Endorsed', 'By GamesWorkshop'],
+      ['Fight the Chaos Gods', 'Then Horus Himself']
     ]
 
     def mode_start(self, **kwargs):
@@ -27,12 +26,6 @@ class MyAttract(Attract):
         self.add_mode_event_handler('s_left_flipper_inactive', self.event_left_flipper_up)
         self.add_mode_event_handler('attract_play_message', self.event_play_message_show)
 
-        #self.machine.set_machine_var('metroid_game_booted', 1)
-        #self.machine.set_machine_var('next_game_acapella', 0)
-        #self.machine.set_machine_var('next_game_bao', 0)
-        #self.machine.set_machine_var('next_game_goren', 0)
-        #self.machine.set_machine_var('next_game_macho', 0)
-        #self.machine.set_machine_var('bao_balls_locked', 0)
 
     def event_play_message_show(self, **kwargs):
         message = randint(0, 3)

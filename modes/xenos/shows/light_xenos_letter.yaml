@@ -1,0 +1,71 @@
+#show_version=5
+##! show: light_xenos_letter
+- time: 0
+  lights:
+    (l_xenos_x): (green)
+
+- time: +.05
+  lights:
+    (l_xenos_x): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_made_color)
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_made_color)
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_made_color)
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_made_color)
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_made_color)
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_made_color)
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_made_color)
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): off
+
+- time: +.05
+  lights:
+    (gadget_letter_made_led): (gadget_letter_final_color)
+
+  duration: -1

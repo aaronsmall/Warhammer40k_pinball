@@ -1,0 +1,6 @@
+#config_version=5
+player_vars:
+  xenos_available:
+    initial_value: 0
+  xenos_earned:
+    initial_value: 0

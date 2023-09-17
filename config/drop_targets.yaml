@@ -1,0 +1,6 @@
+#config_version=5
+
+drop_tartgets:
+  main_lock:
+    switch: s_droptarget
+    reset_coil: c_droptarget

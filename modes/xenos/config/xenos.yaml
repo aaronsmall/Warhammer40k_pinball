@@ -1,0 +1,15 @@
+#config_version=5
+##! mode: xenos
+
+config:
+  - logic_blocks.yaml
+  - event_player.yaml
+  - show_player.yaml
+
+mode:
+  #this mode starts when the ball starts
+  start_events: ball_started
+  priority: 200
+
+
+

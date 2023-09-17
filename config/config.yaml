@@ -40,26 +40,6 @@ game:
 machine: 
   balls_installed: 6
   min_balls: 5
-
-
-sound_system:
-  buffer: 1024
-  channels: 1
-  enabled: true
-  frequency: 44100
-  tracks:
-    music:
-      type: standard
-      simultaneous_sounds: 1
-      volume: 0.5
-    voice:
-      type: standard
-      simultaneous_sounds: 1
-      volume: 0.7
-    sfx:
-      type: standard
-      simultaneous_sounds: 8
-      volume: 0.4
   
 config: 
   - lights.yaml
@@ -69,6 +49,8 @@ config:
   - videos.yaml
   - timed_switches.yaml
   - assets.yaml
+  - sounds.yaml
+  - player_variables.yaml
 
 displays:
   lcd_display:
@@ -123,13 +105,6 @@ autofire_coils:
   ac_popbumper_right:
     coil: c_pop_right
     switch: s_pop_right
-  ac_kickback:
-    coil: c_kickback
-    switch: s_kickback_opto
-  ac_droptarget:
-    coil: c_droptarget
-    switch: s_droptarget
-  
 
 slides: 
   welcome_slide:
@@ -189,3 +164,7 @@ virtual_platform_start_active_switches:
 modes: 
   - base
   - high_score
+  - xenos
+  - warp
+  
+

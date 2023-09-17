@@ -71,7 +71,6 @@ slide_player:
     new_player_slide:
       priority: 1000
 
-
 slides:
   score_slide:
     widgets:
@@ -103,6 +102,7 @@ slides:
         #style: dmd_med
 
 event_player:
+  mode_base_started: warp_traveler
   #player_added{num == 1}: base_sound_player_1
   player_added{num == 2}: base_sound_player_2
   player_added{num == 3}: base_sound_player_3
@@ -128,7 +128,8 @@ event_player:
 
 
 sound_player:
-  mode_base_started{game.num_players == 1}: evenindeath 
+  warp_traveler: Warp Traveler
+  #mode_base_started{game.num_players == 1}: evenindeath 
   base_sound_player_1: evenindeath
   #base_start_single_player: player_ones
   base_sound_player_2: player_two

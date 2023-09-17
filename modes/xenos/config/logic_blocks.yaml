@@ -1,0 +1,15 @@
+#config_version=5
+##! mode: xenos
+accruals:
+  xenos_accrual:
+    events:
+      - xenos_x_complete # index [0]
+      - xenos_e_complete # index [1]
+      - xenos_n_complete # index [2]
+      - xenos_o_complete # index [3]
+      - xenos_s_complete # index [4]
+    reset_on_complete: true
+    disable_on_complete: false
+    reset_events: mode_xenos_started
+    events_when_complete: award_xenos, reset_xenos_lights, xenos_spotted
+

@@ -19,3 +19,21 @@ lights:
     number: playfield-1-8
   GI_light9:
     number: playfield-1-9
+  l_xenos_x:
+    number: playfield-1-10
+    tags: xenos_letter
+  l_xenos_e:
+    number: playfield-1-11
+    tags: xenos_letter
+  l_xenos_n:
+    number: playfield-1-12
+    tags: xenos_letter
+  l_xenos_o:
+    number: playfield-1-13
+    tags: xenos_letter
+  l_xenos+s:
+    number: playfield-1-14
+    tags: xenos_letter
+  l_lockdown_bar:
+    number: playfield-1-16
+    tags: xenos_letter
