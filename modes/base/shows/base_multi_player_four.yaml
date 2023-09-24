@@ -76,4 +76,6 @@
         y: 580
         x: 1%
         anchor_x: left
-        anchor_y: top     
+        anchor_y: top
+      - type: image
+        image: warhammerMarinelogo  

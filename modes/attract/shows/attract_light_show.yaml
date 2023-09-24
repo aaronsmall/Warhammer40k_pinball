@@ -22,3 +22,25 @@
     GI_light7: pink
     GI_light8: pink
     GI_light9: pink
+- duration: 2
+  lights:
+    GI_light1: purple
+    GI_light2: purple
+    GI_light3: purple
+    GI_light4: purple
+    GI_light5: purple
+    GI_light6: purple
+    GI_light7: purple
+    GI_light8: purple
+    GI_light9: purple
+- duration: 2
+  lights:
+    GI_light1: orange
+    GI_light2: orange
+    GI_light3: orange
+    GI_light4: orange
+    GI_light5: orange
+    GI_light6: orange
+    GI_light7: orange
+    GI_light8: orange
+    GI_light9: orange

@@ -53,9 +53,21 @@ config:
   - player_variables.yaml
 
 displays:
-  lcd_display:
-    width: 800
-    height: 600
+  window:
+    width: 1080
+    height: 900
+    default: true
+    #fullscreen: true
+
+window:
+  height: 900
+  width: 1080
+  title: Mission Pinball Framework
+  resizable: true
+  fullscreen: false
+  borderless: false
+  exit_on_escape: true
+  source_display: window
 
 playfields:
   playfield:
