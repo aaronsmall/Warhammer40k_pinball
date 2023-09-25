@@ -65,15 +65,15 @@ switches:
   s_upperscoop:
     number: 3208-18
   s_xenos_x:
-    number: 3208_2-0
+    number: 3208_2-4
   s_xenos_e:
-    number: 3208_2-1
+    number: 3208_2-3
   s_xenos_n:
     number: 3208_2-2
   s_xenos_o:
-    number: 3208_2-3
+    number: 3208_2-1
   s_xenos_s:
-    number: 3208_2-4
+    number: 3208_2-0
   s_kickback1:
     number: 3208_2-7
   s_kickback2:
@@ -85,9 +85,6 @@ switches:
     debounce: normal
   s_droptarget_lock:
     number: 3208_2-14
-  s_kickback_opto:
-    number: 3208_2-23
-    type: "NC"
   s_left_ramp: 
     number: 3208_2-22
     type: "NC"
