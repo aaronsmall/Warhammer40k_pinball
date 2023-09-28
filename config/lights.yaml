@@ -21,16 +21,60 @@ lights:
     number: playfield-1-9
   l_xenos_x:
     number: playfield-2-3
-    tags: xenos_letter
+    tags: xenos_letter, insert
   l_xenos_e:
     number: playfield-2-4
-    tags: xenos_letter
+    tags: xenos_letter , insert
   l_xenos_n:
     number: playfield-2-5
-    tags: xenos_letter
+    tags: xenos_letter , insert
   l_xenos_o:
     number: playfield-2-6
-    tags: xenos_letter
+    tags: xenos_letter , insert
   l_xenos_s:
     number: playfield-2-7
-    tags: xenos_letter
+    tags: xenos_letter, insert
+  l_left_outlane:
+    number: playfield-2-2
+    tags: rolloverlights, insert
+  l_left_inlane:
+    number: playfield-2-1
+    tags: rolloverlights, insert
+  l_left_orbit_circle1:
+    number: playfield-2-8
+    tags: insert
+  l_left_orbit_circle2:
+    number: playfield-2-9
+    tags: insert
+  l_left_orbit_arrow: 
+    number: playfield-2-10
+    tags: insert
+  l_spinner_circle1:
+    number: playfield-2-11
+    tags: insert
+  l_spinner_circle2:
+    number: playfield-2-12
+    tags: insert
+  l_spinner_arrow: 
+    number: playfield-2-13
+    tags: insert
+  l_left_ramp_circle1:
+    number: playfield-2-14
+    tags: insert
+  l_left_ramp_circle2:
+    number: playfield-2-15
+    tags: insert
+  l_left_ramp_arrow:
+    number: playfield-2-16
+    tags: insert
+  l_motor1:
+    number: playfield-2-17
+    tags: insert, tron_spinner
+  l_motor2:
+    number: playfield-2-18
+    tags: insert, tron_spinner
+  l_gork:
+    number: playfield-2-19
+    tags: insert
+  
+

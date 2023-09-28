@@ -9,11 +9,11 @@ coils:
     default_pulse_ms: 12
   c_right_slingshot:
     number: 3208-2
-    default_pulse_ms: 10
+    default_pulse_ms: 5
     allow_enable: true
   c_left_slingshot:
     number: 3208-0
-    default_pulse_ms: 10
+    default_pulse_ms: 5
     allow_enable: true
   c_flipper_left_main:
     number: 3208-4  # again, these numbers will probably be different for you
@@ -43,7 +43,7 @@ coils:
     number: 3208_2-5
   c_kickback:
     number: 3208_2-6
-    default_pulse_ms: 20
+    default_pulse_ms: 15
   c_droptarget:
     number: 3208_2-4
     

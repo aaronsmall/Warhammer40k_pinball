@@ -11,6 +11,7 @@
     GI_light7: turquoise
     GI_light8: turquoise
     GI_light9: turquoise
+    insert: blue
 - duration: 2
   lights:
     GI_light1: pink
@@ -22,6 +23,7 @@
     GI_light7: pink
     GI_light8: pink
     GI_light9: pink
+    insert: pink
 - duration: 2
   lights:
     GI_light1: purple
@@ -33,6 +35,7 @@
     GI_light7: purple
     GI_light8: purple
     GI_light9: purple
+    insert: purple
 - duration: 2
   lights:
     GI_light1: orange
@@ -44,3 +47,4 @@
     GI_light7: orange
     GI_light8: orange
     GI_light9: orange
+    insert: orange

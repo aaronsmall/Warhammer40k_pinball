@@ -1,6 +1,6 @@
 events:
   game_ended: 40
-  game_started: 246
+  game_started: 248
 player:
   score:
     average: 55378.72340425532
@@ -23,44 +23,44 @@ switches:
   s_droptarget: 73
   s_droptarget_down: 2
   s_droptarget_lock: 9
-  s_kickback1: 35
+  s_kickback1: 37
   s_kickback2: 35
   s_kickback_opto: 147
   s_kickback_opto2: 0
   s_kickback_opto3: 0
   s_left_EOS: 1074
   s_left_flipper: 2179
-  s_left_inlane: 47
+  s_left_inlane: 54
   s_left_outlane: 35
   s_left_ramp: 6
-  s_left_slingshot: 253
+  s_left_slingshot: 272
   s_lowerscoop: 0
   s_plunger_lane: 40
-  s_pop_center: 4489
-  s_pop_left: 2118
-  s_pop_right: 7062
+  s_pop_center: 4493
+  s_pop_left: 2124
+  s_pop_right: 7065
   s_right_EOS: 874
   s_right_flipper: 1657
-  s_right_inlane: 193
-  s_right_outlane: 250
+  s_right_inlane: 195
+  s_right_outlane: 251
   s_right_ramp: 5
-  s_right_slingshot: 262
-  s_rollover_gork: 64
+  s_right_slingshot: 280
+  s_rollover_gork: 65
   s_rollover_mork: 71
   s_scoop: 30
   s_shooter_lane: 12
-  s_spinner: 4249
+  s_spinner: 4387
   s_start_button: 233
-  s_trough1: 269
-  s_trough2: 220
-  s_trough3: 209
+  s_trough1: 271
+  s_trough2: 223
+  s_trough3: 211
   s_trough4: 179
-  s_trough5: 173
-  s_trough6: 95
-  s_trough_jam: 76
+  s_trough5: 175
+  s_trough6: 99
+  s_trough_jam: 78
   s_upperscoop: 53
-  s_xenos_e: 127
-  s_xenos_n: 118
-  s_xenos_o: 161
-  s_xenos_s: 189
-  s_xenos_x: 125
+  s_xenos_e: 132
+  s_xenos_n: 128
+  s_xenos_o: 166
+  s_xenos_s: 193
+  s_xenos_x: 128
