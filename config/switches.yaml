@@ -59,9 +59,9 @@ switches:
   s_pop_center:
     number: 3208-21
   s_rollover_gork:
-    number: 3208-22
-  s_rollover_mork: 
     number: 3208-23
+  s_rollover_mork: 
+    number: 3208-22
   s_upperscoop:
     number: 3208-18
   s_xenos_x:
