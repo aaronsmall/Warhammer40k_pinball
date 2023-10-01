@@ -117,6 +117,12 @@ autofire_coils:
   ac_popbumper_right:
     coil: c_pop_right
     switch: s_pop_right
+  ac_tron_motor:
+    coil: c_kickback
+    switch: s_right_outlane
+  ac_3bank:
+    coil: c_3bank
+    switch: s_left_outlane
 
 slides: 
   welcome_slide:

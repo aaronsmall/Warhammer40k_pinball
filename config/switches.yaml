@@ -41,10 +41,8 @@ switches:
     number: 3208-12
   s_left_inlane:
     number: 3208-14
-    tags: playfield_active
   s_left_outlane: 
     number: 3208-15
-    tags: playfield_active
   s_left_slingshot: 
     number: 3208-13
   s_right_flipper:
@@ -97,3 +95,9 @@ switches:
   s_scoop:
     number: 3208_2-19
     type: "NC"   
+  s_3bank:
+    number: 3208_2-13
+  s_3bank_home:
+    number: 3208_2-12
+  s_3bank_away:
+    number: 3208_2-11
