@@ -30,6 +30,9 @@ light:
   l_gork:
     x: 0.6818260780163719
     y: 0.09000989119683482
+  l_left_inlane:
+    x: 0.18866941404954762
+    y: 0.6541850220264317
   l_left_orbit_arrow:
     rotation: 330
     shape: ARROW
@@ -42,6 +45,9 @@ light:
   l_left_orbit_circle2:
     x: 0.18962027021757089
     y: 0.3580613254203759
+  l_left_outlane:
+    x: 0.11904141600745267
+    y: 0.670704845814978
   l_left_ramp_arrow:
     rotation: 340
     shape: ARROW
@@ -67,6 +73,9 @@ light:
   l_motor2:
     x: 0.5446539676462142
     y: 0.12166172106824927
+  l_right_inlane:
+    x: 0.7928607518986942
+    y: 0.6508810572687226
   l_right_orbit_arrow:
     rotation: 10
     shape: ARROW
@@ -78,6 +87,9 @@ light:
   l_right_orbit_circle2:
     x: 0.8210154253037378
     y: 0.33531157270029677
+  l_right_outlane:
+    x: 0.8782112011115848
+    y: 0.6696035242290749
   l_right_ramp_arrow:
     rotation: 10
     shape: ARROW

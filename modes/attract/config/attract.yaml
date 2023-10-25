@@ -8,10 +8,7 @@ mode:
 show_player:
   mode_attract_started:
     attract_light_show:
-      speed: 2
-      loops: 1
-    rainbow360:
-      speed: 10 
+      manual_advance: false
     attract_display_loop:
       priority: 100
       speed: .8

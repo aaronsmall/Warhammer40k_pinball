@@ -1,50 +1,15 @@
 #show_version=5
 ##! show: attract_light_show
-- duration: 2
-  lights:
-    GI_light1: turquoise
-    GI_light2: turquoise
-    GI_light3: turquoise
-    GI_light4: turquoise
-    GI_light5: turquoise
-    GI_light6: turquoise
-    GI_light7: turquoise
-    GI_light8: turquoise
-    GI_light9: turquoise
-    insert: blue
-- duration: 2
-  lights:
-    GI_light1: pink
-    GI_light2: pink
-    GI_light3: pink
-    GI_light4: pink
-    GI_light5: pink
-    GI_light6: pink
-    GI_light7: pink
-    GI_light8: pink
-    GI_light9: pink
-    insert: pink
-- duration: 2
-  lights:
-    GI_light1: purple
-    GI_light2: purple
-    GI_light3: purple
-    GI_light4: purple
-    GI_light5: purple
-    GI_light6: purple
-    GI_light7: purple
-    GI_light8: purple
-    GI_light9: purple
-    insert: purple
-- duration: 2
-  lights:
-    GI_light1: orange
-    GI_light2: orange
-    GI_light3: orange
-    GI_light4: orange
-    GI_light5: orange
-    GI_light6: orange
-    GI_light7: orange
-    GI_light8: orange
-    GI_light9: orange
-    insert: orange
+- duration: 10
+  shows: 
+      rainbow360:
+        speed: 10 
+- duration: 10
+  shows: 
+      color_sweeps:
+        speed: 10
+- duration: 10
+  shows: 
+      rings_expanding: 
+        speed: 10
+  
