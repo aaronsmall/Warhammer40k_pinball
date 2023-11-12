@@ -1,20 +1,13 @@
 #config_version=5
 
-sound_system:
-  buffer: 1024
-  channels: 1
-  enabled: true
-  frequency: 44100
-  tracks:
-    music:
-      type: standard
-      simultaneous_sounds: 1
-      volume: 0.5
-    voice:
-      type: standard
-      simultaneous_sounds: 1
-      volume: 0.7
-    sfx:
-      type: standard
-      simultaneous_sounds: 8
-      volume: 0.4
+sounds:
+  sound_slinghit:
+    file: Kicker_bolter.wav
+    track: sfx
+    priority: 50
+    max_queue_time: None
+  sound_scoop:
+    file: scoop_eject.wav
+    track: sfx
+    
+  

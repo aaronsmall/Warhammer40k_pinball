@@ -1,6 +1,6 @@
 events:
   game_ended: 40
-  game_started: 251
+  game_started: 261
 player:
   score:
     average: 55378.72340425532
@@ -36,7 +36,7 @@ switches:
   s_left_inlane: 54
   s_left_outlane: 470
   s_left_ramp: 6
-  s_left_slingshot: 280
+  s_left_slingshot: 432
   s_lowerscoop: 0
   s_plunger_lane: 40
   s_pop_center: 4493
@@ -53,13 +53,13 @@ switches:
   s_scoop: 32
   s_shooter_lane: 12
   s_spinner: 4387
-  s_start_button: 233
-  s_trough1: 274
-  s_trough2: 226
+  s_start_button: 239
+  s_trough1: 275
+  s_trough2: 227
   s_trough3: 214
   s_trough4: 179
   s_trough5: 178
-  s_trough6: 105
+  s_trough6: 107
   s_trough_jam: 81
   s_upperscoop: 53
   s_xenos_e: 137

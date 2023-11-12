@@ -51,6 +51,7 @@ config:
   - assets.yaml
   - sounds.yaml
   - player_variables.yaml
+  - sound_system.yaml
 
 displays:
   window:
@@ -173,6 +174,8 @@ keyboard:
     switch: s_right_outlane
   w:
     switch: s_start_button
+  a:
+    switch: s_left_slingshot
 
 virtual_platform_start_active_switches:
   - s_trough1

@@ -25,8 +25,6 @@ show_player:
      key: base_score_loop
      loops: -1
 
-
-
 ball_saves:
   default:
     active_time: 10s
@@ -44,9 +42,9 @@ variable_player:
   s_left_inlane_active:
     score: 1000
   s_right_outlane_active:
-    score: 1000
+    score: 10000
   s_left_outlane_active:
-    score: 1000
+    score: 10000
   s_left_slingshot_active:
     score: 500
   s_right_slingshot_active:
@@ -62,9 +60,37 @@ variable_player:
   s_rollover_gork_active:
     score: 1000
   s_upperscoop_active:
-    score: 5000
+    score: 1000
   s_spinner_active:
     score: 100
+  s_xenos_x_active:
+    score: 100
+  s_xenos_e_active:
+    score: 100 
+  s_xenos_n_active:
+    score: 100
+  s_xenos_o_active:
+    score: 100  
+  s_xenos_s_active:
+    score: 100 
+  s_kickback1_active:
+    score: 100
+  s_kickback2_active:
+    score: 100
+  s_disk_backtarget_active:
+    score: 1000
+  s_droptarget_active:
+    score: 1000
+  s_droptarget_lock_active:
+    score: 1000
+  s_center_spinner_active:
+    score: 5000
+  s_right_ramp_active:
+    score: 1000
+  s_scoop_active:
+    score: 1000
+  s_3bank_active:
+    score: 1000
 
 slide_player:
   player_added:
@@ -103,6 +129,9 @@ slides:
 
 event_player:
   mode_base_started: warp_traveler
+  s_left_slingshot_active: sling_hit
+  s_right_slingshot_active: sling_hit
+  s_scoop_active: scoop_hit
   #player_added{num == 1}: base_sound_player_1
   player_added{num == 2}: base_sound_player_2
   player_added{num == 3}: base_sound_player_3
@@ -124,6 +153,8 @@ event_player:
       repeat: 0
       direction: up
   mode_bonus_will_start: stop_all_music
+  
+  
 
 
 
@@ -146,3 +177,5 @@ sound_player:
   shatz_shot_hit: zero_suit_target
   left_orbit_hit: left_orbit
   right_orbit_hit: right_orbit
+  scoop_hit: sound_scoop
+  sling_hit: sound_slinghit
