@@ -153,6 +153,7 @@ event_player:
       repeat: 0
       direction: up
   mode_bonus_will_start: stop_all_music
+  s_center_spinner_active: spinner_hit
   
   
 
@@ -179,3 +180,4 @@ sound_player:
   right_orbit_hit: right_orbit
   scoop_hit: sound_scoop
   sling_hit: sound_slinghit
+  spinner_hit: sound_spinner1

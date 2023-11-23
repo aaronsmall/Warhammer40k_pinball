@@ -178,9 +178,9 @@ keyboard:
     switch: s_left_slingshot
 
 virtual_platform_start_active_switches:
-  - s_trough1
-  - s_trough2
-  - s_trough3
+  #- s_trough1
+  #- s_trough2
+  #- s_trough3
 
 modes: 
   - base

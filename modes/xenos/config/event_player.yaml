@@ -3,8 +3,8 @@ event_player:
   #plus one gadget when accrual is complete
   award_xenos:
     - xenos_earned
+    - xenosspot
     #- gadgets_available
-
   s_xenos_x_active:
     #if the x is hit, and unlit
     - xenos_x_complete{device.accruals.xenos_accrual.value[0]==False}

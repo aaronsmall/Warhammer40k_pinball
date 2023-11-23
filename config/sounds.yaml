@@ -9,5 +9,15 @@ sounds:
   sound_scoop:
     file: scoop_eject.wav
     track: sfx
-    
+  music_warp_traveler:
+    file: Warp Traveler.wav
+    track: music
+  xenos_spotted:
+    file: xenos-spotted.wav
+    track: voice
+  sound_spinner1: 
+    file: lazgun.wav
+    track: sfx
+
+
   
