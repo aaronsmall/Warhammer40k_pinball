@@ -4,7 +4,7 @@ sounds:
   sound_slinghit:
     file: Kicker_bolter.wav
     track: sfx
-    priority: 50
+    #priority: 50
     max_queue_time: None
   sound_scoop:
     file: scoop_eject.wav
@@ -15,9 +15,13 @@ sounds:
   xenos_spotted:
     file: xenos-spotted.wav
     track: voice
-  sound_spinner1: 
+  lazgun:
     file: lazgun.wav
     track: sfx
-
-
-  
+    #priority: 50
+    max_queue_time: None 
+  door_open:
+    file: sfx-door-open.wav
+    track: sfx
+    #priority: 50
+    max_queue_time: None

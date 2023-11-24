@@ -132,6 +132,7 @@ event_player:
   s_left_slingshot_active: sling_hit
   s_right_slingshot_active: sling_hit
   s_scoop_active: scoop_hit
+  s_spinner_active: spinner_hit
   #player_added{num == 1}: base_sound_player_1
   player_added{num == 2}: base_sound_player_2
   player_added{num == 3}: base_sound_player_3
@@ -153,14 +154,11 @@ event_player:
       repeat: 0
       direction: up
   mode_bonus_will_start: stop_all_music
-  s_center_spinner_active: spinner_hit
   
   
-
-
 
 sound_player:
-  warp_traveler: Warp Traveler
+  warp_traveler: music_warp_traveler
   #mode_base_started{game.num_players == 1}: evenindeath 
   base_sound_player_1: evenindeath
   #base_start_single_player: player_ones
@@ -180,4 +178,4 @@ sound_player:
   right_orbit_hit: right_orbit
   scoop_hit: sound_scoop
   sling_hit: sound_slinghit
-  spinner_hit: sound_spinner1
+  spinner_hit: lazgun

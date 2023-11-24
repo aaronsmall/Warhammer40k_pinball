@@ -176,6 +176,8 @@ keyboard:
     switch: s_start_button
   a:
     switch: s_left_slingshot
+  p:
+    switch: s_spinner
 
 virtual_platform_start_active_switches:
   #- s_trough1
