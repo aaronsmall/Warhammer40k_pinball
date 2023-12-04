@@ -124,6 +124,23 @@ lights:
   l_ball_save:
     number: playfield-2-31
     tags: insert
-
+  l_UI_rec_1:
+    number: playfield-4-1
+  l_UI_rec_2:
+    number: playfield-4-2
+  l_UI_rec_3:
+    number: playfield-4-3
+  l_UI_rec_4:
+    number: playfield-4-4
+  l_UI_rec_5:
+    number: playfield-4-5
+  l_UI_circle_1:
+    number: playfield-4-6
+  l_UI_circle_2:
+    number: playfield-4-7
+  l_UI_circle_3:
+    number: playfield-4-8
+  l_UI_circle_4:
+    number: playfield-4-9
   
 
