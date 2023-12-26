@@ -1,9 +1,8 @@
 #config_version=5
 
 switches:
-  s_trough_jam:
-    number: 3208-7
-    type: "NC"
+  s_autoplunger:
+    number: 3208-0
   s_trough1:
     number: 3208-1
   s_trough2:
@@ -14,25 +13,22 @@ switches:
     number: 3208-4
   s_trough5:
     number: 3208-5
-  s_trough6:
-    number: 3208-17
-    type: "NC"
   s_spinner:
     number: 3208-6
     type: "NC"
     debounce: quick
-  s_start_button:
-    number: 3208-30
-    tags: start
+  s_trough_jam:
+    number: 3208-7
+    type: "NC"
+  s_trough6:
+    number: 3208-17
+    type: "NC"
   s_right_outlane:
     number: 3208-8
     #tags: playfield_active
   s_right_inlane:
     number: 3208-9
     #tags: playfield_active
-  s_left_flipper: 
-    number: 3208-31 
-    tags: left_flipper
   s_right_slingshot: 
     number: 3208-10
   s_right_EOS:
@@ -45,11 +41,6 @@ switches:
     number: 3208-15
   s_left_slingshot: 
     number: 3208-13
-  s_right_flipper:
-    number: 3208-29 
-    tags: right_flipper
-  s_autoplunger:
-    number: 3208-0
   s_pop_left:
     number: 3208-19
   s_pop_right:
@@ -62,6 +53,15 @@ switches:
     number: 3208-22
   s_upperscoop:
     number: 3208-18
+  s_right_flipper:
+    number: 3208-29 
+    tags: right_flipper
+  s_start_button:
+    number: 3208-30
+    tags: start
+  s_left_flipper: 
+    number: 3208-31 
+    tags: left_flipper
   s_xenos_x:
     number: 3208_2-4
   s_xenos_e:
@@ -101,3 +101,6 @@ switches:
     number: 3208_2-12
   s_3bank_away:
     number: 3208_2-11
+  s_tilt:
+    number: 3208_2-
+  
