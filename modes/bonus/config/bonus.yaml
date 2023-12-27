@@ -1,0 +1,14 @@
+##! mode: bonus
+#config_version=5
+mode_settings:
+  bonus_entries:
+    - event: bonus_switches
+      score: (current_player.switch_hits )
+    - event: bonus_holy_relics
+      score: (current_player.holy_relics) * (current_player.holy_relic_value)
+    - event: bonus_modes_started
+      score: 750000
+      player_score_entry: current_player.modes_started
+    - event: bonus_warpjumps
+      score: 150000
+      player_score_entry: current_player.warp_jumps
