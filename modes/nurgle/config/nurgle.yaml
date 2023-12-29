@@ -1,6 +1,5 @@
 #config_version=5
 
 mode:
-  start_events: 
   start_events: carousel_item_selected
   priority: 200

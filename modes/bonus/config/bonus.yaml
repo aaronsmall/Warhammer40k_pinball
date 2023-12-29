@@ -1,5 +1,6 @@
-##! mode: bonus
 #config_version=5
+##! mode: bonus
+
 mode_settings:
   bonus_entries:
     - event: bonus_switches
