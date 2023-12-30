@@ -47,4 +47,6 @@ coils:
     number: 3208_2-4
   c_3bank: 
     number: 3208_2-7
-    
+    allow_enable: true
+    ##enable_event: warp_mode_enable
+    ##disable_event: 

@@ -4,3 +4,13 @@ player_vars:
     initial_value: 0
   xenos_earned:
     initial_value: 0
+  bonus_switches:
+    initial_value: 0
+  bonus_holy_relics:
+    initial_value: 0
+  bonus_warp_jumps:
+    initial_value: 0
+  bonus_modes_started:
+    initial_value: 0
+  
+  

@@ -178,6 +178,8 @@ keyboard:
     switch: s_left_slingshot
   p:
     switch: s_spinner
+  t:
+    switch: s_3bank
 
 virtual_platform_start_active_switches:
   #- s_trough1

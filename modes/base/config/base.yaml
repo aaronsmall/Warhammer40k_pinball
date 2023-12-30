@@ -11,19 +11,19 @@ show_player:
   base_start_single_player:
     base_single_player:
       key: base_score_loop
-      loops: -1
+      #loops: -1
   base_start_multi_player_two:
    base_multi_player_two:
      key: base_score_loop
-     loops: -1
+     #loops: -1
   base_start_multi_player_three:
    base_multi_player_three:
      key: base_score_loop
-     loops: -1
+     #loops: -1
   base_start_multi_player_four:
    base_multi_player_four:
      key: base_score_loop
-     loops: -1
+     #loops: -1
 
 ball_saves:
   default:
@@ -126,6 +126,13 @@ slides:
       - type: text
         text: PLAYER (num) ADDED
         #style: dmd_med
+
+counters:
+  warp_qualify_counter:
+    count_events: s_3bank_active
+    count_complete_value: 3
+    events_when_complete: start_mode_warp
+    reset_on_complete: true
 
 event_player:
   mode_base_started: warp_traveler

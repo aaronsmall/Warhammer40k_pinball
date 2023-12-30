@@ -1,1 +1,16 @@
 #config_version=5
+
+mode: 
+  start_events: start_mode_warp
+  stop_events: timer_warp_timer_complete
+  priority: 200
+
+timers:
+  warp_timer:
+    start_value: 30
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    control_events:
+      - action: start
+        event: mode_warp_started
