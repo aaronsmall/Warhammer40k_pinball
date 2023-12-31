@@ -5,6 +5,9 @@ mode:
   stop_events: timer_warp_timer_complete
   priority: 200
 
+
+shots: 
+
 timers:
   warp_timer:
     start_value: 30

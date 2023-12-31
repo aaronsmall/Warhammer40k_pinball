@@ -48,5 +48,7 @@ coils:
   c_3bank: 
     number: 3208_2-7
     allow_enable: true
+    enable_events: mode_warp_started
+    disable_events: timer_warp_timer_complete
     ##enable_event: warp_mode_enable
     ##disable_event: 
