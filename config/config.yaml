@@ -102,6 +102,8 @@ ball_devices:
       eject_coil: c_scoop
       eject_timeouts: 3s 
 
+
+
 autofire_coils:
   ac_slingshot_left:
     coil: c_left_slingshot
@@ -118,12 +120,6 @@ autofire_coils:
   ac_popbumper_right:
     coil: c_pop_right
     switch: s_pop_right
-  ac_tron_motor:
-    coil: c_kickback
-    switch: s_right_outlane
-  ac_3bank:
-    coil: c_3bank
-    switch: s_left_outlane
 
 slides: 
   welcome_slide:

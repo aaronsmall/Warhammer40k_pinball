@@ -39,16 +39,32 @@ coils:
   c_upperscoop:
     number: 3208_2-3
     default_pulse_ms: 3
-  c_scoop:
-    number: 3208_2-5
-  c_kickback:
-    number: 3208_2-6
   c_droptarget:
     number: 3208_2-4
-  c_3bank: 
-    number: 3208_2-7
+  c_scoop:
+    number: 3208_2-5
+  c_tron_disk:
+    number: 3208_2-6
     allow_enable: true
     enable_events: mode_warp_started
     disable_events: timer_warp_timer_complete
+
+
+digital_outputs:
+  c_3bank: 
+    number: 3208_2-7
+    type: driver
+
+motors:
+  motorized_drop_target_bank:
+    motor_left_output: c_3bank
+    position_switches: !!omap
+      - up: s_3bank_home
+      - down: s_3bank_away
+    reset_position: up
+    go_to_position:
+      go_up: up
+      go_down: down
+
     ##enable_event: warp_mode_enable
     ##disable_event: 
