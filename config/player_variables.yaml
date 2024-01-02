@@ -12,5 +12,6 @@ player_vars:
     initial_value: 0
   bonus_modes_started:
     initial_value: 0
-  
+  pv_warp_mode_counter:
+    initial_value: 3
   

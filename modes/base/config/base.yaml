@@ -130,9 +130,13 @@ slides:
 counters:
   warp_qualify_counter:
     count_events: s_3bank_active
+    starting_count: 0
+    count_interval: 1
+    direction: up
     count_complete_value: 3
     events_when_complete: start_mode_warp, go_down
-    reset_on_complete: true
+    #reset_on_complete: true
+    #disable_on_complete: false
 
 event_player:
   mode_base_started: warp_traveler

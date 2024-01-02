@@ -1,6 +1,6 @@
 events:
   game_ended: 40
-  game_started: 280
+  game_started: 293
 player:
   score:
     average: 55378.72340425532
@@ -17,10 +17,10 @@ player:
     - 89600
     total: 47
 switches:
-  s_3bank: 52
+  s_3bank: 123
   s_3bank_away: 1
   s_3bank_home: 1
-  s_autoplunger: 333
+  s_autoplunger: 346
   s_center_spinner: 11
   s_disk_backtarget: 17
   s_droptarget: 73
@@ -53,7 +53,7 @@ switches:
   s_scoop: 32
   s_shooter_lane: 12
   s_spinner: 4490
-  s_start_button: 245
+  s_start_button: 250
   s_tilt: 0
   s_trough1: 277
   s_trough2: 228
