@@ -2,15 +2,21 @@
 
 mode: 
   start_events: start_mode_warp
-  events_when_started: go_down
-  events_when_stopped: go_up, warp_diff_increase
+  events_when_started: 
+    - go_down
+    - warp_diff_increase
+  events_when_stopped: 
+    - go_up 
+    #- warp_diff_increase
   stop_events: timer_warp_timer_complete
   priority: 200
 
-#variable_player: 
-#  warp_diff_increase:
-#    pv_warp_mode_counter: 2
-
+variable_player: 
+  warp_diff_increase:
+    pv_warp_mode_counter:
+      action: add
+      int: 1
+      
 timers:
   warp_timer:
     start_value: 30
@@ -20,3 +26,4 @@ timers:
     control_events:
       - action: start
         event: mode_warp_started
+

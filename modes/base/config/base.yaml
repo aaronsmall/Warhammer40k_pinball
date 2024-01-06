@@ -133,10 +133,10 @@ counters:
     starting_count: 0
     count_interval: 1
     direction: up
-    count_complete_value: 3
-    events_when_complete: start_mode_warp, go_down
-    #reset_on_complete: true
-    #disable_on_complete: false
+    count_complete_value: 3 + (current_player.pv_warp_mode_counter * 2)
+    events_when_complete: start_mode_warp
+    reset_on_complete: true
+    disable_on_complete: false
 
 event_player:
   mode_base_started: warp_traveler
