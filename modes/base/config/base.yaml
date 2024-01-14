@@ -92,6 +92,8 @@ variable_player:
   s_3bank_active:
     score: 1000
 
+
+
 slide_player:
   player_added:
     new_player_slide:
@@ -137,6 +139,14 @@ counters:
     events_when_complete: start_mode_warp
     reset_on_complete: true
     disable_on_complete: false
+  necron_lock_counter:
+    count_events: s_droptarget_lock_active
+    starting_count: 0
+    count_interval : 1
+    direction: up
+    count_complete_value:
+    events_when_complete: start_mode_necron_lock
+    disable_on_complete: true
 
 event_player:
   mode_base_started: warp_traveler

@@ -5,8 +5,8 @@ class dead_flip(Mode):
 
     def mode_init(self):
         self.log.info('dead_flip mode_init')
-
         self.dead_flip_sequence = ["B","L","L","L","L","L","R","L","L","L","L","R","L","L","R",]
+        
     def mode_start(self, **kwargs):
         self.log.info('dead_flip mode_start')
         self.sequence_pos = 0
