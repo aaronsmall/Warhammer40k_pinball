@@ -39,7 +39,7 @@ game:
  
 machine: 
   balls_installed: 6
-  min_balls: 5
+  min_balls: 1
   
 config: 
   - lights.yaml
@@ -52,6 +52,7 @@ config:
   - sounds.yaml
   - player_variables.yaml
   - sound_system.yaml
+  - drop_targets.yaml
 
 displays:
   window:
