@@ -141,12 +141,12 @@ counters:
     disable_on_complete: false
   necron_lock_qualifier:
     count_events: s_droptarget_down_active
-    starting_count: 0
+    starting_count: pv_necron_lock_count
     count_interval : 1
     direction: up
-    count_complete_value: 1
+    count_complete_value: 3
     events_when_complete: 
-        - reset_necron_drop
+        - reset_necron_drop if device.counters.necron_lock_qualifier.value < 3
         - increment_necron_lock
     disable_on_complete: false
   necron_lock_counter:
@@ -154,9 +154,10 @@ counters:
     starting_count: 0
     count_interval : 1
     direction: up
-    count_complete_value: 3
+    count_complete_value: 1
     events_when_complete: start_necron_lock
-    disable_on_complete: false
+    reset_on_complete: true
+    disable_on_complete: true
 
 
 event_player:

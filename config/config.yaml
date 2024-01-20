@@ -176,7 +176,7 @@ keyboard:
   p:
     switch: s_spinner
   t:
-    switch: s_3bank
+    switch: s_droptarget_down
 
 virtual_platform_start_active_switches:
   #- s_trough1
