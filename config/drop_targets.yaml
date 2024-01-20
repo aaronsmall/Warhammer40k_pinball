@@ -1,6 +1,7 @@
 #config_version=5
 
 drop_tartgets:
-  main_lock:
+  droptarget_lock:
     switch: s_droptarget
     reset_coil: c_droptarget
+    reset_events: ball_starting, machine_reset_phase_3, reset_necron_drop
