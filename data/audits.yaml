@@ -24,7 +24,7 @@ switches:
   s_center_spinner: 11
   s_disk_backtarget: 27
   s_droptarget: 91
-  s_droptarget_down: 130
+  s_droptarget_down: 145
   s_droptarget_lock: 32
   s_kickback1: 44
   s_kickback2: 50

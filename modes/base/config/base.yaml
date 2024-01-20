@@ -146,7 +146,7 @@ counters:
     direction: up
     count_complete_value: 3
     events_when_complete: 
-        - reset_necron_drop if device.counters.necron_lock_qualifier.value < 3
+        - reset_necron_drop if pv_necron_lock_count < 3
         - increment_necron_lock
     disable_on_complete: false
   necron_lock_counter:
