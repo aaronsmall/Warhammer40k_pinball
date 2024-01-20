@@ -140,12 +140,14 @@ counters:
     reset_on_complete: true
     disable_on_complete: false
   necron_lock_qualifier:
-    count_events: s_droptarget_lock_active
+    count_events: s_droptarget_down_active
     starting_count: 0
     count_interval : 1
     direction: up
     count_complete_value: 1
-    events_when_complete: reset_necron_drop, increment_necron_lock
+    events_when_complete: 
+        - reset_necron_drop
+        - increment_necron_lock
     disable_on_complete: false
   necron_lock_counter:
     count_events: increment_necron_lock
