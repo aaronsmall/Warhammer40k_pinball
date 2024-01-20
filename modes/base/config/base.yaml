@@ -141,20 +141,28 @@ counters:
     disable_on_complete: false
   necron_lock_qualifier:
     count_events: s_droptarget_down_active
-    starting_count: pv_necron_lock_count
-    count_interval : 1
-    direction: up
-    count_complete_value: 3
-    events_when_complete: 
-        - reset_necron_drop if pv_necron_lock_count < 3
-        - increment_necron_lock
-    disable_on_complete: false
-  necron_lock_counter:
-    count_events: increment_necron_lock
     starting_count: 0
     count_interval : 1
     direction: up
     count_complete_value: 1
+    events_when_complete: 
+        - reset_necron_drop 
+    disable_on_complete: true
+  necron_lock_qualifier2:
+    count_events: s_droptarget_down_active
+    starting_count: 0
+    count_interval : 1
+    direction: up
+    count_complete_value: 2
+    events_when_complete: 
+        - reset_necron_drop 
+    disable_on_complete: true
+  necron_lock_qualifier3:
+    count_events: s_droptarget_down_active
+    starting_count: 0
+    count_interval : 1
+    direction: up
+    count_complete_value: 3
     events_when_complete: start_necron_lock
     reset_on_complete: true
     disable_on_complete: true

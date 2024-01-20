@@ -1,6 +1,6 @@
 events:
   game_ended: 40
-  game_started: 329
+  game_started: 332
 player:
   score:
     average: 55378.72340425532
@@ -20,11 +20,11 @@ switches:
   s_3bank: 241
   s_3bank_away: 4
   s_3bank_home: 4
-  s_autoplunger: 366
+  s_autoplunger: 369
   s_center_spinner: 11
   s_disk_backtarget: 27
   s_droptarget: 91
-  s_droptarget_down: 145
+  s_droptarget_down: 154
   s_droptarget_lock: 32
   s_kickback1: 44
   s_kickback2: 50
