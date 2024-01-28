@@ -1,8 +1,8 @@
-# mode multiball
-##! mode: multiball
+#config_version=5
 mode:
-  start_events: multiball_lock_necron_lock_full
+  start_events: start_necron_multiball
   stop_events: multiball_necron_multiball_ended
+  priority: 100
 multiballs:
   necron_multiball:
     ball_count: 2

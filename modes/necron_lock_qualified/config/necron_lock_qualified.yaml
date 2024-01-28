@@ -1,12 +1,12 @@
-
+#config_version=5
 mode:
-  start_events: necron_lock_is_LOCKED
+  start_events: start_necron_lock_qualified 
+  stop_events: start_necron_multiball
   priority: 100
 
-
 counters:
-  necron_lockup:
-    count_events: s_droptarget_drop_active
+  necron_lockup_qualified:
+    count_events: s_droptarget_down_active
     starting_count: 0
     count_interval : 1
     direction: up
