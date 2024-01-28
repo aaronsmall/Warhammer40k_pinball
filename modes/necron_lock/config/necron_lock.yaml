@@ -9,3 +9,27 @@ variable_player:
       action: set
       int: 0
 
+counters:
+  necron_lockup:
+    count_events: s_droptarget_lock
+    starting_count: 0
+    count_interval : 1
+    direction: up
+    count_complete_value: 1
+    events_when_complete: 
+        - reset_necron_drop 
+        - start_necron_multiball
+    disable_on_complete: true
+
+multiball_locks:
+  bunker:
+    balls_to_lock: 2
+    lock_devices: bd_necron_lock
+
+multiballs:
+  necron_multiball:
+    ball_count: 2
+    ball_count_type: total
+    shoot_again: 20s
+    start_events: start_necron_multiball
+    ball_locks: bd_necron_lock

@@ -103,6 +103,10 @@ ball_devices:
       eject_coil: c_scoop
       eject_timeouts: 3s 
 
+    bd_necron_lock:
+      mechanical_eject: True
+      ball_switches: s_droptarget_lock
+
 
 
 autofire_coils:
