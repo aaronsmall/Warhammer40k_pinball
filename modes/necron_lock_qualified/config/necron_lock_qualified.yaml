@@ -1,0 +1,16 @@
+
+mode:
+  start_events: necron_lock_is_LOCKED
+  priority: 100
+
+
+counters:
+  necron_lockup:
+    count_events: s_droptarget_drop_active
+    starting_count: 0
+    count_interval : 1
+    direction: up
+    count_complete_value: 1
+    events_when_complete: 
+      - start_necron_multiball
+    disable_on_complete: true
