@@ -103,4 +103,6 @@ switches:
     number: 3208_2-12
   s_tilt:
     number: 3208_2-16
+  s_droptarget_opto:
+    number: 3208_2-8
   

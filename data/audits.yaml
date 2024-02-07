@@ -1,10 +1,11 @@
 events:
-  game_ended: 40
-  game_started: 365
+  game_ended: 41
+  game_started: 380
 player:
   score:
-    average: 55378.72340425532
+    average: 112312.5
     top:
+    - 2788200
     - 474300
     - 411000
     - 390500
@@ -14,57 +15,57 @@ player:
     - 149500
     - 142100
     - 122000
-    - 89600
-    total: 47
+    total: 48
 switches:
-  s_3bank: 244
-  s_3bank_away: 5
-  s_3bank_home: 5
-  s_autoplunger: 394
+  s_3bank: 249
+  s_3bank_away: 6
+  s_3bank_home: 6
+  s_autoplunger: 485
   s_center_spinner: 11
-  s_disk_backtarget: 32
+  s_disk_backtarget: 33
   s_droptarget: 91
-  s_droptarget_down: 283
-  s_droptarget_lock: 144
-  s_kickback1: 44
-  s_kickback2: 52
+  s_droptarget_down: 343
+  s_droptarget_lock: 215
+  s_droptarget_opto: 109
+  s_kickback1: 49
+  s_kickback2: 56
   s_kickback_opto: 147
   s_kickback_opto2: 0
   s_kickback_opto3: 0
-  s_left_EOS: 1079
-  s_left_flipper: 2218
-  s_left_inlane: 81
-  s_left_outlane: 478
+  s_left_EOS: 1126
+  s_left_flipper: 2436
+  s_left_inlane: 92
+  s_left_outlane: 484
   s_left_ramp: 6
-  s_left_slingshot: 630
+  s_left_slingshot: 655
   s_lowerscoop: 0
   s_plunger_lane: 40
-  s_pop_center: 4519
-  s_pop_left: 2197
-  s_pop_right: 7557
-  s_right_EOS: 895
-  s_right_flipper: 1702
-  s_right_inlane: 223
-  s_right_outlane: 529
+  s_pop_center: 4675
+  s_pop_left: 2233
+  s_pop_right: 7801
+  s_right_EOS: 942
+  s_right_flipper: 1793
+  s_right_inlane: 224
+  s_right_outlane: 533
   s_right_ramp: 5
-  s_right_slingshot: 1412
-  s_rollover_gork: 65
-  s_rollover_mork: 73
-  s_scoop: 42
+  s_right_slingshot: 1514
+  s_rollover_gork: 72
+  s_rollover_mork: 83
+  s_scoop: 51
   s_shooter_lane: 12
   s_spinner: 4814
-  s_start_button: 264
+  s_start_button: 271
   s_tilt: 0
-  s_trough1: 303
-  s_trough2: 236
-  s_trough3: 222
-  s_trough4: 186
-  s_trough5: 186
-  s_trough6: 140
-  s_trough_jam: 105
+  s_trough1: 325
+  s_trough2: 258
+  s_trough3: 244
+  s_trough4: 199
+  s_trough5: 209
+  s_trough6: 175
+  s_trough_jam: 130
   s_upperscoop: 53
-  s_xenos_e: 146
-  s_xenos_n: 136
-  s_xenos_o: 175
-  s_xenos_s: 208
-  s_xenos_x: 140
+  s_xenos_e: 154
+  s_xenos_n: 140
+  s_xenos_o: 178
+  s_xenos_s: 212
+  s_xenos_x: 150

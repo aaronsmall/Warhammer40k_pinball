@@ -86,7 +86,6 @@ ball_devices:
     bd_trough:
       ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
       eject_coil: c_trough_eject
-      eject_events: start_necron_lock_qualified 
       tags: trough, home, drain
       jam_switch: s_trough_jam
       eject_coil_jam_pulse: 15ms
@@ -106,7 +105,7 @@ ball_devices:
 
     bd_necron_lock:
       mechanical_eject: True
-      ball_switches: s_droptarget_lock
+      ball_switches: s_droptarget_opto
 
 
 
