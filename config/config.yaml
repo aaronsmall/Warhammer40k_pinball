@@ -205,7 +205,7 @@ modes:
   - tilt  
   #- bonus
   - necron_lock
-  - necron_lock_qualified
+  #- necron_lock_qualified
   - necron_multiball
   
 

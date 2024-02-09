@@ -4,9 +4,3 @@ mode:
   stop_events: multiball_necron_multiball_started
   priority: 100
 
-multiball_locks:
-  necron_lock: 
-    balls_to_lock: 1
-    lock_devices: bd_necron_lock
-    disable_events: mode_necron_multiball_started
-    reset_all_counts_events: multiball_necron_multiball_started
