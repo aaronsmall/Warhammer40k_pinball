@@ -105,6 +105,7 @@ ball_devices:
 
     bd_necron_lock:
       mechanical_eject: True
+      confirm_eject_event:  start_necron_multiball
       ball_switches: s_droptarget_opto
 
 
@@ -194,15 +195,15 @@ modes:
   - high_score
   - xenos
   - warp
-  - nurgle
-  - khorne
-  - tzeench
-  - slannesh
-  - waagh_multiball
-  - inquisition_multiball
-  - horus
+  #- nurgle
+  #- khorne
+  #- tzeench
+  #- slannesh
+  #- waagh_multiball
+  #- inquisition_multiball
+  #- horus
   - tilt  
-  - bonus
+  #- bonus
   - necron_lock
   - necron_lock_qualified
   - necron_multiball

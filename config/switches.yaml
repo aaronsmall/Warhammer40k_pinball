@@ -3,15 +3,16 @@
 switches:
   s_autoplunger:
     number: 3208-0
-  s_trough1:
+  s_trough6:
+    number: 3208-17
+    type: "NC"
+  s_trough5:
     number: 3208-1
-  s_trough2:
+  s_trough4:
     number: 3208-2
   s_trough3:
     number: 3208-3
-  s_trough4:
-    number: 3208-4
-  s_trough5:
+  s_trough2:
     number: 3208-5
   s_spinner:
     number: 3208-6
@@ -20,9 +21,8 @@ switches:
   s_trough_jam:
     number: 3208-7
     type: "NC"
-  s_trough6:
-    number: 3208-17
-    type: "NC"
+  s_trough1:
+    number: 3208-4
   s_right_outlane:
     number: 3208-8
     #tags: playfield_active
