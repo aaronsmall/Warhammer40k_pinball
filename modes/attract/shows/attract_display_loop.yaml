@@ -1,7 +1,7 @@
 #show_version=5
 ##! show: attract_display_loop
 
-- duration: 3s
+- duration: 4s
   slides:
     awesome_slide:
       widgets:
@@ -12,7 +12,7 @@
         duration: 1s
         direction: left
 
-- duration: 3s
+- duration: 4s
   slides:
     press_start: 
       widgets:
@@ -38,19 +38,7 @@
         type: push
         duration: 1s
         direction: left
-
-#- duration: 3
-#  slides:
-#    mission_pinball:
-#      widgets:
-#      - type: Text
-#        text: MISSION PINBALL
-#        color: red
-#      transition:
-#        type: push
-#        duration: 1s
-#        direction: left
-
+        
 - duration: 3
   slides:
     last_game_score_slide:
@@ -70,24 +58,6 @@
         duration: 1s
         direction: left
 
-- duration: 3
-  slides:
-    grand_champion_slide:
-      widgets:
-      - type: text
-        text: Grand Champion
-        font_size: 50
-        y: 60%
-      - type: text
-        text: (machine|grand_champion_score)
-        number_grouping: true
-        min_digits: 2
-        font_size: 50
-        y: 40%
-      transition:
-        type: push
-        duration: 1s
-        direction: left
         
 
 

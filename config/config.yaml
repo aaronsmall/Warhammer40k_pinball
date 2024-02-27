@@ -131,7 +131,7 @@ slides:
   welcome_slide:
     widgets:
       - type: text
-        text: PINBALL BITCH!
+        text: INITALIZING.....
         font_size: 60
         color: red
       - type: rectangle
@@ -145,6 +145,15 @@ slides:
 slide_player:
     init_done: welcome_slide
     mode_attract_started: attract_started
+
+multiballs:
+  necron_multiball:
+    ball_count: 2
+    ball_count_type: total
+    shoot_again: 20s
+    start_events: start_necron_multiball
+    stop_events: ball_will_end
+    ball_locks: bd_necron_lock
 
 
 keyboard:
@@ -206,7 +215,7 @@ modes:
   - bonus
   - necron_lock
   - necron_lock_qualified
-  - necron_multiball
+  #- necron_multiball
   
 
   

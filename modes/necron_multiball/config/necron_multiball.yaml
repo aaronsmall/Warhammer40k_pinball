@@ -10,4 +10,5 @@ multiballs:
     ball_count_type: total
     shoot_again: 20s
     start_events: start_necron_multiball
+    stop_events: ball_will_end
     ball_locks: bd_necron_lock
