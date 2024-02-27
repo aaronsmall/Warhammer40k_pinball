@@ -41,7 +41,7 @@ coils:
     default_pulse_ms: 3
   c_droptarget_reset:
     number: 3208_2-4
-    default_pulse_ms: 14
+    default_pulse_ms: 18
   c_scoop:
     number: 3208_2-5
   c_tron_disk:

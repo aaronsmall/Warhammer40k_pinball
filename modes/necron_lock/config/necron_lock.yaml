@@ -12,15 +12,29 @@ variable_player:
 
 counters:
   necron_lockup:
-    count_events: s_droptarget_lock_active
+    count_events: 
+      - s_droptarget_opto_active
+      - s_droptarget_lock_active
     starting_count: 0
     count_interval : 1
     direction: up
     count_complete_value: 1
     events_when_complete: 
         - reset_necron_drop
+<<<<<<< HEAD
         - start_necron_lock_qualified
         - stop_necron_lock
         -
     disable_on_complete: true
 
+=======
+        #- stop_necron_lock
+    disable_on_complete: true
+
+multiball_locks:
+  necron_lock: 
+    balls_to_lock: 1
+    lock_devices: bd_necron_lock
+    disable_events: mode_necron_multiball_started
+    reset_all_counts_events: multiball_necron_multiball_startedc
+>>>>>>> fd3e922d19ebe797d6c1b682f5da8bbc7b0df838
