@@ -122,7 +122,7 @@ lights:
     number: playfield-2-30
     tags: insert
   l_ball_save:
-    number: playfield-2-31
+    number: playfield-4-10
     tags: insert
   l_UI_rec_1:
     number: playfield-4-1
