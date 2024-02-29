@@ -142,5 +142,9 @@ lights:
     number: playfield-4-8
   l_UI_circle_4:
     number: playfield-4-9
-  
+  GI_light10:
+    number: playfield-5-1
+  GI_light11:
+    number: playfield-5-2
+
 
