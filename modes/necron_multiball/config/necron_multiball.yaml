@@ -8,7 +8,7 @@ multiballs:
   necron_multiball:
     ball_count: 2
     ball_count_type: total
-    shoot_again: 20s
-    start_events: start_necron_multiball
+    shoot_again: 10s
+    start_events: s_droptarget_down_active
     stop_events: ball_will_end
     ball_locks: bd_necron_lock

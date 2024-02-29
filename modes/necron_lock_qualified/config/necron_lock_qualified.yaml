@@ -3,25 +3,3 @@ mode:
   start_events: start_necron_lock_qualified 
   stop_events: multiball_necron_multiball_started
   priority: 100
-
-counters:
-  necron_lockup_qualified:
-    count_events: s_droptarget_down_active
-    starting_count: 0
-    count_interval : 1
-    direction: up
-    count_complete_value: 1
-    events_when_complete: 
-      - start_necron_multiball
-    disable_on_complete: true
-
-    
-multiball_locks:
-  necron_lock:
-    balls_to_lock: 1
-    lock_devices: bd_necron_lock
-    disable_events: mode_necron_multiball_started
-    reset_all_counts_events: start_necron_multiball
-    locked_ball_counting_strategy: virtual_only
-
- 

@@ -1,11 +1,12 @@
 events:
-  game_ended: 40
-  game_started: 376
+  game_ended: 43
+  game_started: 387
 player:
   score:
-    average: 107326.92307692308
+    average: 114709.09090909091
     top:
     - 2788200
+    - 593600
     - 474300
     - 411000
     - 390500
@@ -14,57 +15,57 @@ player:
     - 174500
     - 149500
     - 142100
-    - 122000
-    total: 52
+    total: 55
 switches:
-  s_3bank: 244
+  s_3bank: 251
   s_3bank_away: 5
   s_3bank_home: 5
-  s_autoplunger: 434
+  s_autoplunger: 468
   s_center_spinner: 11
   s_disk_backtarget: 33
   s_droptarget: 91
-  s_droptarget_down: 346
-  s_droptarget_lock: 172
-  s_kickback1: 44
-  s_kickback2: 52
+  s_droptarget_down: 397
+  s_droptarget_lock: 199
+  s_droptarget_opto: 68
+  s_kickback1: 58
+  s_kickback2: 62
   s_kickback_opto: 147
   s_kickback_opto2: 0
   s_kickback_opto3: 0
-  s_left_EOS: 1079
-  s_left_flipper: 2218
-  s_left_inlane: 136
-  s_left_outlane: 492
+  s_left_EOS: 1114
+  s_left_flipper: 2351
+  s_left_inlane: 140
+  s_left_outlane: 495
   s_left_ramp: 6
-  s_left_slingshot: 690
+  s_left_slingshot: 746
   s_lowerscoop: 0
   s_plunger_lane: 40
-  s_pop_center: 4519
-  s_pop_left: 2197
-  s_pop_right: 7557
-  s_right_EOS: 895
-  s_right_flipper: 1702
-  s_right_inlane: 318
-  s_right_outlane: 554
+  s_pop_center: 4669
+  s_pop_left: 2241
+  s_pop_right: 8871
+  s_right_EOS: 916
+  s_right_flipper: 1790
+  s_right_inlane: 322
+  s_right_outlane: 557
   s_right_ramp: 5
-  s_right_slingshot: 1565
-  s_rollover_gork: 78
-  s_rollover_mork: 87
-  s_scoop: 61
+  s_right_slingshot: 1610
+  s_rollover_gork: 85
+  s_rollover_mork: 90
+  s_scoop: 64
   s_shooter_lane: 12
-  s_spinner: 4993
-  s_start_button: 275
+  s_spinner: 5141
+  s_start_button: 285
   s_tilt: 0
-  s_trough1: 303
-  s_trough2: 236
-  s_trough3: 222
-  s_trough4: 190
-  s_trough5: 200
-  s_trough6: 148
-  s_trough_jam: 105
+  s_trough1: 331
+  s_trough2: 266
+  s_trough3: 256
+  s_trough4: 225
+  s_trough5: 235
+  s_trough6: 216
+  s_trough_jam: 139
   s_upperscoop: 53
-  s_xenos_e: 146
-  s_xenos_n: 136
-  s_xenos_o: 175
-  s_xenos_s: 208
-  s_xenos_x: 140
+  s_xenos_e: 154
+  s_xenos_n: 146
+  s_xenos_o: 185
+  s_xenos_s: 214
+  s_xenos_x: 152

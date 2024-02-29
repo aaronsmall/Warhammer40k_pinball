@@ -105,7 +105,7 @@ ball_devices:
 
     bd_necron_lock:
       mechanical_eject: True
-      confirm_eject_event:  start_necron_multiball
+      #confirm_eject_event:  start_necron_multiball
       ball_switches: s_droptarget_opto
 
 
@@ -145,16 +145,6 @@ slides:
 slide_player:
     init_done: welcome_slide
     mode_attract_started: attract_started
-
-multiballs:
-  necron_multiball:
-    ball_count: 2
-    ball_count_type: total
-    shoot_again: 20s
-    start_events: start_necron_multiball
-    stop_events: ball_will_end
-    ball_locks: bd_necron_lock
-
 
 keyboard:
   z:
@@ -214,7 +204,7 @@ modes:
   - tilt  
   - bonus
   - necron_lock
-  - necron_lock_qualified
+  #- necron_lock_qualified
   - necron_multiball
   
 
