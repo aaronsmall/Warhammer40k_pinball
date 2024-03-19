@@ -19,7 +19,7 @@ variable_player:
       
 timers:
   warp_timer:
-    start_value: 30
+    start_value: 15
     end_value: 0
     direction: down
     tick_interval: 1s

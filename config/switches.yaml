@@ -3,9 +3,6 @@
 switches:
   s_autoplunger:
     number: 3208-0
-  s_trough6:
-    number: 3208-17
-    type: "NC"
   s_trough5:
     number: 3208-1
   s_trough4:
@@ -39,6 +36,9 @@ switches:
     number: 3208-14
   s_left_outlane: 
     number: 3208-15
+  s_trough6:
+    number: 3208-17
+    type: "NC"
   s_left_slingshot: 
     number: 3208-13
   s_pop_left:
@@ -105,4 +105,6 @@ switches:
     number: 3208_2-16
   s_droptarget_opto:
     number: 3208_2-8
+  s_upperleft_flipper:
+    number: 3208-28
   

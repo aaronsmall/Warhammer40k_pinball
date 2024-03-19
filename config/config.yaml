@@ -15,6 +15,9 @@ fast:
             3208_2:
                 model: FP-I/O-3208
                 order: 2 
+            0804:
+                model: FP-I/O-0804
+                order: 3 
     baud: 921600
     debug: false
     console_log: none

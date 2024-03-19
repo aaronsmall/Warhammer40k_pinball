@@ -11,3 +11,7 @@ flippers:
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
     #enable_events: machine_reset_phase_3
+  upperLeft_flipper:
+    main_coil: c_flipper_upperleft_main
+    hold_coil: c_flipper_upperleft_hold
+    activation_switch: s_upperleft_flipper

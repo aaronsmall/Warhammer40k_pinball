@@ -49,6 +49,13 @@ coils:
     allow_enable: true
     enable_events: mode_warp_started
     disable_events: timer_warp_timer_complete
+  c_flipper_upperleft_main:
+    default_pulse_ms: 12
+    number: 0804-0
+  c_flipper_upperleft_hold:
+    number: 0804-1
+    allow_enable: true
+
 
 
 digital_outputs:

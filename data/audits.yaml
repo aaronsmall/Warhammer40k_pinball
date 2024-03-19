@@ -1,6 +1,6 @@
 events:
   game_ended: 43
-  game_started: 389
+  game_started: 393
 player:
   score:
     average: 114709.09090909091
@@ -17,55 +17,56 @@ player:
     - 142100
     total: 55
 switches:
-  s_3bank: 256
-  s_3bank_away: 6
-  s_3bank_home: 6
-  s_autoplunger: 476
+  s_3bank: 276
+  s_3bank_away: 10
+  s_3bank_home: 8
+  s_autoplunger: 488
   s_center_spinner: 11
-  s_disk_backtarget: 33
+  s_disk_backtarget: 34
   s_droptarget: 91
-  s_droptarget_down: 404
-  s_droptarget_lock: 201
-  s_droptarget_opto: 75
-  s_kickback1: 58
-  s_kickback2: 65
+  s_droptarget_down: 408
+  s_droptarget_lock: 202
+  s_droptarget_opto: 82
+  s_kickback1: 62
+  s_kickback2: 158
   s_kickback_opto: 147
   s_kickback_opto2: 0
   s_kickback_opto3: 0
-  s_left_EOS: 1153
-  s_left_flipper: 2436
-  s_left_inlane: 141
+  s_left_EOS: 1262
+  s_left_flipper: 2631
+  s_left_inlane: 146
   s_left_outlane: 498
   s_left_ramp: 6
-  s_left_slingshot: 782
+  s_left_slingshot: 845
   s_lowerscoop: 0
   s_plunger_lane: 40
-  s_pop_center: 4693
-  s_pop_left: 2245
-  s_pop_right: 8962
-  s_right_EOS: 947
-  s_right_flipper: 1828
-  s_right_inlane: 325
-  s_right_outlane: 558
+  s_pop_center: 4718
+  s_pop_left: 2247
+  s_pop_right: 9063
+  s_right_EOS: 983
+  s_right_flipper: 1878
+  s_right_inlane: 330
+  s_right_outlane: 560
   s_right_ramp: 5
-  s_right_slingshot: 1638
-  s_rollover_gork: 85
+  s_right_slingshot: 1650
+  s_rollover_gork: 88
   s_rollover_mork: 91
-  s_scoop: 68
+  s_scoop: 71
   s_shooter_lane: 12
   s_spinner: 5159
-  s_start_button: 286
+  s_start_button: 287
   s_tilt: 0
-  s_trough1: 338
-  s_trough2: 274
-  s_trough3: 264
-  s_trough4: 233
-  s_trough5: 243
-  s_trough6: 231
-  s_trough_jam: 147
-  s_upperscoop: 53
-  s_xenos_e: 156
-  s_xenos_n: 149
-  s_xenos_o: 187
-  s_xenos_s: 215
-  s_xenos_x: 155
+  s_trough1: 346
+  s_trough2: 284
+  s_trough3: 274
+  s_trough4: 243
+  s_trough5: 254
+  s_trough6: 252
+  s_trough_jam: 158
+  s_upperleft_flipper: 130
+  s_upperscoop: 55
+  s_xenos_e: 160
+  s_xenos_n: 156
+  s_xenos_o: 194
+  s_xenos_s: 219
+  s_xenos_x: 159
