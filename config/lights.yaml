@@ -3,22 +3,43 @@
 lights:
   GI_light1:
     number: playfield-1-1
+    tags: GI
   GI_light2:
     number: playfield-1-2
+    tags: GI
   GI_light3:
     number: playfield-1-3
+    tags: GI
   GI_light4: 
     number: playfield-1-4
+    tags: GI
   GI_light5:
     number: playfield-1-5
+    tags: GI
   GI_light6:
     number: playfield-1-6
+    tags: GI
   GI_light7:
     number: playfield-1-7
+    tags: GI
   GI_light8:
     number: playfield-1-8
+    tags: GI
   GI_light9:
     number: playfield-1-9
+    tags: GI
+  GI_light10:
+    number: playfield-5-1
+    tags: GI
+  GI_light11:
+    number: playfield-5-2
+    tags: GI
+  GI_light12:
+    number: playfield-5-3
+    tags: UI
+  GI_light13:
+    number: playfield-5-4
+    tags: UI
   l_xenos_x:
     number: playfield-2-3
     tags: xenos_letter, insert
@@ -67,84 +88,111 @@ lights:
   l_left_ramp_arrow:
     number: playfield-2-16
     tags: insert
-  l_motor1:
+  l-threeBank_bottom:
     number: playfield-3-1
-    tags: insert, tron_spinner
-  l_motor2:
+    tags: 3-bank
+  l_threeBank_middle: 
     number: playfield-3-2
-    tags: insert, tron_spinner
-  l_motor3:
-    number: playfield-3-3
-    tags: insert, tron_spinner
-  l_motor4:
+    tags: 3-bank
+  l_threeBank_top:
+    number : playfield-3-3
+    tags: 3-bank
+  l_motor1:
     number: playfield-3-4
     tags: insert, tron_spinner
-  l_motor5:
+  l_motor2:
     number: playfield-3-5
     tags: insert, tron_spinner
-  l_motor6:
+  l_motor3:
     number: playfield-3-6
     tags: insert, tron_spinner
+  l_motor4:
+    number: playfield-3-7
+    tags: insert, tron_spinner
+  l_motor5:
+    number: playfield-3-8
+    tags: insert, tron_spinner
+  l_motor6:
+    number: playfield-3-9
+    tags: insert, tron_spinner
   l_gork:
-    number: playfield-2-19
+    number: playfield-2-17
     tags: insert
   l_mork:
-    number: playfield-2-20
+    number: playfield-2-18
     tags: insert
   l_locklight:
-    number: playfield-2-21
+    number: playfield-2-19
     tags: insert
   l_right_ramp_arrow:
-    number: playfield-2-22
+    number: playfield-2-20
     tags: insert
   l_right_ramp_circle2:
-    number: playfield-2-23
+    number: playfield-2-21
     tags: insert
   l_right_ramp_circle1:
-    number: playfield-2-24
+    number: playfield-2-22
     tags: insert
   l_right_orbit_arrow:
-    number: playfield-2-25
+    number: playfield-2-23
     tags: insert
   l_right_orbit_circle2:
-    number: playfield-2-26
+    number: playfield-2-24
     tags: insert
   l_right_orbit_circle1:
-    number: playfield-2-27
+    number: playfield-2-25
     tags: insert
   l_scoop:
-    number: playfield-2-28
+    number: playfield-2-26
     tags: insert
   l_right_outlane:
-    number: playfield-2-29
+    number: playfield-2-27
     tags: insert
   l_right_inlane:
-    number: playfield-2-30
+    number: playfield-2-28
     tags: insert
   l_ball_save:
     number: playfield-4-10
     tags: insert
   l_UI_rec_1:
     number: playfield-4-1
+    tags: UI
   l_UI_rec_2:
     number: playfield-4-2
+    tags: UI
   l_UI_rec_3:
     number: playfield-4-3
+    tags: UI
   l_UI_rec_4:
     number: playfield-4-4
+    tags: UI
   l_UI_rec_5:
     number: playfield-4-5
+    tags: UI
   l_UI_circle_1:
     number: playfield-4-6
+    tags: UI
   l_UI_circle_2:
     number: playfield-4-7
+    tags: UI
   l_UI_circle_3:
     number: playfield-4-8
+    tags: UI
   l_UI_circle_4:
     number: playfield-4-9
-  GI_light10:
-    number: playfield-5-1
-  GI_light11:
-    number: playfield-5-2
-
-
+    tags: UI
+  l_deadend_1:
+    number: playfield-6-1
+    tags: UI
+  l_deadend_2:
+    number: playfield-6-2
+    tags: UI
+  l_deadend_3:
+    number: playfield-6-3
+    tags: UI
+  l_deadend_4:
+    number: playfield-6-4
+    tags: UI
+  l_deadend-5:
+    number: playfield-6-5
+    tags: UI

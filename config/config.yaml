@@ -57,6 +57,7 @@ config:
   - sound_system.yaml
   - drop_targets.yaml
 
+
 displays:
   window:
     width: 1080
@@ -148,6 +149,17 @@ slides:
 slide_player:
     init_done: welcome_slide
     mode_attract_started: attract_started
+
+shot_profiles: 
+  my_first_profile:
+    states:
+      - name: unlit
+        show: off
+      - name: flashing
+        show: flash
+      - name: lit
+        show: on
+    loop: true
 
 keyboard:
   z:

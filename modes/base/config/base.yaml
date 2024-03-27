@@ -91,8 +91,17 @@ variable_player:
     score: 1000
   s_3bank_active:
     score: 1000
+  my_first_shot_my_first_profile_unlit_hit:
+    score: 100
+  my_first_shot_my_first_profile_flashing_hit:
+    score: 10000
 
-
+shots: 
+  my_first_shot: 
+    switch: s_left_orbit
+    show_tokens: 
+      led: l_UI_rec_1
+    profile: my_first_profile
 
 slide_player:
   player_added:
