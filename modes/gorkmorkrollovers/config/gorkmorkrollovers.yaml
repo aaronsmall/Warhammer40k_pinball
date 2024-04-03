@@ -21,11 +21,19 @@ shots:
       rollover_made_color: yellow
       rollover_made_final_color: cyan
 
+show_player:
+  top_lane_group_hit_complete:
+    light_gorkmork: 
+      show_tokens:
+        rollover_made_led: rollovers
+        rollover_made_color: yellow
+        rollover_made_final_color: 000000
+
 shot_profiles:
   top_lane_profile:
     states:
-      - name: 
-        show: off
+      - name: unlit
+        show: "off"
       - name: hit
         show: "light_gorkmork"
         
@@ -33,8 +41,8 @@ shot_groups:
   top_lane_group:
     shots: top_lane_gork, top_lane_mork
     reset_events: top_lane_group_hit_complete
-    rotate_right_events: s_flipper_right_active
-    rotate_left_events: s_flipper_left_active
+    rotate_right_events: s_right_flipper_active
+    rotate_left_events: s_left_flipper_active
 
 variable_player:
   top_lane_group_hit_complete:
