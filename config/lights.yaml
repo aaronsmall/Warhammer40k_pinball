@@ -181,18 +181,90 @@ lights:
   l_UI_circle_4:
     number: playfield-4-9
     tags: UI
-  l_deadend_1:
+  l_backboard_1:
     number: playfield-6-1
-    tags: UI
-  l_deadend_2:
+    tags: backboard
+  l_backboard_2:
     number: playfield-6-2
-    tags: UI
-  l_deadend_3:
+    tags: backboard
+  l_backboard_3:
     number: playfield-6-3
-    tags: UI
-  l_deadend_4:
+    tags: backboard
+  l_backboard_4:
     number: playfield-6-4
-    tags: UI
-  l_deadend-5:
+    tags: backboard
+  l_backboard_5:
     number: playfield-6-5
-    tags: UI
+    tags: backboard
+  l_backboard_6:
+    number: playfield-6-6
+    tags: backboard
+  l_backboard_7:
+    number: playfield-6-7
+    tags: backboard
+  l_backboard_8:
+    number: playfield-6-8
+    tags: backboard
+  l_backboard_9:
+    number: playfield-6-9
+    tags: backboard
+  l_backboard_10:
+    number: playfield-6-10
+    tags: backboard
+  l_backboard_11:
+    number: playfield-6-11
+    tags: backboard
+  l_backboard_12:
+    number: playfield-6-12
+    tags: backboard
+  l_backboard_13:
+    number: playfield-6-13
+    tags: backboard
+  l_backboard_14:
+    number: playfield-6-14
+    tags: backboard
+  l_backboard_15:
+    number: playfield-6-15
+    tags: backboard
+  l_backboard_16:
+    number: playfield-6-16
+    tags: backboard
+  l_backboard_17:
+    number: playfield-6-17
+    tags: backboard
+  l_backboard_18:
+    number: playfield-6-18
+    tags: backboard
+  l_backboard_19:
+    number: playfield-6-19
+    tags: backboard
+  l_backboard_20:
+    number: playfield-6-20
+    tags: backboard
+  l_backboard_21:
+    number: playfield-6-21
+    tags: backboard
+  l_backboard_22:
+    number: playfield-6-22
+    tags: backboard
+  l_backboard_23:
+    number: playfield-6-23
+    tags: backboard
+  l_backboard_24:
+    number: playfield-6-24
+    tags: backboard
+  l_backboard_25:
+    number: playfield-6-25
+    tags: backboard
+  l_backboard_26:
+    number: playfield-6-26
+    tags: backboard
+  l_backboard_27:
+    number: playfield-6-27
+    tags: backboard
+  l_backboard_28:
+    number: playfield-6-28
+    tags: backboard
+  l_backboard_29:
+    number: playfield-6-29
+    tags: backboard

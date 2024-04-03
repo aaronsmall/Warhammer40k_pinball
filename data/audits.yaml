@@ -1,6 +1,6 @@
 events:
   game_ended: 44
-  game_started: 402
+  game_started: 417
 player:
   score:
     average: 234755.35714285713
@@ -17,61 +17,69 @@ player:
     - 149500
     total: 56
 shots:
-  my_first_shot: 53
+  my_first_shot: 91
+  top_lane_gork: 24
 switches:
-  s_3bank: 344
-  s_3bank_away: 19
-  s_3bank_home: 17
-  s_autoplunger: 527
+  s_3bank: 399
+  s_3bank_away: 29
+  s_3bank_bottom: 3
+  s_3bank_home: 27
+  s_3bank_mid: 1
+  s_3bank_top: 0
+  s_autoplunger: 567
   s_center_spinner: 11
-  s_disk_backtarget: 45
+  s_disk_backtarget: 53
   s_droptarget: 91
-  s_droptarget_down: 430
-  s_droptarget_lock: 216
-  s_droptarget_opto: 98
-  s_kickback1: 102
+  s_droptarget_down: 437
+  s_droptarget_lock: 218
+  s_droptarget_opto: 100
+  s_kickback1: 123
   s_kickback2: 158
   s_kickback_opto: 147
   s_kickback_opto2: 0
   s_kickback_opto3: 0
-  s_left_EOS: 1633
-  s_left_flipper: 3442
-  s_left_inlane: 178
-  s_left_orbit: 53
-  s_left_outlane: 512
-  s_left_ramp: 6
-  s_left_slingshot: 1116
+  s_left_EOS: 1769
+  s_left_flipper: 3749
+  s_left_inlane: 190
+  s_left_orbit: 91
+  s_left_outlane: 516
+  s_left_ramp: 7
+  s_left_slingshot: 1210
+  s_lower_bigtarget: 0
   s_lowerscoop: 0
   s_plunger_lane: 40
-  s_pop_center: 12546
-  s_pop_left: 21796
-  s_pop_right: 12642
-  s_right_EOS: 1304
-  s_right_flipper: 2537
-  s_right_inlane: 363
-  s_right_outlane: 576
-  s_right_ramp: 8
-  s_right_slingshot: 1823
-  s_rollover_gork: 148
+  s_pop_center: 13200
+  s_pop_left: 22836
+  s_pop_right: 12790
+  s_right_EOS: 1368
+  s_right_flipper: 2656
+  s_right_inlane: 372
+  s_right_orbit: 0
+  s_right_outlane: 579
+  s_right_ramp: 10
+  s_right_slingshot: 1902
+  s_rollover_gork: 191
   s_rollover_mork: 113
-  s_scoop: 103
+  s_scoop: 117
   s_shooter_lane: 12
-  s_spinner: 6877
-  s_start_button: 291
+  s_spinner: 7971
+  s_start_button: 294
   s_tilt: 0
-  s_trough1: 364
-  s_trough2: 305
-  s_trough3: 300
-  s_trough4: 272
-  s_trough5: 285
-  s_trough6: 316
-  s_trough_jam: 197
+  s_tiltbob: 0
+  s_trough1: 389
+  s_trough2: 333
+  s_trough3: 328
+  s_trough4: 298
+  s_trough5: 319
+  s_trough6: 372
+  s_trough_jam: 238
   s_unused: 0
-  s_upperflipper_eos: 344
-  s_upperleft_flipper: 715
-  s_upperscoop: 61
-  s_xenos_e: 184
-  s_xenos_n: 185
-  s_xenos_o: 219
-  s_xenos_s: 237
-  s_xenos_x: 189
+  s_upper_bigtarget: 5
+  s_upperflipper_eos: 468
+  s_upperleft_flipper: 935
+  s_upperscoop: 66
+  s_xenos_e: 200
+  s_xenos_n: 196
+  s_xenos_o: 229
+  s_xenos_s: 256
+  s_xenos_x: 202

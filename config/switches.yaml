@@ -36,6 +36,10 @@ switches:
     number: 3208-14
   s_left_outlane: 
     number: 3208-15
+  s_lower_bigtarget:
+    number: 3208-16
+  s_upper_bigtarget:
+    number: 3208-24
   s_trough6:
     number: 3208-17
     type: "NC"
@@ -62,6 +66,8 @@ switches:
   s_left_flipper: 
     number: 3208-31 
     tags: left_flipper
+  s_tiltbob: 
+    number: 3208-27
   s_xenos_x:
     number: 3208_2-4
   s_xenos_e:
@@ -111,8 +117,10 @@ switches:
   s_left_orbit: 
     number: 3208_2-31
   s_3bank_top:
-    number: 3208_2-30
+    number: 3208_2-28
   s_3bank_mid:
     number: 3208_2-29
   s_3bank_bottom:
-    number: 3208_2-28
+    number: 3208_2-30
+  s_right_orbit: 
+    number: 3208_2-27

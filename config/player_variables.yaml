@@ -16,4 +16,6 @@ player_vars:
     initial_value: 0
   pv_necron_lock_count:
     initial_value: 0
+  bonus_multiplier: 
+    initial_value: 0 
   

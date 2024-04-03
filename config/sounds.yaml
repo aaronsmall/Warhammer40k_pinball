@@ -12,6 +12,8 @@ sounds:
   music_warp_traveler:
     file: Warp Traveler.wav
     track: music
+  music_emporer:
+    file: The Emperor of Mankind.wav
   xenos_spotted:
     file: xenos-spotted.wav
     track: voice

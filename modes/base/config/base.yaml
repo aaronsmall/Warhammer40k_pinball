@@ -37,6 +37,16 @@ ball_saves:
     debug: true
 
 variable_player:
+  s_3bank_top_active:
+    score: 1000
+  s_3bank_middle_active:
+    score: 1000
+  s_3bank_bottom_active: 
+    score: 1000
+  s_lower_bigtarget_active:
+    score: 3000
+  s_upper_bigtarget_active:
+    score: 5000
   s_right_inlane_active:
     score: 1000
   s_left_inlane_active:
@@ -74,9 +84,9 @@ variable_player:
   s_xenos_s_active:
     score: 100 
   s_kickback1_active:
-    score: 100
+    score: 1000
   s_kickback2_active:
-    score: 100
+    score: 1000
   s_disk_backtarget_active:
     score: 1000
   s_droptarget_active:
@@ -208,7 +218,7 @@ event_player:
   
 
 sound_player:
-  warp_traveler: music_warp_traveler
+  warp_traveler: music_emporer
   #mode_base_started{game.num_players == 1}: evenindeath 
   base_sound_player_1: evenindeath
   #base_start_single_player: player_ones
