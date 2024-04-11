@@ -1,6 +1,6 @@
 events:
   game_ended: 44
-  game_started: 417
+  game_started: 421
 player:
   score:
     average: 234755.35714285713
@@ -18,7 +18,8 @@ player:
     total: 56
 shots:
   my_first_shot: 91
-  top_lane_gork: 24
+  top_lane_gork: 36
+  top_lane_mork: 13
 switches:
   s_3bank: 399
   s_3bank_away: 29
@@ -39,12 +40,12 @@ switches:
   s_kickback_opto2: 0
   s_kickback_opto3: 0
   s_left_EOS: 1769
-  s_left_flipper: 3749
+  s_left_flipper: 3768
   s_left_inlane: 190
   s_left_orbit: 91
   s_left_outlane: 516
   s_left_ramp: 7
-  s_left_slingshot: 1210
+  s_left_slingshot: 1213
   s_lower_bigtarget: 0
   s_lowerscoop: 0
   s_plunger_lane: 40
@@ -52,25 +53,25 @@ switches:
   s_pop_left: 22836
   s_pop_right: 12790
   s_right_EOS: 1368
-  s_right_flipper: 2656
+  s_right_flipper: 2671
   s_right_inlane: 372
-  s_right_orbit: 0
+  s_right_orbit: 2
   s_right_outlane: 579
   s_right_ramp: 10
   s_right_slingshot: 1902
-  s_rollover_gork: 191
-  s_rollover_mork: 113
+  s_rollover_gork: 203
+  s_rollover_mork: 126
   s_scoop: 117
   s_shooter_lane: 12
   s_spinner: 7971
   s_start_button: 294
   s_tilt: 0
   s_tiltbob: 0
-  s_trough1: 389
+  s_trough1: 390
   s_trough2: 333
   s_trough3: 328
   s_trough4: 298
-  s_trough5: 319
+  s_trough5: 320
   s_trough6: 372
   s_trough_jam: 238
   s_unused: 0

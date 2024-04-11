@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 mode:
   code: attract.MyAttract
@@ -28,7 +28,7 @@ show_player:
 
 high_score:
   _overwrite: True
-  categories: !!omap
+  categories: 
   - score:
       - GRAND CHAMPION
       - HIGH SCORE 1

@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 lights:
   GI_light1:
@@ -117,10 +117,10 @@ lights:
     tags: insert, tron_spinner
   l_gork:
     number: playfield-2-17
-    tags: insert
+    tags: insert, rollovers
   l_mork:
     number: playfield-2-18
-    tags: insert
+    tags: insert, rollovers
   l_locklight:
     number: playfield-2-19
     tags: insert

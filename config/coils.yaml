@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 coils:
   c_trough_eject:
@@ -66,9 +66,9 @@ digital_outputs:
 motors:
   motorized_drop_target_bank:
     motor_left_output: c_3bank
-    position_switches: !!omap
-      - up: s_3bank_home
-      - down: s_3bank_away
+    position_switches: 
+      up: s_3bank_home
+      down: s_3bank_away
     reset_position: up
     go_to_position:
       go_up: up
