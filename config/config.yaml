@@ -206,7 +206,7 @@ virtual_platform_start_active_switches:
 
 modes: 
   - base
-  - high_score
+  #- high_score
   - xenos
   - warp
   #- nurgle
