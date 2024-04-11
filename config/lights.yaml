@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 
 lights:
   GI_light1:
@@ -265,6 +265,100 @@ lights:
   l_backboard_28:
     number: playfield-6-28
     tags: backboard
-  l_backboard_29:
-    number: playfield-6-29
-    tags: backboard
+  l_neron_1:
+    number: neuron-1-1
+    tags: head
+  l_neron_2:
+    number: neuron-1-2
+    tags: head
+  l_neron_3:
+    number: neuron-1-3
+    tags: head
+  l_neron_4:
+    number: neuron-1-4
+    tags: head
+  l_neron_5:
+    number: neuron-1-5
+    tags: head
+  l_neron_6:
+    number: neuron-1-6
+    tags: head
+  l_neron_7:
+    number: neuron-1-7
+    tags: head
+  l_neron_8:
+    number: neuron-1-8
+    tags: head
+  l_neron_9:
+    number: neuron-1-9
+    tags: head
+  l_neron_10:
+    number: neuron-1-10
+    tags: head
+  l_neron_11:
+    number: neuron-1-11
+    tags: head
+  l_neron_12:
+    number: neuron-1-12
+    tags: head
+  l_neron_13:
+    number: neuron-1-13
+    tags: head
+  l_neron_14:
+    number: neuron-1-14
+    tags: head
+  l_neron_15:
+    number: neuron-1-15
+    tags: head
+  l_neron_16:
+    number: neuron-1-16
+    tags: head
+  l_neron_17:
+    number: neuron-1-17
+    tags: head
+
+  l_neron_18:
+    number: neuron-1-18
+    tags: head
+  l_neron_19:
+    number: neuron-1-19
+    tags: head
+  l_neron_20:
+    number: neuron-1-20
+    tags: head
+  l_neron_21:
+    number: neuron-1-21
+    tags: head
+  l_neron_22:
+    number: neuron-1-22
+    tags: head
+  l_neron_23:
+    number: neuron-1-23
+    tags: head
+  l_neron_24:
+    number: neuron-1-24
+    tags: head
+  l_neron_25:
+    number: neuron-1-25
+    tags: head
+  l_neron_26:
+    number: neuron-1-26
+    tags: head
+  l_neron_27:
+    number: neuron-1-27
+    tags: head
+  l_neron_28:
+    number: neuron-1-28
+    tags: head
+  l_neron_29:
+    number: neuron-1-29
+    tags: head
+  l_neron_30:
+    number: neuron-1-30
+    tags: head
+  l_neron_31:
+    number: neuron-1-31
+    tags: head
+  l_neron_32:
+    number: neuron-1-32
+    tags: head

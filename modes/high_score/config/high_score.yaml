@@ -1,8 +1,8 @@
-#config_version=5
+#config_version=6
 high_score:
   _overwrite: True
-  categories: !!omap
-  - score:
+  categories: 
+    score:
       - GRAND CHAMPION
       - HIGH SCORE 1
       - HIGH SCORE 2

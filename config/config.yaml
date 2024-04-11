@@ -1,4 +1,4 @@
-#config_version=5
+#config_version=6
 # This config is only valid for MPF 0.56.1
 
 hardware:
@@ -12,10 +12,10 @@ fast:
             3208:
                 model: FP-I/O-3208
                 order: 1
-            3208_2:
+            32082:
                 model: FP-I/O-3208
                 order: 2 
-            0804:
+            io0804:
                 model: FP-I/O-0804
                 order: 3 
     baud: 921600
@@ -206,7 +206,7 @@ virtual_platform_start_active_switches:
 
 modes: 
   - base
-  - high_score
+  #- high_score
   - xenos
   - warp
   #- nurgle

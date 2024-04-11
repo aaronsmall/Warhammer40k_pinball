@@ -1,4 +1,4 @@
-#show_version=5
+#show_version=6
 - duration: 2
   lights:
     GI_light1: white
@@ -17,4 +17,5 @@
     l_UI_rec_1: white
     tron_spinner: white
     3-bank: white
-    backboard: yellow
+    backboard: white
+    head: white

@@ -1,62 +1,62 @@
-#show_version=5
+#show_version=6
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_color)
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): off
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_color)
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): off
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_color)
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): off
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_color)
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): off
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_color)
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): off
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_color)
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): off
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_color)
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): off
 
-- time: +.05
+- time: "+.05"
   lights:
     (rollover_made_led): (rollover_made_final_color)
 

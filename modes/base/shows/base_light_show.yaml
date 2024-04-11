@@ -1,4 +1,4 @@
-#show_version=5
+#show_version=6
 ##! show: base_light_show
 - duration: 2
   lights:
@@ -13,5 +13,7 @@
     GI_light9: white
     GI_light10: white
     GI_light11: white
+    backboard: white
+    head: white
     
   
