@@ -1,1 +1,4 @@
 logs/*.log
+/.vs/Warhammer40k/FileContentIndex
+/.vs/Warhammer40k/v17
+/modes/attract/code/__pycache__
