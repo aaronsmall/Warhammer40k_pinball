@@ -28,39 +28,39 @@ coils:
     number: 3208-3
     allow_enable: true
   c_pop_left:
-    number: 3208_2-0
+    number: 32082-0
     default_pulse_ms: 17
   c_pop_center:
-    number: 3208_2-1
+    number: 32082-1
     default_pulse_ms: 17
   c_pop_right:
-    number: 3208_2-2
+    number: 32082-2
     default_pulse_ms: 17
   c_upperscoop:
-    number: 3208_2-3
+    number: 32082-3
     default_pulse_ms: 3
   c_droptarget_reset:
-    number: 3208_2-4
+    number: 32082-4
     default_pulse_ms: 18
   c_scoop:
-    number: 3208_2-5
+    number: 32082-5
   c_tron_disk:
-    number: 3208_2-6
+    number: 32082-6
     allow_enable: true
     enable_events: mode_warp_started
     disable_events: timer_warp_timer_complete
   c_flipper_upperleft_main:
     default_pulse_ms: 12
-    number: 0804-0
+    number: io0804-0
   c_flipper_upperleft_hold:
-    number: 0804-1
+    number: io0804-1
     allow_enable: true
 
 
 
 digital_outputs:
   c_3bank: 
-    number: 3208_2-7
+    number: 32082-7
     type: driver
 
 motors:

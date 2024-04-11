@@ -1,6 +1,56 @@
 events:
   game_ended: 44
-  game_started: 421
+  game_started: 423
+missing_switches:
+  s_3bank: 2
+  s_3bank_away: 2
+  s_3bank_bottom: 2
+  s_3bank_home: 2
+  s_3bank_mid: 2
+  s_3bank_top: 2
+  s_autoplunger: 1
+  s_disk_backtarget: 2
+  s_droptarget_down: 2
+  s_droptarget_lock: 2
+  s_droptarget_opto: 2
+  s_kickback1: 2
+  s_left_EOS: 2
+  s_left_flipper: 2
+  s_left_inlane: 2
+  s_left_orbit: 1
+  s_left_outlane: 2
+  s_left_ramp: 2
+  s_left_slingshot: 2
+  s_lower_bigtarget: 2
+  s_pop_center: 1
+  s_pop_left: 2
+  s_pop_right: 2
+  s_right_EOS: 2
+  s_right_flipper: 2
+  s_right_inlane: 2
+  s_right_orbit: 2
+  s_right_outlane: 2
+  s_right_ramp: 2
+  s_right_slingshot: 2
+  s_rollover_gork: 2
+  s_rollover_mork: 2
+  s_scoop: 2
+  s_spinner: 2
+  s_start_button: 2
+  s_tilt: 2
+  s_tiltbob: 2
+  s_trough1: 1
+  s_trough2: 1
+  s_unused: 2
+  s_upper_bigtarget: 2
+  s_upperflipper_eos: 2
+  s_upperleft_flipper: 2
+  s_upperscoop: 1
+  s_xenos_e: 2
+  s_xenos_n: 2
+  s_xenos_o: 2
+  s_xenos_s: 2
+  s_xenos_x: 2
 player:
   score:
     average: 234755.35714285713
@@ -17,7 +67,7 @@ player:
     - 149500
     total: 56
 shots:
-  my_first_shot: 91
+  my_first_shot: 93
   top_lane_gork: 36
   top_lane_mork: 13
 switches:
@@ -27,7 +77,7 @@ switches:
   s_3bank_home: 27
   s_3bank_mid: 1
   s_3bank_top: 0
-  s_autoplunger: 567
+  s_autoplunger: 568
   s_center_spinner: 11
   s_disk_backtarget: 53
   s_droptarget: 91
@@ -42,14 +92,14 @@ switches:
   s_left_EOS: 1769
   s_left_flipper: 3768
   s_left_inlane: 190
-  s_left_orbit: 91
+  s_left_orbit: 93
   s_left_outlane: 516
   s_left_ramp: 7
   s_left_slingshot: 1213
   s_lower_bigtarget: 0
   s_lowerscoop: 0
   s_plunger_lane: 40
-  s_pop_center: 13200
+  s_pop_center: 13201
   s_pop_left: 22836
   s_pop_right: 12790
   s_right_EOS: 1368
@@ -67,18 +117,18 @@ switches:
   s_start_button: 294
   s_tilt: 0
   s_tiltbob: 0
-  s_trough1: 390
-  s_trough2: 333
-  s_trough3: 328
-  s_trough4: 298
-  s_trough5: 320
-  s_trough6: 372
-  s_trough_jam: 238
+  s_trough1: 392
+  s_trough2: 335
+  s_trough3: 332
+  s_trough4: 302
+  s_trough5: 324
+  s_trough6: 379
+  s_trough_jam: 242
   s_unused: 0
   s_upper_bigtarget: 5
   s_upperflipper_eos: 468
   s_upperleft_flipper: 935
-  s_upperscoop: 66
+  s_upperscoop: 67
   s_xenos_e: 200
   s_xenos_n: 196
   s_xenos_o: 229
