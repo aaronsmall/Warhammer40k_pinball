@@ -82,10 +82,10 @@ playfields:
 
 ball_devices:
     bd_plunger:
-      mechanical_eject: false
+      mechanical_eject: True
       ball_switches: s_autoplunger
       eject_coil: c_autoplunger
-      eject_timeouts: 5s
+      eject_timeouts: 19s
       eject_targets: playfield
     bd_trough:
       ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
