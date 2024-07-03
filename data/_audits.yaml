@@ -49,7 +49,7 @@ switches:
   s_3bank_bottom: 15
   s_3bank_home: 41
   s_3bank_mid: 15
-  s_3bank_top: 254
+  s_3bank_top: 255
   s_autoplunger: 632
   s_center_spinner: 11
   s_disk_backtarget: 61
@@ -68,7 +68,7 @@ switches:
   s_left_orbit: 146
   s_left_outlane: 522
   s_left_ramp: 23
-  s_left_slingshot: 1322
+  s_left_slingshot: 1323
   s_lower_bigtarget: 14
   s_lowerscoop: 0
   s_plunger_lane: 40

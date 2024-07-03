@@ -17,12 +17,12 @@ coils:
     allow_enable: true
   c_flipper_left_main:
     number: 3208-4  # again, these numbers will probably be different for you
-    default_pulse_ms: 20
+    default_pulse_ms: 26
   c_flipper_left_hold:
     number: 3208-5  # check your platform-specific documentation for the actual numbers
     allow_enable: true
   c_flipper_right_main:
-    default_pulse_ms: 20
+    default_pulse_ms: 26
     number: 3208-1
   c_flipper_right_hold:
     number: 3208-3

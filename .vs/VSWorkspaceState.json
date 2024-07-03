@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\modes",
-    "\\modes\\high_score",
-    "\\modes\\high_score\\config",
-    "\\sounds",
-    "\\sounds\\sfx",
-    "\\sounds\\voice"
+    "\\config"
   ],
   "PreviewInSolutionExplorer": false
 }
