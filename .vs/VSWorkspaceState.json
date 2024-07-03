@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\modes",
-    "\\modes\\high_score",
+    "\\modes\\attract",
+    "\\modes\\attract\\code",
+    "\\modes\\attract\\config",
+    "\\modes\\attract\\shows",
     "\\modes\\high_score\\config",
-    "\\sounds",
-    "\\sounds\\sfx",
-    "\\sounds\\voice"
+    "\\sounds\\voice",
+    "\\videos"
   ],
+  "SelectedNode": "\\videos\\flippercodeultramar.mp4",
   "PreviewInSolutionExplorer": false
 }

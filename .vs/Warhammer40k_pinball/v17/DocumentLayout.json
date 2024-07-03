@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Warhammer40k_pinball\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Warhammer40k_pinball\\modes\\attract\\shows\\attract_display_loop.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modes\\attract\\shows\\attract_display_loop.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Warhammer40k_pinball\\modes\\attract\\config\\attract.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modes\\attract\\config\\attract.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Warhammer40k_pinball\\config\\lights.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\lights.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -23,6 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "attract_display_loop.yaml",
+              "DocumentMoniker": "C:\\Warhammer40k_pinball\\modes\\attract\\shows\\attract_display_loop.yaml",
+              "RelativeDocumentMoniker": "modes\\attract\\shows\\attract_display_loop.yaml",
+              "ToolTip": "C:\\Warhammer40k_pinball\\modes\\attract\\shows\\attract_display_loop.yaml",
+              "RelativeToolTip": "modes\\attract\\shows\\attract_display_loop.yaml",
+              "ViewState": "AQIAAB4AAAAAAACQPkflvzAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-05-01T21:58:00.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "attract.yaml",
+              "DocumentMoniker": "C:\\Warhammer40k_pinball\\modes\\attract\\config\\attract.yaml",
+              "RelativeDocumentMoniker": "modes\\attract\\config\\attract.yaml",
+              "ToolTip": "C:\\Warhammer40k_pinball\\modes\\attract\\config\\attract.yaml",
+              "RelativeToolTip": "modes\\attract\\config\\attract.yaml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-05-01T21:57:46.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "lights.yaml",
               "DocumentMoniker": "C:\\Warhammer40k_pinball\\config\\lights.yaml",
               "RelativeDocumentMoniker": "config\\lights.yaml",
@@ -35,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "high_score.yaml",
               "DocumentMoniker": "C:\\Warhammer40k_pinball\\modes\\high_score\\config\\high_score.yaml",
               "RelativeDocumentMoniker": "modes\\high_score\\config\\high_score.yaml",

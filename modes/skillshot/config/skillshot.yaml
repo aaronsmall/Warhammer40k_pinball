@@ -1,0 +1,59 @@
+#config_version=6
+
+#Normal Skillshot to the upper rollovers
+#Full/soft plunge to the scoop/
+#Left or right flipper activation causes dropper ramp to drop and activate super skillshot either 3 bank, pop bumper or lower long target. 
+#Which will reward, locks, bonus ball saver timer, spot xenos, big points, bonus x, light mystery, extra ball, 
+
+mode:
+  start_events: ball_started, skillshot_restart
+  stop_events: 
+    - stop_mode_skillshot
+  priority: 500
+shots:
+  skill_gork:
+    advance_events: advance_skillshot_gork
+    switch: s_rollover_gork
+    profile: skill_shot_profile
+    show_tokens: 
+      led: l_gork
+  skill_mork:
+    advance_events: advance_skillshot_mork
+    switch: s_rollover_mork
+    profile: skill_shot_profile
+    show_tokens:
+      led: l_mork
+shot_groups:
+  skillshots:
+    shots: skill_gork, skill_mork
+    disable_rotation_events: s_autoplunger_inactive
+    rotate_right_events: s_right_flipper_active
+    rotate_left_events: s_left_flipper_active
+
+shot_profiles:
+  skill_shot_profile:
+    advance_on_hit: false
+    states: 
+      - name : off
+        show: off
+      - name: lit
+        show: flash
+
+
+random_event_player:
+  mode_skillshot_started:
+    events:
+      - advance_skillshot_mork
+      - advance_skillshot_gork
+
+
+variable_player:
+  skillshot_lit_hit:
+    score: 20000
+
+
+event_player: 
+  skillshot_hit: stop_mode_skillshot
+  playfield_active: stop_mode_skillshot|3s
+#an event to trigger the super skill mode.
+#hold left flipper and plunge to activate super skill shot
