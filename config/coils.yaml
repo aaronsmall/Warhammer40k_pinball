@@ -17,12 +17,12 @@ coils:
     allow_enable: true
   c_flipper_left_main:
     number: 3208-4  # again, these numbers will probably be different for you
-    default_pulse_ms: 26
+    default_pulse_ms: 27
   c_flipper_left_hold:
     number: 3208-5  # check your platform-specific documentation for the actual numbers
     allow_enable: true
   c_flipper_right_main:
-    default_pulse_ms: 26
+    default_pulse_ms: 27
     number: 3208-1
   c_flipper_right_hold:
     number: 3208-3
@@ -40,15 +40,15 @@ coils:
     number: 32082-3
     default_pulse_ms: 3
   c_droptarget_reset:
-    number: 32082-4
+    number: 32082-5
     default_pulse_ms: 18
   c_scoop:
-    number: 32082-5
-  c_tron_disk:
-    number: 32082-6
+    number: 32082-4
+  c_droppod:
+    number: 32082-7
+    default_pulse_ms: 200
+    default_hold_power: 0.250
     allow_enable: true
-    enable_events: mode_warp_started
-    disable_events: timer_warp_timer_complete
   c_flipper_upperleft_main:
     default_pulse_ms: 12
     number: io0804-0
@@ -59,16 +59,16 @@ coils:
 
 
 digital_outputs:
-  c_3bank: 
-    number: 32082-7
+  c_liftramp: 
+    number: 32082-6
     type: driver
 
 motors:
   motorized_drop_target_bank:
-    motor_left_output: c_3bank
+    motor_left_output: c_liftramp
     position_switches: 
-      up: s_3bank_home
-      down: s_3bank_away
+      up: s_dropramp_home
+      down: s_dropramp_away
     reset_position: up
     go_to_position:
       go_up: up

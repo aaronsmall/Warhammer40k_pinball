@@ -6,7 +6,6 @@ hardware:
 
 fast:
   net:
-    #port: com4
     controller: neuron
     io_loop: 
             3208:
@@ -29,7 +28,7 @@ fast:
     default_normal_debounce_close: 4ms
 
   exp:
-    port: com5
+    #port: com5
     boards: 
       playfield:
         model: FP-EXP-0081
@@ -110,6 +109,13 @@ ball_devices:
     bd_necron_lock:
       mechanical_eject: True
       ball_switches: s_droptarget_opto
+
+    bd_droppod:
+      mechanical_eject: false
+      ball_switches: s_lockopto1, s_lockopto2, s_lockopto3
+      eject_coil: c_droppod
+      eject_timeouts: 3s
+      
 
 ball_holds:
   lowerScoop: 
@@ -198,7 +204,7 @@ keyboard:
   a:
     switch: s_left_slingshot
   p:
-    switch: s_spinner
+    coil: c_droppod_release
   t:
     switch: s_droptarget_down
   i:
@@ -223,12 +229,12 @@ modes:
   #- horus
   - tilt  
   - bonus
-  - necron_lock
+  #- necron_lock
   #- necron_lock_qualified
-  - necron_multiball
+  #- necron_multiball
   - gorkmorkrollovers
-  - skillshot
-  - super_skillshot
+  #- skillshot
+  #- super_skillshot
 
-  
+
 

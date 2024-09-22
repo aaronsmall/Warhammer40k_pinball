@@ -95,8 +95,6 @@ variable_player:
     score: 1000
   s_center_spinner_active:
     score: 5000
-  s_right_ramp_active:
-    score: 1000
   s_scoop_active:
     score: 1000
   s_3bank_shot_hit:
@@ -121,11 +119,6 @@ shots:
    #   led: tron_spinner
    # profile: my_first_profile
   
-  right_ramp_shot:
-    switch: s_right_ramp
-
-  left_ramp_shot:
-    switch: s_left_ramp
   left_orbit:
     switch: s_left_orbit
 
@@ -205,7 +198,7 @@ accruals:
 
 counters:
   warp_qualify_counter:
-    count_events: s_3bank_active
+    count_events: s_snikt_active
     starting_count: 0
     count_interval: 1
     direction: up
