@@ -23,8 +23,14 @@ switches:
   s_trough1:
     number: 3208-2
     type: "NC"
-
-
+  s_27:
+    number: 3208-27
+  s_26:
+    number: 3208-26
+  s_25:
+    number: 3208-25
+  s_24:
+    number: 3208-24
   s_right_EOS:
     number: 3208-22
   s_left_EOS:
@@ -103,7 +109,7 @@ switches:
     number: 3208-28
     debounce: normal
 
-    type: "NC"
+
 
 
 
