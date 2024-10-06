@@ -1,12 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\config",
     "\\modes",
-    "\\modes\\high_score",
-    "\\modes\\high_score\\config",
-    "\\sounds",
+    "\\modes\\attract",
+    "\\modes\\attract\\shows",
+    "\\modes\\base",
+    "\\modes\\base\\config",
+    "\\modes\\base\\shows",
     "\\sounds\\sfx",
     "\\sounds\\voice"
   ],
+  "SelectedNode": "\\modes\\attract\\shows\\gi_test.yaml",
   "PreviewInSolutionExplorer": false
 }
