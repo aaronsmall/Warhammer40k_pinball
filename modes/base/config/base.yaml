@@ -95,12 +95,12 @@ variable_player:
     score: 1000
   s_center_spinner_active:
     score: 5000
-  s_right_ramp_active:
-    score: 1000
   s_scoop_active:
     score: 1000
-  s_3bank_active:
+  s_3bank_shot_hit:
     score: 1000
+  s_3bank_shot_flashProfile_flashing_hit:
+    score: 10000
   my_first_shot_my_first_profile_unlit_hit:
     score: 100
   my_first_shot_my_first_profile_flashing_hit:
@@ -112,6 +112,43 @@ shots:
     show_tokens: 
       led: l_UI_rec_1
     profile: my_first_profile
+  
+  #3_bank_shot:
+  #  switch: s_3bank
+   # show_tokens:
+   #   led: tron_spinner
+   # profile: my_first_profile
+  
+  left_orbit:
+    switch: s_left_orbit
+
+  left_sling_shot:
+    switch: s_left_slingshot
+  right_sling_shot:
+    switch: s_right_slingshot
+  
+  left_deadend_shot: 
+   switch: s_left_deadend
+  #pops
+  left_pop:
+    switch: s_pop_left
+  right_pop:
+    switch: s_pop_right
+  center_pop:
+    switch: s_pop_center
+  drop_target:
+    switch: s_droptarget_down
+
+  drop_target_lock:
+    switch: s_droptarget_lock
+  center_spinner_target:
+    switch: #s_center_spinner
+
+sequence_shots: 
+  right_orbit:
+    switch_sequence: s_right_orbit, s_left_orbit
+    sequence_timeout: 3s
+
 
 slide_player:
   player_added:
@@ -148,9 +185,20 @@ slides:
         text: PLAYER (num) ADDED
         #style: dmd_med
 
+accruals:
+  qualify_main_mode:
+    events: 
+      - left_ramp_shot_hit
+      - right_ramp_shot_hit
+    events_when_complete:
+      - carousel_qualified
+    disable_events: 
+    enable_events:
+
+
 counters:
   warp_qualify_counter:
-    count_events: s_3bank_active
+    count_events: s_snikt_active
     starting_count: 0
     count_interval: 1
     direction: up

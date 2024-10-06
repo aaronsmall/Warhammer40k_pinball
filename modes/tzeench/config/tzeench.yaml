@@ -1,1 +1,6 @@
 #config_version=6
+
+mode:
+  start_events: carousel_tzeench_selected
+  stop_events:
+  priority: 200
