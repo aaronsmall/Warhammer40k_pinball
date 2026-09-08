@@ -30,7 +30,7 @@ timers:
 
 shots:
   tzeench_center_ramp_shot:
-    switch: s_18
+    switch: s_23
     profile: tzeench_roaming_profile
     show_tokens:
       led: l_center_ramp_arrow

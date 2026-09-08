@@ -1,5 +1,9 @@
 #show_version=6
 ##! show: attract_light_show
+- duration: 30
+  shows: 
+        gi_test:          
+            speed: 1
 - duration: 10
   shows: 
         trace_stay_on:          

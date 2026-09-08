@@ -3,5 +3,6 @@
 drop_targets:
   droptarget_lock:
     switch: s_droptarget_down
+    knockdown_coil: c_droptarget_knockdown
     reset_coil: c_droptarget_reset
     reset_events: ball_starting,  reset_necron_drop, machine_reset_phase_3

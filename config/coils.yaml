@@ -36,7 +36,9 @@ coils:
 
   c_dc_dreadnought_gun:
     number: 32082-6
-    default_pulse_ms: 17
+    #default_pulse_ms: 17
+    allow_enable: true
+    default_hold_power: .5
    ##DC Motor gattling gun
   c_uppost:
     number: 32082-5
@@ -51,7 +53,7 @@ coils:
   c_droptarget_reset:
     number: 32082-4
     default_pulse_ms: 18
-  c_droptarget_down:
+  c_droptarget_knockdown:
     number: 32082-7
   c_dreadnought_lock:
     number: io0804-2

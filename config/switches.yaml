@@ -47,7 +47,7 @@ switches:
     type: "NC"
   s_scoop_nurgle_target:
     number: 3208-17
-  s_18:
+  s_droptarget_down:
     number: 3208-18
   s_light_mystery: 
     number: 3208-19
@@ -57,7 +57,7 @@ switches:
     number: 3208-21
   s_light_lock:
     number: 3208-22
-  s_droptarget_down:
+  s_23:
     number: 3208-23
   s_24:
     number: 3208-24

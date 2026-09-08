@@ -50,14 +50,12 @@ ball_holds:
 
 show_player: 
     
-
-
    spinner_center_spinner_hit:
         spinner_show:
             show_tokens: 
                 led: l_innerloop_flasher
-                color: orange
-            speed: 15
+                color: red
+            speed: 20
             loops: 0
    spinner_right_spinner_hit:
         spinner_show:
@@ -583,8 +581,8 @@ widget_player:
 coil_player: 
     engage_gattling_cannon: 
         c_dc_dreadnought_gun:
-            action: pulse 
-            hold_power: .5
+            action: enable 
+            #hold_power: .5
         
     disable_gattling_cannon:
         c_dc_dreadnought_gun:

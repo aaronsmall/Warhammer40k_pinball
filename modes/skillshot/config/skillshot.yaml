@@ -326,7 +326,7 @@ event_player:
 
     
 coil_player: 
-    enable_superskillshot_lights: c_droptarget_down
+    enable_superskillshot_lights: c_droptarget_knockdown
     reset_superskillshot_droptarget: c_droptarget_reset
         
                         

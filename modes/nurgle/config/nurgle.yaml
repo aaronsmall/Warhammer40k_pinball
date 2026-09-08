@@ -65,7 +65,7 @@ shots:
              led: l_nurgle2
              color: lime
     nurgle_bell3:
-        switch: s_18
+        switch: s_23
         profile: nurgle_major_shot_profile
         show_tokens:
              led: l_nurgle3
