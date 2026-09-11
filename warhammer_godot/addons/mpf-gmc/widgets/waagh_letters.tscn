@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk23085woc6o3"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/widgets/waagh_letters.gd" id="1_waagh"]
+[ext_resource type="Theme" uid="uid://c5x41h6sfr2a6" path="res://addons/mpf-gmc/body_md.tres" id="2_theme"]
+
+[node name="WaaghLetters" type="Control"]
+layout_mode = 3
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -620.0
+offset_top = -60.0
+offset_bottom = 60.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.975784, 1.01435)
+script = ExtResource("1_waagh")
+
+[node name="Letters" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="W" type="Label" parent="Letters"]
+modulate = Color(1, 1, 1, 0.2)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 78
+text = "W"
+
+[node name="A1" type="Label" parent="Letters"]
+modulate = Color(1, 1, 1, 0.2)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 78
+text = "A"
+
+[node name="A2" type="Label" parent="Letters"]
+modulate = Color(1, 1, 1, 0.2)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 78
+text = "A"
+
+[node name="G" type="Label" parent="Letters"]
+modulate = Color(1, 1, 1, 0.2)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 78
+text = "G"
+
+[node name="H" type="Label" parent="Letters"]
+modulate = Color(1, 1, 1, 0.2)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 78
+text = "H"

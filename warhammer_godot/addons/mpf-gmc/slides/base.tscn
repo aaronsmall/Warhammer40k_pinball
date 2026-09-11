@@ -1,30 +1,43 @@
 [gd_scene load_steps=5 format=3 uid="uid://bwbqg1bdq2vbl"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ifiep"]
-[ext_resource type="Texture2D" uid="uid://dkp57m6amnmka" path="res://addons/mpf-gmc/images/Warhammer Translite.png" id="2_l8le3"]
+[ext_resource type="Texture2D" uid="uid://dnhn62e7esmpr" path="res://addons/mpf-gmc/images/Warhammer-Logo.png" id="2_av2di"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_4w4lw"]
 [ext_resource type="Theme" uid="uid://c5x41h6sfr2a6" path="res://addons/mpf-gmc/body_md.tres" id="4_c4bpu"]
 
 [node name="base" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 script = ExtResource("1_ifiep")
 mask_from_active = null
 
-[node name="background" type="Sprite2D" parent="."]
-position = Vector2(960.5, 540.5)
-scale = Vector2(0.542196, 0.403086)
-texture = ExtResource("2_l8le3")
+[node name="ColorRect5" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 10.078
+anchor_bottom = 2.703
+offset_right = -17429.8
+offset_bottom = -1839.24
+color = Color(0.74978, 0.74978, 0.74978, 1)
 
 [node name="active score" type="Label" parent="."]
-layout_mode = 0
-offset_left = 442.0
-offset_top = 424.0
-offset_right = 1553.0
-offset_bottom = 589.0
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -82.5
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_y = 20
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 20
 theme_override_font_sizes/font_size = 120
+text = "100,000,000,000"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_4w4lw")
@@ -32,77 +45,63 @@ variable_name = "score"
 comma_separate = true
 min_digits = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 14.0
-offset_top = 5.0
-offset_right = 868.0
-offset_bottom = 142.0
-
-[node name="player" type="Label" parent="HBoxContainer"]
-layout_mode = 2
-theme = ExtResource("4_c4bpu")
-text = "Player 1
-"
-script = ExtResource("3_4w4lw")
-variable_name = "number"
-template_string = "Player %s "
-min_players = 2
-
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 2
 anchor_right = 10.078
 anchor_bottom = 2.703
 offset_left = 2.0
 offset_top = 965.0
-offset_right = -312.12
-offset_bottom = 941.88
+offset_right = -19267.8
+offset_bottom = -1869.24
 scale = Vector2(5.44, 1.32)
-color = Color(0, 0, 0, 1)
+color = Color(0.270222, 0.270222, 0.270222, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 layout_mode = 2
 anchor_right = 10.078
 anchor_bottom = 2.703
-offset_left = 1505.0
+offset_left = 1483.0
 offset_top = 965.0
-offset_right = 1177.88
-offset_bottom = 941.88
+offset_right = -17786.8
+offset_bottom = -1869.24
 scale = Vector2(5.44, 1.32)
-color = Color(0, 0, 0, 1)
+color = Color(0.270588, 0.270588, 0.270588, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="."]
-layout_mode = 2
+layout_mode = 1
+anchors_preset = -1
 anchor_right = 10.078
 anchor_bottom = 2.703
-offset_left = 1016.0
+offset_left = 997.0
 offset_top = 965.0
-offset_right = 688.88
-offset_bottom = 941.88
+offset_right = -18272.8
+offset_bottom = -1869.24
 scale = Vector2(5.44, 1.32)
-color = Color(0, 0, 0, 1)
+color = Color(0.270588, 0.270588, 0.270588, 1)
 
 [node name="ColorRect4" type="ColorRect" parent="."]
-layout_mode = 2
-anchor_right = 10.078
-anchor_bottom = 2.703
-offset_left = 545.0
-offset_top = 962.0
-offset_right = 217.88
-offset_bottom = 938.88
+layout_mode = 1
+offset_left = 492.0
+offset_top = 965.0
+offset_right = 572.0
+offset_bottom = 1050.0
 scale = Vector2(5.44, 1.32)
-color = Color(0, 0, 0, 1)
+color = Color(0.270588, 0.270588, 0.270588, 1)
 
 [node name="Player 1 score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 6.0
-offset_top = 971.0
-offset_right = 332.0
-offset_bottom = 1046.0
+offset_left = -20.0
+offset_top = 970.0
+offset_right = 311.0
+offset_bottom = 1044.0
 scale = Vector2(1.43693, 1.34795)
-theme_override_font_sizes/font_size = 50
-text = "1,000,000,000
-"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(7.31587e-06, 0.877747, 0.981933, 1)
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 25
+theme_override_font_sizes/font_size = 42
+text = "1,000,000,000"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_4w4lw")
@@ -113,83 +112,138 @@ min_digits = 2
 
 [node name="Player 2 score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 14.6216
-offset_top = 2279.86
-offset_right = 340.622
-offset_bottom = 2354.86
+offset_left = 472.0
+offset_top = 970.0
+offset_right = 798.0
+offset_bottom = 1045.0
 scale = Vector2(1.43693, 1.34795)
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(7.31587e-06, 0.877747, 0.981933, 1)
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 25
+theme_override_font_sizes/font_size = 42
 text = "1,000,000,000
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_4w4lw")
-variable_type = 4
+variable_type = 5
 variable_name = "score"
 comma_separate = true
 min_digits = 2
+min_players = 2
 
 [node name="Player 3 score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 23.2432
-offset_top = 3588.72
-offset_right = 349.243
-offset_bottom = 3663.72
+offset_left = 984.0
+offset_top = 969.0
+offset_right = 1310.0
+offset_bottom = 1044.0
 scale = Vector2(1.43693, 1.34795)
-theme_override_font_sizes/font_size = 50
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(7.31587e-06, 0.877747, 0.981933, 1)
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 25
+theme_override_font_sizes/font_size = 42
 text = "1,000,000,000
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_4w4lw")
-variable_type = 4
+variable_type = 6
 variable_name = "score"
 comma_separate = true
 min_digits = 2
+min_players = 3
 
 [node name="Player 4 score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 31.8647
-offset_top = 4897.58
-offset_right = 357.865
-offset_bottom = 4972.58
-scale = Vector2(1.43693, 1.34795)
-theme_override_font_sizes/font_size = 50
+offset_left = 1491.0
+offset_top = 967.0
+offset_right = 1784.0
+offset_bottom = 1050.0
+scale = Vector2(1.43938, 1.35193)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(7.31587e-06, 0.877747, 0.981933, 1)
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 25
+theme_override_font_sizes/font_size = 42
 text = "1,000,000,000
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_4w4lw")
-variable_type = 4
+variable_type = 7
 variable_name = "score"
 comma_separate = true
 min_digits = 2
+min_players = 4
 
 [node name="MPFVariable" type="Label" parent="."]
-layout_mode = 0
-offset_left = 823.0
-offset_top = 17.9999
-offset_right = 1096.0
-offset_bottom = 92.9999
+layout_mode = 1
+offset_top = 73.0
+offset_right = 308.0
+offset_bottom = 130.0
 scale = Vector2(1.43693, 1.34795)
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 41
 text = "Bonus : 2X 
 "
-horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_4w4lw")
 variable_name = "bonus_multiplier"
-template_string = "Bonus : %sX"
+template_string = "BONUS : %sX"
 
 [node name="ball" type="Label" parent="."]
 layout_mode = 2
-offset_left = 1641.0
-offset_top = -2.0
-offset_right = 1904.0
-offset_bottom = 135.0
+offset_left = 1645.0
+offset_top = -3.0
+offset_right = 1908.0
+offset_bottom = 134.0
 theme = ExtResource("4_c4bpu")
 theme_override_font_sizes/font_size = 0
 text = "Ball 1"
 script = ExtResource("3_4w4lw")
 variable_name = "ball"
 template_string = "Ball %s"
+
+[node name="player" type="Label" parent="."]
+layout_mode = 2
+offset_left = 1053.0
+offset_top = 2.0
+offset_right = 1546.0
+offset_bottom = 139.0
+scale = Vector2(0.997939, 0.952303)
+theme = ExtResource("4_c4bpu")
+text = "Player %s "
+script = ExtResource("3_4w4lw")
+variable_name = "number"
+template_string = "Player %s "
+min_players = 1
+max_players = 4
+
+[node name="ball2" type="Label" parent="."]
+layout_mode = 1
+offset_right = 579.0
+offset_bottom = 72.0
+theme = ExtResource("4_c4bpu")
+theme_override_font_sizes/font_size = 50
+text = "RANK: Space Marine"
+vertical_alignment = 1
+script = ExtResource("3_4w4lw")
+variable_name = "rank"
+template_string = "RANK: %s"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -600.5
+offset_right = 600.5
+offset_bottom = 663.0
+grow_horizontal = 2
+texture = ExtResource("2_av2di")
+expand_mode = 1

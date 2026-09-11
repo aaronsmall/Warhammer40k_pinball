@@ -4,7 +4,7 @@
 mode:
   #this mode starts when the ball starts
   start_events: skill_shot_failed, skill_shot_success
-  stop_events: rewardbank_mode_stop
+  stop_events: rank_up_mode_stop
   priority: 200
 
 shots:
@@ -12,7 +12,7 @@ shots:
     switch: s_light_lock
     profile: rewardbank_generic_flash
     disable_events: start_group_level2
-    enable_events: mode_weapons_bank_will_start
+    enable_events: mode_rank_up_will_start
     start_enabled: true
     show_tokens:
       led: l_lightlock
@@ -21,7 +21,7 @@ shots:
     switch: s_light_spinners
     profile: rewardbank_generic_flash
     disable_events: start_group_level2
-    enable_events: mode_weapons_bank_will_start
+    enable_events: mode_rank_up_will_start
     start_enabled: true
     show_tokens:
       led: l_light_spinners
@@ -30,7 +30,7 @@ shots:
     switch: s_bonus_x
     profile: rewardbank_generic_flash
     disable_events: start_group_level2
-    enable_events: mode_weapons_bank_will_start
+    enable_events: mode_rank_up_will_start
     start_enabled: true
     show_tokens:
       led: l_bonusx
@@ -39,7 +39,7 @@ shots:
     switch: s_light_mystery
     profile: rewardbank_generic_flash
     disable_events: start_group_level2
-    enable_events: mode_weapons_bank_will_start
+    enable_events: mode_rank_up_will_start
     start_enabled: true
     show_tokens:
       led: l_light_mystery
@@ -48,7 +48,7 @@ shots:
   rewardbank1_level2:
     switch: s_light_lock
     profile: rewardbank_generic_flash
-    disable_events: start_group_level3,  ,mode_weapons_bank_will_start
+    disable_events: start_group_level3,  ,mode_rank_up_will_start
     enable_events: start_group_level2
     show_tokens:
       led: l_lightlock
@@ -57,7 +57,7 @@ shots:
     switch: s_light_spinners
     profile: rewardbank_generic_flash
     disable_events: start_group_level3
-    enable_events: start_group_level2, mode_weapons_bank_will_start
+    enable_events: start_group_level2, mode_rank_up_will_start
     show_tokens:
       led: l_light_spinners
       color: green
@@ -65,7 +65,7 @@ shots:
     switch: s_bonus_x
     profile: rewardbank_generic_flash
     disable_events: start_group_level3
-    enable_events: start_group_level2, mode_weapons_bank_will_start
+    enable_events: start_group_level2, mode_rank_up_will_start
     show_tokens:
       led: l_bonusx
       color: green
@@ -73,7 +73,7 @@ shots:
     switch: s_light_mystery
     profile: rewardbank_generic_flash
     disable_events: start_group_level3
-    enable_events: start_group_level2, mode_weapons_bank_will_start
+    enable_events: start_group_level2, mode_rank_up_will_start
     show_tokens:
       led: l_light_mystery
       color: green
@@ -81,7 +81,7 @@ shots:
   rewardbank1_level3:
     switch: s_light_lock
     profile: rewardbank_generic_flash
-    disable_events: start_group_level4,  ,mode_weapons_bank_will_start
+    disable_events: start_group_level4,  ,mode_rank_up_will_start
     enable_events: start_group_level3
     show_tokens:
       led: l_lightlock
@@ -90,7 +90,7 @@ shots:
     switch: s_light_spinners
     profile: rewardbank_generic_flash
     disable_events: start_group_level4
-    enable_events: start_group_level3, mode_weapons_bank_will_start
+    enable_events: start_group_level3, mode_rank_up_will_start
     show_tokens:
       led: l_light_spinners
       color: cyan
@@ -98,7 +98,7 @@ shots:
     switch: s_bonus_x
     profile: rewardbank_generic_flash
     disable_events: start_group_level4
-    enable_events: start_group_level3, mode_weapons_bank_will_start
+    enable_events: start_group_level3, mode_rank_up_will_start
     show_tokens:
       led: l_bonusx
       color: cyan
@@ -106,7 +106,7 @@ shots:
     switch: s_light_mystery
     profile: rewardbank_generic_flash
     disable_events: start_group_level4
-    enable_events: start_group_level3, mode_weapons_bank_will_start
+    enable_events: start_group_level3, mode_rank_up_will_start
     show_tokens:
       led: l_light_mystery
       color: cyan
@@ -114,7 +114,7 @@ shots:
   rewardbank1_level4:
     switch: s_light_lock
     profile: rewardbank_generic_flash
-    disable_events: start_group_level5  ,mode_weapons_bank_will_start
+    disable_events: start_group_level5  ,mode_rank_up_will_start
     enable_events: start_group_level4
     show_tokens:
       led: l_lightlock
@@ -122,7 +122,7 @@ shots:
   rewardbank2_level4:
     switch: s_light_spinners
     profile: rewardbank_generic_flash
-    disable_events: start_group_level5, mode_weapons_bank_will_start
+    disable_events: start_group_level5, mode_rank_up_will_start
     enable_events: start_group_level4
     show_tokens:
       led: l_light_spinners
@@ -131,7 +131,7 @@ shots:
   rewardbank3_level4:
     switch: s_bonus_x
     profile: rewardbank_generic_flash
-    disable_events: start_group_level5, mode_weapons_bank_will_start
+    disable_events: start_group_level5, mode_rank_up_will_start
     enable_events: start_group_level4
     show_tokens:
       led: l_bonusx
@@ -139,7 +139,7 @@ shots:
   rewardbank4_level4:
     switch: s_light_mystery
     profile: rewardbank_generic_flash
-    disable_events: start_group_level5, mode_weapons_bank_will_start
+    disable_events: start_group_level5, mode_rank_up_will_start
     enable_events: start_group_level4
     show_tokens:
       led: l_light_mystery
@@ -148,7 +148,7 @@ shots:
   rewardbank1_level5:
     switch: s_light_lock
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level5
     show_tokens:
       led: l_lightlock
@@ -156,7 +156,7 @@ shots:
   rewardbank2_level5:
     switch: s_light_spinners
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level5
     show_tokens:
       led: l_light_spinners
@@ -164,7 +164,7 @@ shots:
   rewardbank3_level5:
     switch: s_bonus_x
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level5
     show_tokens:
       led: l_bonusx
@@ -172,7 +172,7 @@ shots:
   rewardbank4_level5:
     switch: s_light_mystery
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level5
     show_tokens:
       led: l_light_mystery
@@ -181,7 +181,7 @@ shots:
   rewardbank1_level6:
     switch: s_light_lock
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level6
     show_tokens:
       led: l_lightlock
@@ -189,7 +189,7 @@ shots:
   rewardbank2_level6:
     switch: s_light_spinners
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level6
     show_tokens:
       led: l_light_spinners
@@ -197,7 +197,7 @@ shots:
   rewardbank3_level6:
     switch: s_bonus_x
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level6
     show_tokens:
       led: l_bonusx
@@ -205,7 +205,7 @@ shots:
   rewardbank4_level6:
     switch: s_light_mystery
     profile: rewardbank_generic_flash
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level6
     show_tokens:
       led: l_light_mystery
@@ -219,6 +219,16 @@ shots:
 #level 5 - purple
 #level 6 - red
 
+#Reward Rank Levels
+#level 0 - Recruit
+#level 1 - Neophyte 
+#level 2 - Battle Brother
+#level 3 - Sergeant
+#level 4 - Lieutenant
+#level 5 - Captain
+#level 6 - Chapter Master
+
+
 shot_groups:
   reward_group_level1:
     shots: rewardbank1_level1, rewardbank2_level1, rewardbank3_level1, rewardbank4_level1
@@ -229,28 +239,28 @@ shot_groups:
     #rotate_events: timer_rewardbank_rotation_tick
   reward_group_level2:
     shots: rewardbank1_level2, rewardbank2_level2, rewardbank3_level2, rewardbank4_level2
-    disable_events: mode_weapons_bank_will_start, start_group_level3
+    disable_events: mode_rank_up_will_start, start_group_level3
     enable_events: start_group_level2
     reset_events: ball_ended, mode_skillshot_stopped
     #reset_events: reward_bank_group, start_group_level2
   reward_group_level3:
     shots: rewardbank1_level3, rewardbank2_level3, rewardbank3_level3, rewardbank4_level3
-    disable_events: mode_weapons_bank_will_start, start_group_level4
+    disable_events: mode_rank_up_will_start, start_group_level4
     enable_events: start_group_level3
     reset_events: ball_ended, mode_skillshot_stopped
   reward_group_level4:
     shots: rewardbank1_level4, rewardbank2_level4, rewardbank3_level4, rewardbank4_level4
-    disable_events: mode_weapons_bank_will_start, start_group_level5
+    disable_events: mode_rank_up_will_start, start_group_level5
     enable_events: start_group_level4
     reset_events: ball_ended, mode_skillshot_stopped
   reward_group_level5:
     shots: rewardbank1_level5, rewardbank2_level5, rewardbank3_level5, rewardbank4_level5
-    disable_events: mode_weapons_bank_will_start, start_group_level6
+    disable_events: mode_rank_up_will_start, start_group_level6
     reset_events: ball_ended, mode_skillshot_stopped
     enable_events: start_group_level5
   reward_group_level6:
     shots: rewardbank1_level6, rewardbank2_level6, rewardbank3_level6, rewardbank4_level6
-    disable_events: mode_weapons_bank_will_start
+    disable_events: mode_rank_up_will_start
     enable_events: start_group_level6
     reset_events: ball_ended, mode_skillshot_stopped
     restart_events: reward_group_level6_hit_complete
@@ -263,25 +273,55 @@ shot_profiles:
               priority: 1
             - name: hit
               show: "solid_color"
+#Reward Rank Levels
+#level 0 - Recruit
+#level 1 - Neophyte 
+#level 2 - Space Marine
+#level 3 - Sergeant
+#level 4 - Lieutenant
+#level 5 - Captain
+#level 6 - Chapter Master
 
 variable_player:
   inlane_lane_group_hit_complete:
     score: 10000
     bonus_multiplier: 1
+  reward_group_level1_hit_complete:
+    rank: 
+      string: "Neophyte"
+  reward_group_level2_hit_complete:
+    rank: 
+      string: "Space Marine"
+  reward_group_level3_hit_complete:
+    rank: 
+      string: "Sergeant"
+  reward_group_level4_hit_complete:
+    rank: 
+      string: "Lieutenant"
+  reward_group_level5_hit_complete:
+    rank: 
+      string: "Captain"
+  reward_group_level6_hit_complete:
+    rank: 
+      string: "Chapter Master"
 
 event_player:
   reward_group_level1_hit_complete:
     - reset_weaponsbank_lights
     - start_group_level2
+
   reward_group_level2_hit_complete:
     - reset_weaponsbank_lights
     - start_group_level3
+
   reward_group_level3_hit_complete:
     - reset_weaponsbank_lights
     - start_group_level4
+
   reward_group_level4_hit_complete:
     - reset_weaponsbank_lights
     - start_group_level5
+
   reward_group_level5_hit_complete:
     - reset_weaponsbank_lights
     - start_group_level6
@@ -291,7 +331,7 @@ event_player:
     
 show_player: 
   reset_weaponsbank_lights:
-    light_weapons_bank:
+    light_rank_up:
       priority: 10
       show_tokens:
         shot_led: weapon_bank
@@ -299,8 +339,8 @@ show_player:
 
 
 sound_player: 
-    reward_group_level1_hit_complete|1s:
-        ShotValuesIncreased:
+    reward_group_level1_hit_complete:
+        ShotValuesIncreased|1s:
             action: play
             volume: 1
             ducking:
@@ -309,4 +349,67 @@ sound_player:
                 attenuation: 0
                 release_point: 2.0 sec
                 release: 1.0 sec
-        
+        neophyte|3s:
+            action: play
+            volume: 1
+            ducking:
+                bus: voice
+                attack: 0.3 sec
+                attenuation: 0
+                release_point: 2.0 sec
+                release: 1.0 sec
+      reward_group_level2_hit_complete:
+        SpaceMarine|1s:
+            action: play
+            volume: 1
+            ducking:
+                bus: voice
+                attack: 0.3 sec
+                attenuation: 0
+                release_point: 2.0 sec
+                release: 1.0 sec
+       reward_group_level3_hit_complete:
+        sergent|1s:
+            action: play
+            volume: 1
+            ducking:
+                bus: voice
+                attack: 0.3 sec
+                attenuation: 0
+                release_point: 2.0 sec
+                release: 1.0 sec
+       reward_group_level4_hit_complete:
+        lieutenant|1s:
+            action: play
+            volume: 1
+            ducking:
+                bus: voice
+                attack: 0.3 sec
+                attenuation: 0
+                release_point: 2.0 sec
+                release: 1.0 sec
+                                                     
+       reward_group_level5_hit_complete:
+        Captain|1s:
+            action: play
+            volume: 1
+            ducking:
+                bus: voice
+                attack: 0.3 sec
+                attenuation: 0
+                release_point: 2.0 sec
+                release: 1.0 sec
+                                                     
+       reward_group_level6_hit_complete:
+        ChapterMaster|1s:
+            action: play
+            volume: 1
+            ducking:
+                bus: voice
+                attack: 0.3 sec
+                attenuation: 0
+                release_point: 2.0 sec
+                release: 1.0 sec
+                                                     
+
+

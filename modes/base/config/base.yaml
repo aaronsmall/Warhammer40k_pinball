@@ -574,6 +574,30 @@ event_player:
 
 
 widget_player: 
+  mode_base_started:
+    waagh_letters:
+      key: play
+      priority: 10
+      x: 0
+      y: 0
+  waagh_qualify_shot_w_complete:
+    waagh_letters:
+      key: W
+  waagh_qualify_shot_a_complete:
+    waagh_letters:
+      key: A
+  waagh_qualify_shot_a2_complete:
+    waagh_letters:
+      key: A2
+  waagh_qualify_shot_g_complete:
+    waagh_letters:
+      key: G
+  waagh_qualify_shot_h_complete:
+    waagh_letters:
+      key: H
+  reset_waagh_lights:
+    waagh_letters:
+      key: update
   imperial_fists_qualified:
     imperialFistsIcon
   
