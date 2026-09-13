@@ -3,7 +3,7 @@
 
 mode:
   #this mode starts when the ball starts
-  start_events: skill_shot_failed, skill_shot_success
+  start_events: mode_skillshot_stopped
   stop_events: rank_up_mode_stop
   priority: 200
 
@@ -288,22 +288,29 @@ variable_player:
     bonus_multiplier: 1
   reward_group_level1_hit_complete:
     rank: 
+      action: set
       string: "Neophyte"
   reward_group_level2_hit_complete:
     rank: 
+      action: set
       string: "Space Marine"
   reward_group_level3_hit_complete:
     rank: 
+      action: set
       string: "Sergeant"
   reward_group_level4_hit_complete:
     rank: 
+      action: set
       string: "Lieutenant"
   reward_group_level5_hit_complete:
     rank: 
+      action: set
       string: "Captain"
   reward_group_level6_hit_complete:
     rank: 
+      action: set
       string: "Chapter Master"
+
 
 event_player:
   reward_group_level1_hit_complete:
@@ -328,8 +335,57 @@ event_player:
   reward_group_level6_hit_complete:
     - reset_weaponsbank_lights
   
+    #level 1 - yellow
+#level 2 - green
+#level 3 - cyan
+#level 4 - blue
+#level 5 - purple
+#level 6 - red
     
 show_player: 
+  reward_group_level1_hit_complete:
+    generic_triple_flash:
+      action: play
+      priority: 10
+      show_tokens:
+        led: GI
+        color: yellow
+  reward_group_level2_hit_complete:
+    generic_triple_flash:
+      action: play
+      priority: 10
+      show_tokens:
+        led: GI
+        color: green
+  reward_group_level3_hit_complete:
+    generic_triple_flash:
+      action: play
+      priority: 10
+      show_tokens:
+        led: GI
+        color: cyan
+  reward_group_level4_hit_complete:
+    generic_triple_flash:
+      action: play
+      priority: 10
+      show_tokens:
+        led: GI
+        color: blue
+  reward_group_level5_hit_complete:
+    generic_triple_flash:
+      action: play
+      priority: 10
+      show_tokens:
+        led: GI
+        color: purple
+  reward_group_level6_hit_complete:
+    generic_triple_flash:
+      action: play
+      priority: 10
+      show_tokens:
+        led: GI
+        color: red
+  
   reset_weaponsbank_lights:
     light_rank_up:
       priority: 10
@@ -339,8 +395,37 @@ show_player:
 
 
 sound_player: 
-    reward_group_level1_hit_complete:
-        ShotValuesIncreased|1s:
+  reward_group_level1_hit_complete:
+      # ShotValuesIncreased:
+      #     action: play
+      #     volume: 1
+      #     ducking:
+      #         bus: voice
+      #         attack: 0.3 sec
+      #         attenuation: 0
+      #         release_point: 2.0 sec
+      #         release: 1.0 sec
+      neophyte:
+          action: play
+          volume: 1
+          ducking:
+              bus: voice
+              attack: 0.3 sec
+              attenuation: 0
+              release_point: 2.0 sec
+              release: 1.0 sec
+  reward_group_level2_hit_complete:
+      SpaceMarine:
+          action: play
+          volume: 1
+          ducking:
+            bus: voice
+            attack: 0.3 sec
+            attenuation: 0
+            release_point: 2.0 sec
+            release: 1.0 sec
+  reward_group_level3_hit_complete:
+        sergent:
             action: play
             volume: 1
             ducking:
@@ -349,48 +434,8 @@ sound_player:
                 attenuation: 0
                 release_point: 2.0 sec
                 release: 1.0 sec
-        neophyte|3s:
-            action: play
-            volume: 1
-            ducking:
-                bus: voice
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-      reward_group_level2_hit_complete:
-        SpaceMarine|1s:
-            action: play
-            volume: 1
-            ducking:
-                bus: voice
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-       reward_group_level3_hit_complete:
-        sergent|1s:
-            action: play
-            volume: 1
-            ducking:
-                bus: voice
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-       reward_group_level4_hit_complete:
-        lieutenant|1s:
-            action: play
-            volume: 1
-            ducking:
-                bus: voice
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-                                                     
-       reward_group_level5_hit_complete:
-        Captain|1s:
+  reward_group_level4_hit_complete:
+        lieutenant:
             action: play
             volume: 1
             ducking:
@@ -400,16 +445,28 @@ sound_player:
                 release_point: 2.0 sec
                 release: 1.0 sec
                                                      
-       reward_group_level6_hit_complete:
-        ChapterMaster|1s:
-            action: play
-            volume: 1
-            ducking:
-                bus: voice
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-                                                     
-
-
+  reward_group_level5_hit_complete:
+   Captain:
+       action: play
+       volume: 1
+       ducking:
+           bus: voice
+           attack: 0.3 sec
+           attenuation: 0
+           release_point: 2.0 sec
+           release: 1.0 sec
+                                                
+  reward_group_level6_hit_complete:
+   ChapterMaster:
+       action: play
+       volume: 1
+       ducking:
+           bus: voice
+           attack: 0.3 sec
+           attenuation: 0
+           release_point: 2.0 sec
+           release: 1.0 sec
+                                                
+  
+  
+  

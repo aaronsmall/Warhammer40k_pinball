@@ -5,15 +5,26 @@ config:
 
 mode:
   start_events: mission_select_necrons_selected
-  stop_events: timer_necrons_mode_timer_complete
+  stop_events: timer_necrons_complete
   priority: 200
   
 
 timers:
-    necrons_mode_timer: 
+    necrons: 
         start_value: 60 # seconds
         end_value: 0
         direction: down 
         tick_interval: 1s
         restart_on_complete: false
         start_running: true
+
+widget_player:
+    mode_necrons_started: 
+        necrons_mode_timer:
+            action: play
+    timer_necrons_complete:
+        necrons_mode_timer:
+            action: remove
+    mode_necrons_stopping:
+        necrons_mode_timer:
+            action: remove

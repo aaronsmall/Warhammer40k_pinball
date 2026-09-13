@@ -165,7 +165,7 @@ shot_profiles:
 
 timers:
   skill_shot_timeout:
-    start_value: 20
+    start_value: 10
     end_value: 0     # set the timeout of your skill shot here
     direction: down
     tick_interval: 1s

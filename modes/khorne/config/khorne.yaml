@@ -6,7 +6,7 @@ config:
 
 mode: 
   start_events: mission_select_khorne_selected
-  stop_events: timer_khorne_mode_timer_complete, end_khorne_mode
+  stop_events: timer_khorne_complete, end_khorne_mode
   priority: 200 
 
 #Khorne - The Blood God (Number 8):
@@ -30,7 +30,7 @@ counters:
 
 
 timers:
-    khorne_mode_timer: 
+    khorne: 
         start_value: current_player.mode_timer_value # seconds
         end_value: 0
         direction: down 
@@ -194,13 +194,13 @@ shot_groups:
 
 widget_player:
     mode_khorne_started: 
-        mode_timer:
+        khorne_mode_timer:
             action: play
-    timer_khorne_mode_timer_complete:
-        mode_timer:
+    timer_khorne_mode_timer_complete: 
+        khorne_mode_timer:
             action: remove
-    end_khorne_mode:
-        mode_timer:
+    mode_khorne_stopping:
+        khorne_mode_timer:
             action: remove
 
 variable_player:

@@ -22,7 +22,7 @@ player_vars:
     initial_value: 3
   bonus_multiplier: 
     initial_value: 2
-  playfield_multiplier_value: 
+  playfield_multiplier: 
     initial_value: 1
   bonus_total:
     initial_value: 1
@@ -85,8 +85,8 @@ player_vars:
     initial_value: 100000
   khorne_super_jackpot_value:
     initial_value: 10000000
-
-
+  skillshot_value:
+    initial_value: 50000
     #Reward Rank Levels
 #level 1 - Neophyte 
 #level 2 - Battle Brother

@@ -47,15 +47,27 @@
 
 mode:
   start_events: mission_select_tyranids_selected
-  stop_events: timer_tyranids_mode_timer_complete
+  stop_events: timer_tyranids_complete
   priority: 200
  
 
 timers:
-    tyranids_mode_timer: 
+    tyranids: 
         start_value: 60 # seconds
         end_value: 0
         direction: down 
         tick_interval: 1s
         restart_on_complete: false
         start_running: true
+
+
+widget_player:
+    mode_tyranids_started: 
+        tyranids_mode_timer:
+            action: play
+    timer_tyranids_complete:
+        tyranids_mode_timer:
+            action: remove
+    mode_tyranids_stopping:
+        tyranids_mode_timer:
+            action: remove

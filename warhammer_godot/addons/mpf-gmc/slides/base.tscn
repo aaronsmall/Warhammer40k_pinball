@@ -22,28 +22,18 @@ offset_right = -17429.8
 offset_bottom = -1839.24
 color = Color(0.74978, 0.74978, 0.74978, 1)
 
-[node name="active score" type="Label" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_top = -82.5
-offset_bottom = 82.5
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -600.5
+offset_top = 6.10352e-05
+offset_right = 600.5
+offset_bottom = 663.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/line_spacing = 0
-theme_override_constants/shadow_offset_y = 20
-theme_override_constants/outline_size = 20
-theme_override_constants/shadow_outline_size = 20
-theme_override_font_sizes/font_size = 120
-text = "100,000,000,000"
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("3_4w4lw")
-variable_name = "score"
-comma_separate = true
-min_digits = 2
+texture = ExtResource("2_av2di")
+expand_mode = 1
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 2
@@ -236,14 +226,26 @@ script = ExtResource("3_4w4lw")
 variable_name = "rank"
 template_string = "RANK: %s"
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="score" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -600.5
-offset_right = 600.5
-offset_bottom = 663.0
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
 grow_horizontal = 2
-texture = ExtResource("2_av2di")
-expand_mode = 1
+grow_vertical = 2
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 120
+text = "1,234,567"
+horizontal_alignment = 1
+script = ExtResource("3_4w4lw")
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

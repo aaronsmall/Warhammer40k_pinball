@@ -5,7 +5,7 @@ config:
 
 mode:
   start_events: mission_select_slannesh_selected
-  stop_events: timer_slannesh_mode_timer_complete, timer_slannesh_complete
+  stop_events: timer_slannesh_complete
   priority: 200
  
   # The Prince of Pleasure (Number 6)
@@ -21,6 +21,18 @@ timers:
         tick_interval: 1s
         restart_on_complete: false
         start_running: false
+
+widget_player:
+    mode_slannesh_started: 
+        slannesh_mode_timer:
+            action: play
+    timer_slannesh_complete:
+        slannesh_mode_timer:
+            action: remove
+    mode_slannesh_stopping:
+        slannesh_mode_timer:
+            action: remove
+
 
 counters: 
     center_slannesh_spinner:

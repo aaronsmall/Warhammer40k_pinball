@@ -8,11 +8,11 @@ config:
 
 mode:
   start_events: mission_select_tzeench_selected
-  stop_events: timer_tzeench_mode_timer_complete, 
+  stop_events: timer_tzeench_complete, 
   priority: 200
 
 timers:
-  tzeench_mode_timer:
+  tzeench:
     start_value: 60
     end_value: 0
     direction: down
@@ -27,6 +27,18 @@ timers:
     tick_interval: 1s
     restart_on_complete: true
     start_running: true
+
+
+widget_player:
+    mode_tzeench_started: 
+        tzeench_mode_timer:
+            action: play
+    timer_tzeench_complete:
+        tzeench_mode_timer:
+            action: remove
+    mode_tzeench_stopping:
+        tzeench_mode_timer:
+            action: remove
 
 shots:
   tzeench_center_ramp_shot:

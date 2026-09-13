@@ -5,7 +5,7 @@ config:
 
 mode:
   start_events: mission_select_nurgle_selected
-  stop_events: timer_khorne_mode_timer_complete, timer_nurgle_complete
+  stop_events:  timer_nurgle_complete
   priority: 200
 
  # The Plague Lord (Number 7): The number 7
@@ -36,6 +36,17 @@ timers:
               action: stop
             - event: nurgle_ricochet_enable_lit_hit
               action: restart
+
+widget_player:
+    mode_nurgle_started: 
+        nurgle_mode_timer:
+            action: play
+    timer_nurgle_complete:
+        nurgle_mode_timer:
+            action: remove
+    mode_nurgle_stopping:
+        nurgle_mode_timer:
+            action: remove
 
 
 sequence_shots: 
