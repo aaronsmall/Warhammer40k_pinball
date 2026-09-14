@@ -8,7 +8,8 @@ config:
 
 mode:
   #this mode starts when the ball starts
-  start_events: ball_started
+  start_events: ball_started, timer_tyranids_complete
+  stop_events: mission_select_tyranids_selected
   priority: 200
 
 # ball_holds:

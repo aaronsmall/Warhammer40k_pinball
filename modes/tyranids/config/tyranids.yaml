@@ -45,6 +45,8 @@
 
 # Sound Design: Organic, chittering FX layered with industrial synths. Think Aliens meets Doom Eternal.
 
+
+# starting this mode will actually disable the 5 bank as its going to become a target. 
 mode:
   start_events: mission_select_tyranids_selected
   stop_events: timer_tyranids_complete
@@ -59,6 +61,13 @@ timers:
         tick_interval: 1s
         restart_on_complete: false
         start_running: true
+    tryanid_shot_reset:
+        start_value: 30
+        end_value: 0
+        direction: down 
+        tick_interval: 1s
+        start_running: true
+        restart_on_complete: false 
 
 
 widget_player:
@@ -71,3 +80,63 @@ widget_player:
     mode_tyranids_stopping:
         tyranids_mode_timer:
             action: remove
+
+shots:
+    tyranid_bank1:
+        switch: s_xenos_x
+        profile: tyranids_major_shot_profile
+        show_tokens:
+            led: l_xenos_x
+            color: purple
+    tyranid_bank2:
+        switch: s_xenos_e
+        profile: tyranids_major_shot_profile
+        show_tokens:
+            led: l_xenos_e
+            color: purple
+    tyranid_bank3:
+        switch: s_xenos_n
+        profile: tyranids_major_shot_profile
+        show_tokens:
+            led: l_xenos_n
+            color: purple
+    tyranid_bank4:
+        switch: s_xenos_o
+        profile: tyranids_major_shot_profile
+        show_tokens:
+            led: l_xenos_o
+            color: purple
+    tyranid_bank5:
+        switch: s_xenos_s
+        profile: tyranids_major_shot_profile
+        show_tokens:
+            led: l_xenos_s
+            color: purple    
+
+
+shot_profiles:
+    tyranids_major_shot_profile:
+        states:
+            - name: lit
+              show: "generic_flash"
+            - name: hit
+              show: "off"
+        loop: false
+        speed: 3
+
+    tyranids_super_jackpot_profile:
+        states:
+            - name: lit
+              show: "generic_flash"
+            - name: collected
+              show: "on"
+        loop: false
+        speed: 3
+
+
+shot_groups: 
+    tyranid_bank: 
+        shots: tyranid_bank1,tyranid_bank2,tyranid_bank3,tyranid_bank4, tyranid_bank5
+        reset_events: 
+        enable_events:
+        disable_events: 
