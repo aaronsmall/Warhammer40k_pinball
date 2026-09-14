@@ -49,7 +49,6 @@ ball_holds:
 #         wait_for: play_scoop_flash_show_complete
 
 show_player: 
-    
    spinner_center_spinner_hit:
         spinner_show:
             show_tokens: 
@@ -113,7 +112,6 @@ show_player:
 #        color: red
 
 shots: 
-
   base_dreadnought_lock_qualifier_1:
     switch: s_nurgle_redcircle
     start_enabled: true

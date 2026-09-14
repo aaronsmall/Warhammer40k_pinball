@@ -222,7 +222,7 @@ lights:
     tags: Chain3, odd, first, 3-7
   l_jackpot:
     number: playfield-3-8
-    tags: Chain3, even, second, 3-8
+    tags: Chain3, even, second, 3-8, jackpot_arrow
   l_super_jackpot:
     number: playfield-3-9
     tags: Chain3, odd, third, 3-9

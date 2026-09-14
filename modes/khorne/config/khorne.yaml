@@ -12,7 +12,7 @@ mode:
 #Khorne - The Blood God (Number 8):
 
 counters: 
-    # Final-stage counter: any lit major-mode shot hit; when reaches 5, light Super Jackpot
+    # Final-stage counter: any lit major-mode shot hit; when reaches 8, light Super Jackpot
     khorne_final_stage_counter:
         count_events: 
             - khorne_center_ramp_shot_lit_hit
@@ -38,8 +38,16 @@ timers:
         restart_on_complete: false
         start_running: true
 
-shot_profiles:
+    khorne_shot_reset:
+        start_value: 15
+        end_value: 0
+        direction: down
+        tick_interval: 1s
+        restart_on_complete: true
+        start_running: true
 
+
+shot_profiles:
     khorne_major_shot_profile:
         states:
             - name: lit
@@ -63,14 +71,12 @@ shots:
         profile: khorne_major_shot_profile
         start_enabled: false
         reset_events:
-        hit_events: khorne_center_ramp_shot_hit
         show_tokens:
             led: l_center_ramp_arrow
             color: red
 
     khorne_left_loop_shot:
-        hit_events: 
-            - khorne_left_loop_shot_hit
+        hit_events: khorne_left_loop_sequence_hit
         profile: khorne_major_shot_profile
         start_enabled: false
         reset_events:
@@ -79,8 +85,7 @@ shots:
             color: red
 
     khorne_right_loop_shot:
-        hit_events: 
-            - khorne_right_loop_shot_hit
+        hit_events: khorne_right_loop_sequence_hit
         profile: khorne_major_shot_profile
         start_enabled: false
         reset_events:
@@ -93,7 +98,6 @@ shots:
         profile: khorne_major_shot_profile
         start_enabled: false
         reset_events:
-        hit_events: khorne_left_orbit_shot_hit
         show_tokens:
             led: l_left_orbit_arrow
             color: red
@@ -103,7 +107,6 @@ shots:
         profile: khorne_major_shot_profile
         start_enabled: false
         reset_events:
-        hit_events: khorne_right_orbit_shot_hit
         show_tokens:
             led: l_right_orbit_arrow
             color: red
@@ -114,13 +117,11 @@ shots:
         start_enabled: false
         reset_events:
         show_tokens:
-            led: l_jackpot_arrow
+            led: l_super_jackpot
             color: red
 
     khorne_ricochet_loop_shot:
-        hit_events: 
-            - khorne_ricochet_sequence_right_hit
-            - khorne_ricochet_loop_shot_hit
+        hit_events: khorne_ricochet_sequence_right_hit
         profile: khorne_major_shot_profile
         start_enabled: false
         reset_events:
@@ -133,7 +134,6 @@ shots:
         profile: khorne_major_shot_profile
         start_enabled: false
         reset_events:
-        hit_events: khorne_droptarget_shot_hit
         show_tokens: 
             led: l_solemnace_arrow
             color: red
@@ -142,8 +142,7 @@ shots:
         switch: s_scoop
         profile: khorne_major_shot_profile
         start_enabled: false
-        reset_events: khorne_scoop_shot_hit
-        hit_events: khorne_scoop_shot_hit
+        #reset_events: khorne_scoop_shot_hit
         show_tokens: 
             led: l_adeptus_mechanicius #replace this eventually with a proper arrow insert.
             color: red
@@ -152,39 +151,42 @@ shots:
 sequence_shots: 
   khorne_left_loop_sequence:
     switch_sequence: s_innerloop_left, s_innerloop_right
-  khorne_right_loops_sequence: 
+  khorne_right_loop_sequence: 
    switch_sequence: s_innerloop_right, s_innerloop_left
   khorne_ricochet_sequence_right:
     switch_sequence: s_snikt_target, s_innerloop_right, s_innerloop_left
     sequence_timeout: 2s
+
+
 #This will enable stages 1 -3 for the mode.
 shot_groups:
-
+#on start of stage one, enable all shots except for the Super Jackpot shot, which will be enabled after the stage counter is complete.
     khorne_stage_one_one:
-        shots: khorne_right_orbit_shot, khorne_left_orbit_shot
-        enable_events: mission_select_khorne_selected
-        reset_events: mission_select_khorne_selected
+        shots: khorne_right_orbit_shot, khorne_left_orbit_shot, khorne_scoop_shot, khorne_droptarget_shot, khorne_ricochet_loop_shot, khorne_center_ramp_shot, khorne_right_loop_shot, khorne_left_loop_shot
+        #enable_events: mission_select_khorne_selected
+        reset_events: timer_khorne_shot_reset_complete
+        restart_events: mode_khorne_started
         disable_events: khorne_stage_one_one_hit_complete, khorne_right_orbit_shot_hit_hit, khorne_left_orbit_shot_hit_hit #this will need to trigger after lightshow after stage one is hit
-    khorne_stage_one_two: 
-        shots: khorne_ricochet_loop_shot, khorne_center_ramp_shot, khorne_right_loop_shot, khorne_left_loop_shot, khorne_super_jackpot_shot
-        enable_events: khorne_stage_one_one_hit_complete, khorne_right_orbit_shot_hit_hit, khorne_left_orbit_shot_hit_hit #this will need to trigger after lightshow after stage one is hit
-        
-    khorne_stage_two_one:
-        shots: khorne_right_orbit_shot, khorne_left_orbit_shot
-        enable_events: khorne_stage_one_two_hit_complete
-        reset_events: 
-        disable_events: khorne_stage_one_two_hit_complete #this will need to trigger after lightshow after stage one is hit
-
-    khorne_stage_two_two:
-        shots: khorne_ricochet_loop_shot, khorne_center_ramp_shot, khorne_right_loop_shot, khorne_left_loop_shot
-        enable_events: khorne_stage_two_one_hit_complete #this will need to trigger after lightshow after stage one is hit
-
-
-    khorne_stage_three: #the final stage should be all shots are lit, hitting any five shots will light super JP, however hitting a lit shot will unlight it and light other unlit shots 
-    #meaning you can keep hitting shots indefinitely until you score the Super Jackpot or the timer expires. 
-        shots: khorne_center_ramp_shot, khorne_left_loop_shot, khorne_right_loop_shot, khorne_left_orbit_shot, khorne_right_orbit_shot, khorne_ricochet_loop_shot, khorne_droptarget_shot, khorne_scoop_shot
-        enable_events: khorne_stage_two_two_complete #this will need to trigger after lightshow after stage one is hit
-        reset_events: khorne_stage_two_two_complete
+#   khorne_stage_one_two: 
+#       shots: khorne_ricochet_loop_shot, khorne_center_ramp_shot, khorne_right_loop_shot, khorne_left_loop_shot, khorne_super_jackpot_shot
+#       enable_events: khorne_stage_one_one_hit_complete, khorne_right_orbit_shot_hit_hit, khorne_left_orbit_shot_hit_hit #this will need to trigger after lightshow after stage one is hit
+#       
+#   khorne_stage_two_one:
+#       shots: khorne_right_orbit_shot, khorne_left_orbit_shot
+#       enable_events: khorne_stage_one_two_hit_complete
+#       reset_events: 
+#       disable_events: khorne_stage_one_two_hit_complete #this will need to trigger after lightshow after stage one is hit
+#
+#   khorne_stage_two_two:
+#       shots: khorne_ricochet_loop_shot, khorne_center_ramp_shot, khorne_right_loop_shot, khorne_left_loop_shot
+#       enable_events: khorne_stage_two_one_hit_complete #this will need to trigger after lightshow after stage one is hit
+#
+#
+#   khorne_stage_three: #the final stage should be all shots are lit, hitting any five shots will light super JP, however hitting a lit shot will unlight it and light other unlit shots 
+#   #meaning you can keep hitting shots indefinitely until you score the Super Jackpot or the timer expires. 
+#       shots: khorne_center_ramp_shot, khorne_left_loop_shot, khorne_right_loop_shot, khorne_left_orbit_shot, khorne_right_orbit_shot, khorne_ricochet_loop_shot, khorne_droptarget_shot, khorne_scoop_shot
+#       enable_events: khorne_stage_two_two_complete #this will need to trigger after lightshow after stage one is hit
+#       reset_events: khorne_stage_two_two_complete
 
     # small group to allow enabling the Super Jackpot shot on final-stage counter completion
     khorne_super_jackpot_enable_group:
@@ -192,11 +194,12 @@ shot_groups:
         enable_events: khorne_final_stage_counter_complete
         #reset_events: khorne_super_jackpot_shot_hit
 
+
 widget_player:
     mode_khorne_started: 
         khorne_mode_timer:
             action: play
-    timer_khorne_mode_timer_complete: 
+    timer_khorne_complete: 
         khorne_mode_timer:
             action: remove
     mode_khorne_stopping:
@@ -208,62 +211,62 @@ variable_player:
     khorne_super_jackpot_collected:
         score: current_player.khorne_super_jackpot_value + current_player.khorne_mode_cashout_runs * current_player.playfield_multiplier
 
-# show_player:
-#     khorne_center_ramp_shot_lit_hit:
-#         generic_flash:
-#             show_tokens: 
-#                 led: GI
-#                 color: red
-#             speed: 2
-#             loops: 0 
-#     khorne_left_loop_shot_lit_hit:
-#         generic_flash:
-#             show_tokens: 
-#                 led: GI
-#                 color: red
-#             speed: 2
-#             loops: 0 
+show_player:
+    khorne_center_ramp_shot_lit_hit:
+        generic_flash:
+            show_tokens: 
+                led: GI
+                color: red
+            speed: 2
+            loops: 0 
+    khorne_left_loop_shot_lit_hit:
+        generic_flash:
+            show_tokens: 
+                led: GI
+                color: red
+            speed: 2
+            loops: 0 
 
-#     khorne_right_loop_shot_lit_hit:
-#         generic_flash: 
-#             show_tokens: 
-#                 led: GI
-#                 color: red 
-#             speed: 2
-#             loops: 0
-#     khorne_left_orbit_shot_lit_hit: 
-#         generic_flash:
-#             show_tokens:
-#                 led: GI
-#                 color: red
-#             speed: 2
-#             loops: 0 
-#     khorne_right_orbit_shot_lit_hit: 
-#         generic_flash:
-#             show_tokens:
-#                 led: GI
-#                 color: red
-#             speed: 2
-#             loops: 0 
-#     khorne_ricochet_loop_shot_lit_hit:
-#         generic_flash:
-#             show_tokens:
-#                 led: GI
-#                 color: red
-#             speed: 2
-#             loops: 0
-#     khorne_droptarget_shot_lit_hit:
-#         generic_flash:
-#             show_tokens:
-#                 led: GI
-#                 color: red
-#             speed: 2
-#             loops: 0 
-#     khorne_scoop_shot_hit:
-#         generic_flash:
-#             show_tokens:
-#                 led: GI
-#                 color: red
+    khorne_right_loop_shot_lit_hit:
+        generic_flash: 
+            show_tokens: 
+                led: GI
+                color: red 
+            speed: 2
+            loops: 0
+    khorne_left_orbit_shot_lit_hit: 
+        generic_flash:
+            show_tokens:
+                led: GI
+                color: red
+            speed: 2
+            loops: 0 
+    khorne_right_orbit_shot_lit_hit: 
+        generic_flash:
+            show_tokens:
+                led: GI
+                color: red
+            speed: 2
+            loops: 0 
+    khorne_ricochet_loop_shot_lit_hit:
+        generic_flash:
+            show_tokens:
+                led: GI
+                color: red
+            speed: 2
+            loops: 0
+    khorne_droptarget_shot_lit_hit:
+        generic_flash:
+            show_tokens:
+                led: GI
+                color: red
+            speed: 2
+            loops: 0 
+    khorne_scoop_shot_hit:
+        generic_flash:
+            show_tokens:
+                led: GI
+                color: red
         
 event_player:
 
@@ -294,3 +297,7 @@ event_player:
         - khorne_super_jackpot_collected
         - end_khorne_mode|3s
     
+
+ # sound_player:
+ #     khorne_super_jackpot_collected:
+ #         sound: khorne_super_jackpot_collected
