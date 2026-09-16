@@ -1,0 +1,14 @@
+#show_version=6
+- time: 0
+  lights:
+    (led): teal
+- time: "+.2"
+  lights:
+    (led): off
+- time: "+.2"
+  lights:
+    (led): teal
+- time: "+.2"
+  lights:
+    (led): off
+    duration: -1

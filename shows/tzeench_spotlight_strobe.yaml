@@ -1,0 +1,7 @@
+#show_version=6
+- time: 0
+  lights:
+    (led): white
+- time: "+.25"
+  lights:
+    (led): off

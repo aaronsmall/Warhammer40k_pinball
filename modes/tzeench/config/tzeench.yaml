@@ -1,14 +1,15 @@
 #config_version=6
+
 # TZEENCH - THE CHANGER OF WAYS
 # Stage 1: Dramatic strobe effect with roaming shot mechanic
 # Stage 2: Batman 66-style progressive ruleset
 
 config:
-    - tzeench_sounds.yaml
+  - tzeench_sounds.yaml
 
 mode:
   start_events: mission_select_tzeench_selected
-  stop_events: timer_tzeench_complete, 
+  stop_events: timer_tzeench_complete, tzeench_targets_complete
   priority: 200
 
 timers:
@@ -20,142 +21,121 @@ timers:
     restart_on_complete: false
     start_running: true
 
-  tzeench_roaming_advance:
-    start_value: 6
-    end_value: 0
-    direction: down
-    tick_interval: 1s
-    restart_on_complete: true
-    start_running: true
-
-
 widget_player:
-    mode_tzeench_started: 
-        tzeench_mode_timer:
-            action: play
-    timer_tzeench_complete:
-        tzeench_mode_timer:
-            action: remove
-    mode_tzeench_stopping:
-        tzeench_mode_timer:
-            action: remove
+  mode_tzeench_started:
+    tzeench_mode_timer:
+      action: play
+  timer_tzeench_complete:
+    tzeench_mode_timer:
+      action: remove
+  tzeench_targets_complete:
+    tzeench_mode_timer:
+      action: remove
+  mode_tzeench_stopping:
+    tzeench_mode_timer:
+      action: remove
+
+shot_profiles:
+  tzeench_strobe_profile:
+    states:
+      - name: lit
+        show: generic_flash
+      - name: hit
+        show: tzeench_shot_solid
+    loop: false
 
 shots:
   tzeench_center_ramp_shot:
     switch: s_23
-    profile: tzeench_roaming_profile
+    profile: tzeench_strobe_profile
+    start_enabled: false
+    enable_events: mode_tzeench_started
+    disable_events: tzeench_center_ramp_shot_hit
     show_tokens:
       led: l_center_ramp_arrow
-      color: aqua
+      color: teal
 
   tzeench_left_orbit_shot:
     switch: s_snikt_target
-    profile: tzeench_roaming_profile
+    profile: tzeench_strobe_profile
+    start_enabled: false
+    enable_events: mode_tzeench_started
+    disable_events: tzeench_left_orbit_shot_hit
     show_tokens:
       led: l_left_orbit_arrow
-      color: aqua
+      color: teal
 
   tzeench_right_orbit_shot:
     switch: s_27
-    profile: tzeench_roaming_profile
+    profile: tzeench_strobe_profile
+    start_enabled: false
+    enable_events: mode_tzeench_started
+    disable_events: tzeench_right_orbit_shot_hit
     show_tokens:
       led: l_right_orbit_arrow
-      color: aqua
+      color: teal
 
   tzeench_inner_loop_left_shot:
     switch: s_scoop_nurgle_target
-    profile: tzeench_roaming_profile
+    profile: tzeench_strobe_profile
+    start_enabled: false
+    enable_events: mode_tzeench_started
+    disable_events: tzeench_inner_loop_left_shot_hit
     show_tokens:
       led: l_left_innerloop_arrow
-      color: aqua
+      color: teal
 
   tzeench_inner_loop_right_shot:
     switch: s_24
-    profile: tzeench_roaming_profile
+    profile: tzeench_strobe_profile
+    start_enabled: false
+    enable_events: mode_tzeench_started
+    disable_events: tzeench_inner_loop_right_shot_hit
     show_tokens:
       led: l_right_innerloop_circle
-      color: aqua
+      color: teal
 
   tzeench_droptarget_shot:
     switch: s_26
-    profile: tzeench_roaming_profile
+    profile: tzeench_strobe_profile
+    start_enabled: false
+    enable_events: mode_tzeench_started
+    disable_events: tzeench_droptarget_shot_hit
     show_tokens:
       led: l_solemnace_arrow
-      color: aqua
-
-  tzeench_scoop_shot:
-    switch: s_scoop_nurgle_target
-    profile: tzeench_roaming_profile
-    show_tokens:
-      led: l_nurgle1
-      color: aqua
+      color: teal
 
   tzeench_jackpot_shot:
     switch: s_25
-    profile: tzeench_roaming_profile
-    show_tokens:
-      led: l_jackpot
-      color: aqua
-
-  tzeench_snikt_target_shot:
-    switch: s_snikt_target
-    profile: tzeench_roaming_profile
-    show_tokens:
-      led: l_left_sling_upper
-      color: aqua
-
-  tzeench_super_jackpot:
-    switch: s_25
-    profile: tzeench_jackpot_profile
+    profile: tzeench_strobe_profile
     start_enabled: false
+    enable_events: mode_tzeench_started
+    disable_events: tzeench_jackpot_shot_hit
     show_tokens:
       led: l_jackpot
-      color: aqua
+      color: teal
 
-shot_groups:
-  tzeench_roaming_shots:
-    shots: tzeench_center_ramp_shot, tzeench_left_orbit_shot, tzeench_right_orbit_shot, tzeench_inner_loop_left_shot, tzeench_inner_loop_right_shot, tzeench_droptarget_shot, tzeench_scoop_shot, tzeench_jackpot_shot, tzeench_snikt_target_shot
-    rotate_events: timer_tzeench_roaming_advance_complete
-    enable_events: mode_tzeench_started
-    disable_events: timer_tzeench_mode_timer_complete
-
-shot_profiles:
-  tzeench_roaming_profile:
-    states:
-      - name: roaming
-        show: strobe_white
-      - name: hit
-        show: tzeench_roaming_hit
-    loop: false
-
-  tzeench_stage2_profile:
-    states:
-      - name: flashing
-        show: generic_flash
-      - name: hit
-        show: on
-
-  tzeench_stage3_profile:
-    states:
-      - name: flashing
-        show: generic_flash
-      - name: lit
-        show: on
-      - name: hit
-        show: generic_flash
-    loop: true
-
-  tzeench_jackpot_profile:
-    states:
-      - name: unlit
-        show: off
-      - name: lit
-        show: generic_flash
-      - name: hit
-        show: on
+counters:
+  tzeench_target_counter:
+    count_events: tzeench_target_hit
+    starting_count: 0
+    count_interval: 1
+    direction: up
+    count_complete_value: 7
+    events_when_complete: tzeench_targets_complete
+    reset_on_complete: false
+    disable_on_complete: true
 
 variable_player:
-  shot_tzeench_center_ramp_shot_hit:
+  mode_tzeench_started:
+    tzeench_shots_hit:
+      int: 0
+      action: set
+    tzeench_shot_value:
+      int: 100000
+      action: set
+
+  tzeench_target_hit:
     score:
       int: current_player.tzeench_shot_value
       block: true
@@ -164,374 +144,45 @@ variable_player:
       int: 1
     tzeench_shot_value:
       action: add
-      int: 10000
+      int: 25000
 
-  shot_tzeench_left_orbit_shot_hit:
+  tzeench_targets_complete:
     score:
-      int: current_player.tzeench_shot_value
+      int: 2000000
       block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  shot_tzeench_right_orbit_shot_hit:
-    score:
-      int: current_player.tzeench_shot_value
-      block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  shot_tzeench_inner_loop_left_shot_hit:
-    score:
-      int: current_player.tzeench_shot_value
-      block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  shot_tzeench_inner_loop_right_shot_hit:
-    score:
-      int: current_player.tzeench_shot_value
-      block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  shot_tzeench_droptarget_shot_hit:
-    score:
-      int: current_player.tzeench_shot_value
-      block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  shot_tzeench_scoop_shot_hit:
-    score:
-      int: current_player.tzeench_shot_value
-      block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  shot_tzeench_jackpot_shot_hit:
-    score:
-      int: current_player.tzeench_shot_value
-      block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  shot_tzeench_snikt_target_shot_hit:
-    score:
-      int: current_player.tzeench_shot_value
-      block: true
-    tzeench_shots_hit:
-      action: add
-      int: 1
-    tzeench_shot_value:
-      action: add
-      int: 10000
-
-  s_left_xenos_target_active:
-    tzeench_shot_value:
-      action: add
-      int: 50000
-
-  # variable_tzeench_shots_hit|ge:9:
-  #   tzeench_stage:
-  #     action: set
-  #     int: 2
-
-  # tzeench_stage_2_start:
-  #   tzeench_stage2_shots_hit:
-  #     action: set
-  #     int: 0
-
-  # shot_tzeench_center_ramp_shot_hit|current_player.tzeench_stage:2:
-  #   score:
-  #     int: 250000
-  #     block: true
-  #   tzeench_stage2_shots_hit:
-  #     action: set
-  #     int: 0
-
-  # shot_tzeench_left_orbit_shot_hit|current_player.tzeench_stage:2:
-  #   score:
-  #     int: 250000
-  #     block: true
-  #   tzeench_stage2_shots_hit:
-  #     action: set
-  #     int: 0
-
-  # shot_tzeench_right_orbit_shot_hit|current_player.tzeench_stage:2:
-  #   score:
-  #     int: 250000
-  #     block: true
-  #   tzeench_stage2_shots_hit:
-  #     action: set
-  #     int: 0
-
-  # shot_tzeench_inner_loop_left_shot_hit|current_player.tzeench_stage:2:
-  #   score:
-  #     int: 250000
-  #     block: true
-  #   tzeench_stage2_shots_hit:
-  #     action: set
-  #     int: 0
-
-  # shot_tzeench_inner_loop_right_shot_hit|current_player.tzeench_stage:2:
-  #   score:
-  #     int: 250000
-  #     block: true
-  #   tzeench_stage2_shots_hit:
-  #     action: set
-  #     int: 0
-
-  # shot_tzeench_super_jackpot_hit|current_player.tzeench_stage:2:
-  #   score:
-  #     int: 1000000
-  #     block: true
-
-  # tzeench_stage_3_start:
-  #   tzeench_stage:
-  #     action: set
-  #     int: 3
-  #   tzeench_stage3_shots_hit:
-  #     action: set
-  #     int: 0
-
-  # shot_tzeench_center_ramp_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_left_orbit_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_right_orbit_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_inner_loop_left_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_inner_loop_right_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_droptarget_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_scoop_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_jackpot_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_snikt_target_shot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 500000
-  #     block: true
-  #   tzeench_stage3_shots_hit:
-  #     action: add
-  #     int: 1
-
-  # shot_tzeench_super_jackpot_hit|current_player.tzeench_stage:3:
-  #   score:
-  #     int: 5000000
-  #     block: true
 
 event_player:
-  mode_tzeench_started:
-    - shot_tzeench_roaming_shots_lighting_hit
-
-  shot_tzeench_center_ramp_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_left_orbit_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_right_orbit_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_inner_loop_left_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_inner_loop_right_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_droptarget_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_scoop_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_jackpot_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  shot_tzeench_snikt_target_shot_hit:
-    - timer_tzeench_roaming_advance_restart
-    - tzeench_reset_roaming_shots|15s
-
-  variable_tzeench_shots_hit|ge:9:
-    - tzeench_stage_2_start
-
-  tzeench_stage_2_start:
-    - shot_tzeench_stage2_shots_reset
-    - shot_tzeench_stage2_shots_lighting_hit
-
-  # shot_tzeench_center_ramp_shot_hit|current_player.tzeench_stage:2:
-  #   - shot_tzeench_super_jackpot_lighting_hit
-
-  # shot_tzeench_left_orbit_shot_hit|current_player.tzeench_stage:2:
-  #   - shot_tzeench_super_jackpot_lighting_hit
-
-  # shot_tzeench_right_orbit_shot_hit|current_player.tzeench_stage:2:
-  #   - shot_tzeench_super_jackpot_lighting_hit
-
-  # shot_tzeench_inner_loop_left_shot_hit|current_player.tzeench_stage:2:
-  #   - shot_tzeench_super_jackpot_lighting_hit
-
-  # shot_tzeench_inner_loop_right_shot_hit|current_player.tzeench_stage:2:
-  #   - shot_tzeench_super_jackpot_lighting_hit
-
-  # shot_tzeench_super_jackpot_hit|current_player.tzeench_stage:2:
-  #   - tzeench_stage_3_start
-
-  tzeench_stage_3_start:
-    - shot_tzeench_stage3_shots_reset
-    - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_center_ramp_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_left_orbit_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_right_orbit_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_inner_loop_left_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_inner_loop_right_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_droptarget_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_scoop_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_jackpot_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # shot_tzeench_snikt_target_shot_hit|current_player.tzeench_stage:3:
-  #   - shot_tzeench_stage3_shots_reset
-  #   - shot_tzeench_stage3_shots_lighting_hit
-
-  # variable_tzeench_stage3_shots_hit|ge:5:
-  #   - shot_tzeench_super_jackpot_lighting_hit
-
-  # shot_tzeench_super_jackpot_hit|current_player.tzeench_stage:3:
-  #   - tzeench_mode_complete
-
-  tzeench_reset_roaming_shots:
-    - shot_tzeench_roaming_shots_reset
-
-sound_player:
-  mission_select_tzeench_selected|2s:
-    BlueSpinnerThenScoop_01:
-      action: play
-      volume: 1
-      ducking:
-        bus: voice
-        attack: 0.3 sec
-        attenuation: 0
-        release_point: 2.0 sec
-        release: 1.0 sec
+  tzeench_center_ramp_shot_hit:
+    - tzeench_target_hit
+  tzeench_left_orbit_shot_hit:
+    - tzeench_target_hit
+  tzeench_right_orbit_shot_hit:
+    - tzeench_target_hit
+  tzeench_inner_loop_left_shot_hit:
+    - tzeench_target_hit
+  tzeench_inner_loop_right_shot_hit:
+    - tzeench_target_hit
+  tzeench_droptarget_shot_hit:
+    - tzeench_target_hit
+  tzeench_jackpot_shot_hit:
+    - tzeench_target_hit
 
 show_player:
   mode_tzeench_started:
-    gi_lights_off:
-      show_tokens:
-        led: GI
-    strobe_white:
-      show_tokens:
-        led: GI
+    tzeench_spotlight_strobe:
+      key: tzeench_spotlight_strobe
       loops: -1
+      priority: 20
+      show_tokens:
+        led: spotlight
+
+  mode_tzeench_stopping:
+    tzeench_spotlight_strobe:
+      action: stop
+      key: tzeench_spotlight_strobe
+
+  tzeench_targets_complete:
+    tzeench_spotlight_strobe:
+      action: stop
+      key: tzeench_spotlight_strobe
 

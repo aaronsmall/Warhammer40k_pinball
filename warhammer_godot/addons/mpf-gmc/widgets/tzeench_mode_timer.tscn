@@ -33,4 +33,4 @@ variable_name = "ticks_remaining"
 comma_separate = true
 template_string = "Timer: %ss"
 initialize_empty = false
-update_event = "timer_tzeench_mode_timer_tick"
+update_event = "timer_tzeench_tick"

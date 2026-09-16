@@ -299,16 +299,16 @@ lights:
 
   l_ork_spotlight_right:
     number: playfield-4-1
-    tags:  odd, first
+    tags:  odd, first, spotlight, 4-1
   l_ork_spotlight_left:
     number: playfield-4-2
-    tags:  even, second
-  l_4-3:
+    tags:  even, second, spotlight, 4-2
+  l_spotlight_left:
     number: playfield-4-3
-    tags: Chain4, odd, third
-  l_4-4:
+    tags: Chain4, odd, third, spotlight, 4-3
+  l_spotlight_right:
     number: playfield-4-4
-    tags: Chain4, even, first
+    tags: Chain4, even, first, spotlight, 4-4
   l_4-5:
     number: playfield-4-5
     tags: Chain4, odd, second

@@ -1,58 +1,82 @@
 #config_version=6
 
 sound_player:
-    timer_tzeench_tick{ticks_remaining==5}:
-        Five:
-            action: play
-            volume: 1
-            bus: voice
-            ducking:
-                bus: music
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-    timer_tzeench_tick{ticks_remaining==4}:
-        Four:
-            action: play
-            volume: 1
-            bus: voice
-            ducking:
-                bus: music
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-    timer_tzeench_tick{ticks_remaining==3}:
-        Three:
-            action: play
-            volume: 1
-            bus: voice
-            ducking:
-                bus: music
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-    timer_tzeench_tick{ticks_remaining==2}:
-        Two:
-            action: play
-            volume: 1
-            bus: voice
-            ducking:
-                bus: music
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
-    timer_tzeench_tick{ticks_remaining==1}:
-        One:
-            action: play
-            volume: 1
-            bus: voice
-            ducking:
-                bus: music
-                attack: 0.3 sec
-                attenuation: 0
-                release_point: 2.0 sec
-                release: 1.0 sec
+  mode_tzeench_started:
+    Broadcast_Apparatus:
+      action: play
+      volume: 0.8
+      bus: music
+
+  tzeench_target_hit:
+    DP_Cinematic_SFX_Orbit_Spectral Trails_01:
+      action: play
+      volume: 0.8
+      bus: sfx
+
+  tzeench_targets_complete:
+    ShotValuesIncreased:
+      action: play
+      volume: 1
+      bus: voice
+      ducking:
+        bus: music
+        attack: 0.3 sec
+        attenuation: 0
+        release_point: 2.0 sec
+        release: 1.0 sec
+
+  timer_tzeench_tick{ticks_remaining==5}:
+    Five:
+      action: play
+      volume: 1
+      bus: voice
+      ducking:
+        bus: music
+        attack: 0.3 sec
+        attenuation: 0
+        release_point: 2.0 sec
+        release: 1.0 sec
+  timer_tzeench_tick{ticks_remaining==4}:
+    Four:
+      action: play
+      volume: 1
+      bus: voice
+      ducking:
+        bus: music
+        attack: 0.3 sec
+        attenuation: 0
+        release_point: 2.0 sec
+        release: 1.0 sec
+  timer_tzeench_tick{ticks_remaining==3}:
+    Three:
+      action: play
+      volume: 1
+      bus: voice
+      ducking:
+        bus: music
+        attack: 0.3 sec
+        attenuation: 0
+        release_point: 2.0 sec
+        release: 1.0 sec
+  timer_tzeench_tick{ticks_remaining==2}:
+    Two:
+      action: play
+      volume: 1
+      bus: voice
+      ducking:
+        bus: music
+        attack: 0.3 sec
+        attenuation: 0
+        release_point: 2.0 sec
+        release: 1.0 sec
+  timer_tzeench_tick{ticks_remaining==1}:
+    One:
+      action: play
+      volume: 1
+      bus: voice
+      ducking:
+        bus: music
+        attack: 0.3 sec
+        attenuation: 0
+        release_point: 2.0 sec
+        release: 1.0 sec
